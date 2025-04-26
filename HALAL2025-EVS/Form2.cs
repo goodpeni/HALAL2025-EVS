@@ -15,6 +15,7 @@ namespace HALAL2025_EVS
         public Form2()
         {
             InitializeComponent();
+            PnlVoting.BackColor = Color.FromArgb(70, 0, 0, 0);
         }
 
         private void BtnLogout_Click(object sender, EventArgs e)
