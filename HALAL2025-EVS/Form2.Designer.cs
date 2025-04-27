@@ -1,6 +1,6 @@
 ﻿namespace HALAL2025_EVS
 {
-    partial class Form2
+    partial class VoteNow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VoteNow));
             this.PnlHeading = new System.Windows.Forms.Panel();
             this.BtnLogout = new System.Windows.Forms.Button();
             this.BtnPartylists = new System.Windows.Forms.Button();
@@ -41,210 +41,210 @@
             this.BtnSubmit = new System.Windows.Forms.Button();
             this.BtnReview = new System.Windows.Forms.Button();
             this.PnlG6Repre = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.BtnClearG6Repre = new System.Windows.Forms.Button();
+            this.LblG6R3 = new System.Windows.Forms.Label();
+            this.LblG6R2 = new System.Windows.Forms.Label();
+            this.LblG6R1 = new System.Windows.Forms.Label();
+            this.RdoG6R3 = new System.Windows.Forms.RadioButton();
+            this.RdoG6R2 = new System.Windows.Forms.RadioButton();
+            this.RdoG6R1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFG6R3 = new System.Windows.Forms.Button();
+            this.BtnPFG6R2 = new System.Windows.Forms.Button();
+            this.BtnPFG6R1 = new System.Windows.Forms.Button();
+            this.PicBoxG6R2 = new System.Windows.Forms.PictureBox();
+            this.PicBoxG6R3 = new System.Windows.Forms.PictureBox();
+            this.PicBoxG6R1 = new System.Windows.Forms.PictureBox();
+            this.LblG6RepreDesc = new System.Windows.Forms.Label();
+            this.LblG6Repre = new System.Windows.Forms.Label();
             this.PnlG5Repre = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.BtnClearG5Rrepre = new System.Windows.Forms.Button();
+            this.LblG5R3 = new System.Windows.Forms.Label();
+            this.LblG5R2 = new System.Windows.Forms.Label();
+            this.LblG5R1 = new System.Windows.Forms.Label();
+            this.RdoG5R3 = new System.Windows.Forms.RadioButton();
+            this.BtnPFG5R3 = new System.Windows.Forms.Button();
+            this.RdoG5R2 = new System.Windows.Forms.RadioButton();
+            this.RdoG5R1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFG5R2 = new System.Windows.Forms.Button();
+            this.BtnPFG5R1 = new System.Windows.Forms.Button();
+            this.PicBoxG5R2 = new System.Windows.Forms.PictureBox();
+            this.PicBoxG5R3 = new System.Windows.Forms.PictureBox();
+            this.PicBoxG5R1 = new System.Windows.Forms.PictureBox();
+            this.LblG5RepreDesc = new System.Windows.Forms.Label();
+            this.LblG5Repre = new System.Windows.Forms.Label();
             this.PnlG4Repre = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.BtnClearG4Repre = new System.Windows.Forms.Button();
+            this.LblG4R3 = new System.Windows.Forms.Label();
+            this.LblG4R2 = new System.Windows.Forms.Label();
+            this.LblG4R1 = new System.Windows.Forms.Label();
+            this.RdoG4R3 = new System.Windows.Forms.RadioButton();
+            this.RdoG4R2 = new System.Windows.Forms.RadioButton();
+            this.RdoG4R1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFG4R3 = new System.Windows.Forms.Button();
+            this.BtnPFG4R2 = new System.Windows.Forms.Button();
+            this.BtnPFG4R1 = new System.Windows.Forms.Button();
+            this.PicBoxG4R2 = new System.Windows.Forms.PictureBox();
+            this.PicBoxG4R3 = new System.Windows.Forms.PictureBox();
+            this.PicBoxG4R1 = new System.Windows.Forms.PictureBox();
+            this.LblG4RepreDesc = new System.Windows.Forms.Label();
+            this.LblG4Repre = new System.Windows.Forms.Label();
             this.PnlPO = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.BtnClearPO = new System.Windows.Forms.Button();
+            this.LblPO3 = new System.Windows.Forms.Label();
+            this.LblPO2 = new System.Windows.Forms.Label();
+            this.LblPO1 = new System.Windows.Forms.Label();
+            this.RdoPO3 = new System.Windows.Forms.RadioButton();
+            this.RdoPO2 = new System.Windows.Forms.RadioButton();
+            this.RdoPO1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFPO3 = new System.Windows.Forms.Button();
+            this.BtnPFPO2 = new System.Windows.Forms.Button();
+            this.BtnPFPO1 = new System.Windows.Forms.Button();
+            this.PicBoxPO2 = new System.Windows.Forms.PictureBox();
+            this.PicBoxPO3 = new System.Windows.Forms.PictureBox();
+            this.PicBoxPO1 = new System.Windows.Forms.PictureBox();
+            this.LblPODesc = new System.Windows.Forms.Label();
+            this.LblPO = new System.Windows.Forms.Label();
             this.PnlPIO = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.BtnClearPIO = new System.Windows.Forms.Button();
+            this.LblPIO3 = new System.Windows.Forms.Label();
+            this.LblPIO2 = new System.Windows.Forms.Label();
+            this.LblPIO1 = new System.Windows.Forms.Label();
+            this.RdoPIO3 = new System.Windows.Forms.RadioButton();
+            this.RdoPIO2 = new System.Windows.Forms.RadioButton();
+            this.RdoPIO1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFPIO3 = new System.Windows.Forms.Button();
+            this.BtnPFPIO2 = new System.Windows.Forms.Button();
+            this.BtnPFPIO1 = new System.Windows.Forms.Button();
+            this.PicBoxPIO2 = new System.Windows.Forms.PictureBox();
+            this.PicBoxPIO3 = new System.Windows.Forms.PictureBox();
+            this.PicBoxPIO1 = new System.Windows.Forms.PictureBox();
+            this.LblPIODesc = new System.Windows.Forms.Label();
+            this.LblPIO = new System.Windows.Forms.Label();
             this.PnlAudit = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.BtnClearAudit = new System.Windows.Forms.Button();
+            this.LblAudit3 = new System.Windows.Forms.Label();
+            this.LblAudit2 = new System.Windows.Forms.Label();
+            this.LblAudit1 = new System.Windows.Forms.Label();
+            this.RdoAudit3 = new System.Windows.Forms.RadioButton();
+            this.RdoAudit2 = new System.Windows.Forms.RadioButton();
+            this.RdoAudit1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFAudit3 = new System.Windows.Forms.Button();
+            this.BtnPFAudit2 = new System.Windows.Forms.Button();
+            this.BtnPFAudit1 = new System.Windows.Forms.Button();
+            this.PicBoxAudit2 = new System.Windows.Forms.PictureBox();
+            this.PicBoxAudit3 = new System.Windows.Forms.PictureBox();
+            this.PicBoxAudit1 = new System.Windows.Forms.PictureBox();
+            this.LblAuditDesc = new System.Windows.Forms.Label();
+            this.LblAudit = new System.Windows.Forms.Label();
             this.PnlTreas = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.BtnClearTreas = new System.Windows.Forms.Button();
+            this.LblTreas3 = new System.Windows.Forms.Label();
+            this.LblTreas2 = new System.Windows.Forms.Label();
+            this.LblTreas1 = new System.Windows.Forms.Label();
+            this.RdoTreas3 = new System.Windows.Forms.RadioButton();
+            this.RdoTreas2 = new System.Windows.Forms.RadioButton();
+            this.RdoTreas1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFTreas3 = new System.Windows.Forms.Button();
+            this.BtnPFTreas2 = new System.Windows.Forms.Button();
+            this.BtnPFTreas1 = new System.Windows.Forms.Button();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.LblTreasDesc = new System.Windows.Forms.Label();
+            this.LblTreas = new System.Windows.Forms.Label();
             this.PnlSec = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.BtnClearSecretary = new System.Windows.Forms.Button();
+            this.LblSec3 = new System.Windows.Forms.Label();
+            this.LblSec2 = new System.Windows.Forms.Label();
+            this.LblSec1 = new System.Windows.Forms.Label();
+            this.RdoSec3 = new System.Windows.Forms.RadioButton();
+            this.RdoSec2 = new System.Windows.Forms.RadioButton();
+            this.RdoSec1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFSec3 = new System.Windows.Forms.Button();
+            this.BtnPFSec2 = new System.Windows.Forms.Button();
+            this.BtnPFSec1 = new System.Windows.Forms.Button();
+            this.PicBoxSec3 = new System.Windows.Forms.PictureBox();
+            this.PicBoxSec2 = new System.Windows.Forms.PictureBox();
+            this.PicBoxSec1 = new System.Windows.Forms.PictureBox();
+            this.LblSecDesc = new System.Windows.Forms.Label();
+            this.LblSec = new System.Windows.Forms.Label();
             this.PnlVice = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.BtnClearVice = new System.Windows.Forms.Button();
+            this.LblVice3 = new System.Windows.Forms.Label();
+            this.LblVice2 = new System.Windows.Forms.Label();
+            this.LblVice1 = new System.Windows.Forms.Label();
+            this.RdoVice3 = new System.Windows.Forms.RadioButton();
+            this.RdoVice2 = new System.Windows.Forms.RadioButton();
+            this.RdoVice1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFVIce3 = new System.Windows.Forms.Button();
+            this.BtnPFVice2 = new System.Windows.Forms.Button();
+            this.BtnPFVice1 = new System.Windows.Forms.Button();
+            this.PicBoxVice2 = new System.Windows.Forms.PictureBox();
+            this.PicBoxVice3 = new System.Windows.Forms.PictureBox();
+            this.PicBoxVice1 = new System.Windows.Forms.PictureBox();
+            this.LblVIceDesc = new System.Windows.Forms.Label();
+            this.LblVice = new System.Windows.Forms.Label();
             this.PnlPres = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.BtnClearPres = new System.Windows.Forms.Button();
+            this.LblPres3 = new System.Windows.Forms.Label();
+            this.LblPres2 = new System.Windows.Forms.Label();
+            this.LblPres1 = new System.Windows.Forms.Label();
+            this.RdoPres3 = new System.Windows.Forms.RadioButton();
+            this.RdoPres2 = new System.Windows.Forms.RadioButton();
+            this.RdoPres1 = new System.Windows.Forms.RadioButton();
+            this.BtnPFPres3 = new System.Windows.Forms.Button();
+            this.BtnPFPres2 = new System.Windows.Forms.Button();
+            this.BtnPFPres1 = new System.Windows.Forms.Button();
+            this.PicBoxPres3 = new System.Windows.Forms.PictureBox();
+            this.PicBoxPres2 = new System.Windows.Forms.PictureBox();
+            this.PicBoxPres1 = new System.Windows.Forms.PictureBox();
+            this.LblPresDesc = new System.Windows.Forms.Label();
             this.LblPres = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
-            this.radioButton19 = new System.Windows.Forms.RadioButton();
-            this.radioButton20 = new System.Windows.Forms.RadioButton();
-            this.radioButton21 = new System.Windows.Forms.RadioButton();
-            this.radioButton22 = new System.Windows.Forms.RadioButton();
-            this.radioButton23 = new System.Windows.Forms.RadioButton();
-            this.radioButton24 = new System.Windows.Forms.RadioButton();
-            this.radioButton25 = new System.Windows.Forms.RadioButton();
-            this.radioButton26 = new System.Windows.Forms.RadioButton();
-            this.radioButton27 = new System.Windows.Forms.RadioButton();
-            this.radioButton28 = new System.Windows.Forms.RadioButton();
-            this.radioButton29 = new System.Windows.Forms.RadioButton();
-            this.radioButton30 = new System.Windows.Forms.RadioButton();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PnlVoting.SuspendLayout();
             this.panel12.SuspendLayout();
             this.PnlG6Repre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG6R2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG6R3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG6R1)).BeginInit();
             this.PnlG5Repre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5R2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5R3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5R1)).BeginInit();
             this.PnlG4Repre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG4R2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG4R3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG4R1)).BeginInit();
             this.PnlPO.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPO2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPO3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPO1)).BeginInit();
             this.PnlPIO.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO1)).BeginInit();
             this.PnlAudit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit1)).BeginInit();
             this.PnlTreas.SuspendLayout();
-            this.PnlSec.SuspendLayout();
-            this.PnlVice.SuspendLayout();
-            this.PnlPres.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.PnlSec.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec1)).BeginInit();
+            this.PnlVice.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxVice2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxVice3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxVice1)).BeginInit();
+            this.PnlPres.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPres3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPres2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPres1)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlHeading
@@ -267,6 +267,8 @@
             // BtnLogout
             // 
             this.BtnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLogout.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogout.FlatAppearance.BorderSize = 0;
             this.BtnLogout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -401,6 +403,7 @@
             this.BtnSubmit.TabIndex = 10;
             this.BtnSubmit.Text = "SUBMIT";
             this.BtnSubmit.UseVisualStyleBackColor = true;
+            this.BtnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
             // 
             // BtnReview
             // 
@@ -416,445 +419,1876 @@
             this.BtnReview.TabIndex = 9;
             this.BtnReview.Text = "REVIEW";
             this.BtnReview.UseVisualStyleBackColor = true;
+            this.BtnReview.Click += new System.EventHandler(this.BtnReview_Click);
             // 
             // PnlG6Repre
             // 
             this.PnlG6Repre.BackColor = System.Drawing.Color.White;
-            this.PnlG6Repre.Controls.Add(this.button40);
-            this.PnlG6Repre.Controls.Add(this.label50);
-            this.PnlG6Repre.Controls.Add(this.label51);
-            this.PnlG6Repre.Controls.Add(this.label52);
-            this.PnlG6Repre.Controls.Add(this.radioButton25);
-            this.PnlG6Repre.Controls.Add(this.radioButton26);
-            this.PnlG6Repre.Controls.Add(this.radioButton27);
-            this.PnlG6Repre.Controls.Add(this.button28);
-            this.PnlG6Repre.Controls.Add(this.button29);
-            this.PnlG6Repre.Controls.Add(this.button30);
-            this.PnlG6Repre.Controls.Add(this.pictureBox31);
-            this.PnlG6Repre.Controls.Add(this.pictureBox30);
-            this.PnlG6Repre.Controls.Add(this.pictureBox12);
-            this.PnlG6Repre.Controls.Add(this.label21);
-            this.PnlG6Repre.Controls.Add(this.label22);
+            this.PnlG6Repre.Controls.Add(this.BtnClearG6Repre);
+            this.PnlG6Repre.Controls.Add(this.LblG6R3);
+            this.PnlG6Repre.Controls.Add(this.LblG6R2);
+            this.PnlG6Repre.Controls.Add(this.LblG6R1);
+            this.PnlG6Repre.Controls.Add(this.RdoG6R3);
+            this.PnlG6Repre.Controls.Add(this.RdoG6R2);
+            this.PnlG6Repre.Controls.Add(this.RdoG6R1);
+            this.PnlG6Repre.Controls.Add(this.BtnPFG6R3);
+            this.PnlG6Repre.Controls.Add(this.BtnPFG6R2);
+            this.PnlG6Repre.Controls.Add(this.BtnPFG6R1);
+            this.PnlG6Repre.Controls.Add(this.PicBoxG6R2);
+            this.PnlG6Repre.Controls.Add(this.PicBoxG6R3);
+            this.PnlG6Repre.Controls.Add(this.PicBoxG6R1);
+            this.PnlG6Repre.Controls.Add(this.LblG6RepreDesc);
+            this.PnlG6Repre.Controls.Add(this.LblG6Repre);
             this.PnlG6Repre.Location = new System.Drawing.Point(42, 3004);
             this.PnlG6Repre.Name = "PnlG6Repre";
             this.PnlG6Repre.Size = new System.Drawing.Size(814, 309);
             this.PnlG6Repre.TabIndex = 8;
             // 
-            // label21
+            // BtnClearG6Repre
             // 
-            this.label21.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(22, 41);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(228, 20);
-            this.label21.TabIndex = 7;
-            this.label21.Text = "Select only one candidate.";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearG6Repre.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearG6Repre.FlatAppearance.BorderSize = 0;
+            this.BtnClearG6Repre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearG6Repre.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearG6Repre.ForeColor = System.Drawing.Color.White;
+            this.BtnClearG6Repre.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearG6Repre.Name = "BtnClearG6Repre";
+            this.BtnClearG6Repre.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearG6Repre.TabIndex = 25;
+            this.BtnClearG6Repre.Text = "CLEAR SELECTION";
+            this.BtnClearG6Repre.UseVisualStyleBackColor = true;
             // 
-            // label22
+            // LblG6R3
             // 
-            this.label22.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(20, 7);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(387, 38);
-            this.label22.TabIndex = 6;
-            this.label22.Text = "GRADE 6 REPRESENTATIVE";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblG6R3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG6R3.ForeColor = System.Drawing.Color.Black;
+            this.LblG6R3.Location = new System.Drawing.Point(278, 253);
+            this.LblG6R3.Name = "LblG6R3";
+            this.LblG6R3.Size = new System.Drawing.Size(331, 23);
+            this.LblG6R3.TabIndex = 24;
+            this.LblG6R3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblG6R3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblG6R2
+            // 
+            this.LblG6R2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG6R2.ForeColor = System.Drawing.Color.Black;
+            this.LblG6R2.Location = new System.Drawing.Point(278, 169);
+            this.LblG6R2.Name = "LblG6R2";
+            this.LblG6R2.Size = new System.Drawing.Size(331, 23);
+            this.LblG6R2.TabIndex = 23;
+            this.LblG6R2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblG6R2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblG6R1
+            // 
+            this.LblG6R1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG6R1.ForeColor = System.Drawing.Color.Black;
+            this.LblG6R1.Location = new System.Drawing.Point(278, 91);
+            this.LblG6R1.Name = "LblG6R1";
+            this.LblG6R1.Size = new System.Drawing.Size(331, 23);
+            this.LblG6R1.TabIndex = 22;
+            this.LblG6R1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblG6R1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoG6R3
+            // 
+            this.RdoG6R3.ForeColor = System.Drawing.Color.Black;
+            this.RdoG6R3.Location = new System.Drawing.Point(42, 246);
+            this.RdoG6R3.Name = "RdoG6R3";
+            this.RdoG6R3.Size = new System.Drawing.Size(16, 24);
+            this.RdoG6R3.TabIndex = 21;
+            this.RdoG6R3.TabStop = true;
+            this.RdoG6R3.UseVisualStyleBackColor = true;
+            // 
+            // RdoG6R2
+            // 
+            this.RdoG6R2.ForeColor = System.Drawing.Color.Black;
+            this.RdoG6R2.Location = new System.Drawing.Point(42, 168);
+            this.RdoG6R2.Name = "RdoG6R2";
+            this.RdoG6R2.Size = new System.Drawing.Size(16, 24);
+            this.RdoG6R2.TabIndex = 20;
+            this.RdoG6R2.TabStop = true;
+            this.RdoG6R2.UseVisualStyleBackColor = true;
+            // 
+            // RdoG6R1
+            // 
+            this.RdoG6R1.ForeColor = System.Drawing.Color.Black;
+            this.RdoG6R1.Location = new System.Drawing.Point(42, 90);
+            this.RdoG6R1.Name = "RdoG6R1";
+            this.RdoG6R1.Size = new System.Drawing.Size(16, 24);
+            this.RdoG6R1.TabIndex = 19;
+            this.RdoG6R1.TabStop = true;
+            this.RdoG6R1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFG6R3
+            // 
+            this.BtnPFG6R3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFG6R3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFG6R3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFG6R3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFG6R3.Location = new System.Drawing.Point(79, 242);
+            this.BtnPFG6R3.Name = "BtnPFG6R3";
+            this.BtnPFG6R3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFG6R3.TabIndex = 15;
+            this.BtnPFG6R3.Text = "PLATFORM";
+            this.BtnPFG6R3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFG6R2
+            // 
+            this.BtnPFG6R2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFG6R2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFG6R2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFG6R2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFG6R2.Location = new System.Drawing.Point(79, 164);
+            this.BtnPFG6R2.Name = "BtnPFG6R2";
+            this.BtnPFG6R2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFG6R2.TabIndex = 14;
+            this.BtnPFG6R2.Text = "PLATFORM";
+            this.BtnPFG6R2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFG6R1
+            // 
+            this.BtnPFG6R1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFG6R1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFG6R1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFG6R1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFG6R1.Location = new System.Drawing.Point(79, 86);
+            this.BtnPFG6R1.Name = "BtnPFG6R1";
+            this.BtnPFG6R1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFG6R1.TabIndex = 13;
+            this.BtnPFG6R1.Text = "PLATFORM";
+            this.BtnPFG6R1.UseVisualStyleBackColor = true;
+            // 
+            // PicBoxG6R2
+            // 
+            this.PicBoxG6R2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxG6R2.Location = new System.Drawing.Point(200, 151);
+            this.PicBoxG6R2.Name = "PicBoxG6R2";
+            this.PicBoxG6R2.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxG6R2.TabIndex = 12;
+            this.PicBoxG6R2.TabStop = false;
+            // 
+            // PicBoxG6R3
+            // 
+            this.PicBoxG6R3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxG6R3.Location = new System.Drawing.Point(200, 228);
+            this.PicBoxG6R3.Name = "PicBoxG6R3";
+            this.PicBoxG6R3.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxG6R3.TabIndex = 11;
+            this.PicBoxG6R3.TabStop = false;
+            // 
+            // PicBoxG6R1
+            // 
+            this.PicBoxG6R1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxG6R1.Location = new System.Drawing.Point(200, 74);
+            this.PicBoxG6R1.Name = "PicBoxG6R1";
+            this.PicBoxG6R1.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxG6R1.TabIndex = 8;
+            this.PicBoxG6R1.TabStop = false;
+            // 
+            // LblG6RepreDesc
+            // 
+            this.LblG6RepreDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG6RepreDesc.ForeColor = System.Drawing.Color.Black;
+            this.LblG6RepreDesc.Location = new System.Drawing.Point(22, 41);
+            this.LblG6RepreDesc.Name = "LblG6RepreDesc";
+            this.LblG6RepreDesc.Size = new System.Drawing.Size(228, 20);
+            this.LblG6RepreDesc.TabIndex = 7;
+            this.LblG6RepreDesc.Text = "Select only one candidate.";
+            this.LblG6RepreDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblG6Repre
+            // 
+            this.LblG6Repre.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG6Repre.ForeColor = System.Drawing.Color.Black;
+            this.LblG6Repre.Location = new System.Drawing.Point(20, 7);
+            this.LblG6Repre.Name = "LblG6Repre";
+            this.LblG6Repre.Size = new System.Drawing.Size(387, 38);
+            this.LblG6Repre.TabIndex = 6;
+            this.LblG6Repre.Text = "GRADE 6 REPRESENTATIVE";
+            this.LblG6Repre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlG5Repre
             // 
             this.PnlG5Repre.BackColor = System.Drawing.Color.White;
-            this.PnlG5Repre.Controls.Add(this.button39);
-            this.PnlG5Repre.Controls.Add(this.label47);
-            this.PnlG5Repre.Controls.Add(this.label48);
-            this.PnlG5Repre.Controls.Add(this.label49);
-            this.PnlG5Repre.Controls.Add(this.radioButton22);
-            this.PnlG5Repre.Controls.Add(this.button25);
-            this.PnlG5Repre.Controls.Add(this.radioButton23);
-            this.PnlG5Repre.Controls.Add(this.radioButton24);
-            this.PnlG5Repre.Controls.Add(this.button26);
-            this.PnlG5Repre.Controls.Add(this.button27);
-            this.PnlG5Repre.Controls.Add(this.pictureBox29);
-            this.PnlG5Repre.Controls.Add(this.pictureBox28);
-            this.PnlG5Repre.Controls.Add(this.pictureBox11);
-            this.PnlG5Repre.Controls.Add(this.label19);
-            this.PnlG5Repre.Controls.Add(this.label20);
+            this.PnlG5Repre.Controls.Add(this.BtnClearG5Rrepre);
+            this.PnlG5Repre.Controls.Add(this.LblG5R3);
+            this.PnlG5Repre.Controls.Add(this.LblG5R2);
+            this.PnlG5Repre.Controls.Add(this.LblG5R1);
+            this.PnlG5Repre.Controls.Add(this.RdoG5R3);
+            this.PnlG5Repre.Controls.Add(this.BtnPFG5R3);
+            this.PnlG5Repre.Controls.Add(this.RdoG5R2);
+            this.PnlG5Repre.Controls.Add(this.RdoG5R1);
+            this.PnlG5Repre.Controls.Add(this.BtnPFG5R2);
+            this.PnlG5Repre.Controls.Add(this.BtnPFG5R1);
+            this.PnlG5Repre.Controls.Add(this.PicBoxG5R2);
+            this.PnlG5Repre.Controls.Add(this.PicBoxG5R3);
+            this.PnlG5Repre.Controls.Add(this.PicBoxG5R1);
+            this.PnlG5Repre.Controls.Add(this.LblG5RepreDesc);
+            this.PnlG5Repre.Controls.Add(this.LblG5Repre);
             this.PnlG5Repre.Location = new System.Drawing.Point(42, 2682);
             this.PnlG5Repre.Name = "PnlG5Repre";
             this.PnlG5Repre.Size = new System.Drawing.Size(814, 309);
             this.PnlG5Repre.TabIndex = 7;
             // 
-            // label19
+            // BtnClearG5Rrepre
             // 
-            this.label19.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(22, 41);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(228, 20);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "Select only one candidate.";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearG5Rrepre.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearG5Rrepre.FlatAppearance.BorderSize = 0;
+            this.BtnClearG5Rrepre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearG5Rrepre.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearG5Rrepre.ForeColor = System.Drawing.Color.White;
+            this.BtnClearG5Rrepre.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearG5Rrepre.Name = "BtnClearG5Rrepre";
+            this.BtnClearG5Rrepre.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearG5Rrepre.TabIndex = 25;
+            this.BtnClearG5Rrepre.Text = "CLEAR SELECTION";
+            this.BtnClearG5Rrepre.UseVisualStyleBackColor = true;
             // 
-            // label20
+            // LblG5R3
             // 
-            this.label20.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(20, 7);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(387, 38);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "GRADE 5 RERESENTATIVE";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblG5R3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG5R3.ForeColor = System.Drawing.Color.Black;
+            this.LblG5R3.Location = new System.Drawing.Point(278, 253);
+            this.LblG5R3.Name = "LblG5R3";
+            this.LblG5R3.Size = new System.Drawing.Size(331, 23);
+            this.LblG5R3.TabIndex = 24;
+            this.LblG5R3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblG5R3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblG5R2
+            // 
+            this.LblG5R2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG5R2.ForeColor = System.Drawing.Color.Black;
+            this.LblG5R2.Location = new System.Drawing.Point(278, 169);
+            this.LblG5R2.Name = "LblG5R2";
+            this.LblG5R2.Size = new System.Drawing.Size(331, 23);
+            this.LblG5R2.TabIndex = 23;
+            this.LblG5R2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblG5R2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblG5R1
+            // 
+            this.LblG5R1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG5R1.ForeColor = System.Drawing.Color.Black;
+            this.LblG5R1.Location = new System.Drawing.Point(278, 91);
+            this.LblG5R1.Name = "LblG5R1";
+            this.LblG5R1.Size = new System.Drawing.Size(331, 23);
+            this.LblG5R1.TabIndex = 22;
+            this.LblG5R1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblG5R1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoG5R3
+            // 
+            this.RdoG5R3.ForeColor = System.Drawing.Color.Black;
+            this.RdoG5R3.Location = new System.Drawing.Point(42, 245);
+            this.RdoG5R3.Name = "RdoG5R3";
+            this.RdoG5R3.Size = new System.Drawing.Size(16, 24);
+            this.RdoG5R3.TabIndex = 21;
+            this.RdoG5R3.TabStop = true;
+            this.RdoG5R3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFG5R3
+            // 
+            this.BtnPFG5R3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFG5R3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFG5R3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFG5R3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFG5R3.Location = new System.Drawing.Point(79, 241);
+            this.BtnPFG5R3.Name = "BtnPFG5R3";
+            this.BtnPFG5R3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFG5R3.TabIndex = 15;
+            this.BtnPFG5R3.Text = "PLATFORM";
+            this.BtnPFG5R3.UseVisualStyleBackColor = true;
+            // 
+            // RdoG5R2
+            // 
+            this.RdoG5R2.ForeColor = System.Drawing.Color.Black;
+            this.RdoG5R2.Location = new System.Drawing.Point(42, 167);
+            this.RdoG5R2.Name = "RdoG5R2";
+            this.RdoG5R2.Size = new System.Drawing.Size(16, 24);
+            this.RdoG5R2.TabIndex = 20;
+            this.RdoG5R2.TabStop = true;
+            this.RdoG5R2.UseVisualStyleBackColor = true;
+            // 
+            // RdoG5R1
+            // 
+            this.RdoG5R1.ForeColor = System.Drawing.Color.Black;
+            this.RdoG5R1.Location = new System.Drawing.Point(42, 89);
+            this.RdoG5R1.Name = "RdoG5R1";
+            this.RdoG5R1.Size = new System.Drawing.Size(16, 24);
+            this.RdoG5R1.TabIndex = 19;
+            this.RdoG5R1.TabStop = true;
+            this.RdoG5R1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFG5R2
+            // 
+            this.BtnPFG5R2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFG5R2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFG5R2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFG5R2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFG5R2.Location = new System.Drawing.Point(79, 163);
+            this.BtnPFG5R2.Name = "BtnPFG5R2";
+            this.BtnPFG5R2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFG5R2.TabIndex = 14;
+            this.BtnPFG5R2.Text = "PLATFORM";
+            this.BtnPFG5R2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFG5R1
+            // 
+            this.BtnPFG5R1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFG5R1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFG5R1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFG5R1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFG5R1.Location = new System.Drawing.Point(79, 85);
+            this.BtnPFG5R1.Name = "BtnPFG5R1";
+            this.BtnPFG5R1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFG5R1.TabIndex = 13;
+            this.BtnPFG5R1.Text = "PLATFORM";
+            this.BtnPFG5R1.UseVisualStyleBackColor = true;
+            // 
+            // PicBoxG5R2
+            // 
+            this.PicBoxG5R2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxG5R2.Location = new System.Drawing.Point(200, 152);
+            this.PicBoxG5R2.Name = "PicBoxG5R2";
+            this.PicBoxG5R2.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxG5R2.TabIndex = 12;
+            this.PicBoxG5R2.TabStop = false;
+            // 
+            // PicBoxG5R3
+            // 
+            this.PicBoxG5R3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxG5R3.Location = new System.Drawing.Point(200, 229);
+            this.PicBoxG5R3.Name = "PicBoxG5R3";
+            this.PicBoxG5R3.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxG5R3.TabIndex = 11;
+            this.PicBoxG5R3.TabStop = false;
+            // 
+            // PicBoxG5R1
+            // 
+            this.PicBoxG5R1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxG5R1.Location = new System.Drawing.Point(200, 75);
+            this.PicBoxG5R1.Name = "PicBoxG5R1";
+            this.PicBoxG5R1.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxG5R1.TabIndex = 8;
+            this.PicBoxG5R1.TabStop = false;
+            // 
+            // LblG5RepreDesc
+            // 
+            this.LblG5RepreDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG5RepreDesc.ForeColor = System.Drawing.Color.Black;
+            this.LblG5RepreDesc.Location = new System.Drawing.Point(22, 41);
+            this.LblG5RepreDesc.Name = "LblG5RepreDesc";
+            this.LblG5RepreDesc.Size = new System.Drawing.Size(228, 20);
+            this.LblG5RepreDesc.TabIndex = 7;
+            this.LblG5RepreDesc.Text = "Select only one candidate.";
+            this.LblG5RepreDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblG5Repre
+            // 
+            this.LblG5Repre.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG5Repre.ForeColor = System.Drawing.Color.Black;
+            this.LblG5Repre.Location = new System.Drawing.Point(20, 7);
+            this.LblG5Repre.Name = "LblG5Repre";
+            this.LblG5Repre.Size = new System.Drawing.Size(387, 38);
+            this.LblG5Repre.TabIndex = 6;
+            this.LblG5Repre.Text = "GRADE 5 RERESENTATIVE";
+            this.LblG5Repre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlG4Repre
             // 
             this.PnlG4Repre.BackColor = System.Drawing.Color.White;
-            this.PnlG4Repre.Controls.Add(this.button38);
-            this.PnlG4Repre.Controls.Add(this.label44);
-            this.PnlG4Repre.Controls.Add(this.label45);
-            this.PnlG4Repre.Controls.Add(this.label46);
-            this.PnlG4Repre.Controls.Add(this.radioButton19);
-            this.PnlG4Repre.Controls.Add(this.radioButton20);
-            this.PnlG4Repre.Controls.Add(this.radioButton21);
-            this.PnlG4Repre.Controls.Add(this.button22);
-            this.PnlG4Repre.Controls.Add(this.button23);
-            this.PnlG4Repre.Controls.Add(this.button24);
-            this.PnlG4Repre.Controls.Add(this.pictureBox25);
-            this.PnlG4Repre.Controls.Add(this.pictureBox24);
-            this.PnlG4Repre.Controls.Add(this.pictureBox23);
-            this.PnlG4Repre.Controls.Add(this.label17);
-            this.PnlG4Repre.Controls.Add(this.label18);
+            this.PnlG4Repre.Controls.Add(this.BtnClearG4Repre);
+            this.PnlG4Repre.Controls.Add(this.LblG4R3);
+            this.PnlG4Repre.Controls.Add(this.LblG4R2);
+            this.PnlG4Repre.Controls.Add(this.LblG4R1);
+            this.PnlG4Repre.Controls.Add(this.RdoG4R3);
+            this.PnlG4Repre.Controls.Add(this.RdoG4R2);
+            this.PnlG4Repre.Controls.Add(this.RdoG4R1);
+            this.PnlG4Repre.Controls.Add(this.BtnPFG4R3);
+            this.PnlG4Repre.Controls.Add(this.BtnPFG4R2);
+            this.PnlG4Repre.Controls.Add(this.BtnPFG4R1);
+            this.PnlG4Repre.Controls.Add(this.PicBoxG4R2);
+            this.PnlG4Repre.Controls.Add(this.PicBoxG4R3);
+            this.PnlG4Repre.Controls.Add(this.PicBoxG4R1);
+            this.PnlG4Repre.Controls.Add(this.LblG4RepreDesc);
+            this.PnlG4Repre.Controls.Add(this.LblG4Repre);
             this.PnlG4Repre.Location = new System.Drawing.Point(42, 2362);
             this.PnlG4Repre.Name = "PnlG4Repre";
             this.PnlG4Repre.Size = new System.Drawing.Size(814, 309);
             this.PnlG4Repre.TabIndex = 6;
             // 
-            // label17
+            // BtnClearG4Repre
             // 
-            this.label17.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(22, 41);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(228, 20);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "Select only one candidate.";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearG4Repre.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearG4Repre.FlatAppearance.BorderSize = 0;
+            this.BtnClearG4Repre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearG4Repre.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearG4Repre.ForeColor = System.Drawing.Color.White;
+            this.BtnClearG4Repre.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearG4Repre.Name = "BtnClearG4Repre";
+            this.BtnClearG4Repre.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearG4Repre.TabIndex = 22;
+            this.BtnClearG4Repre.Text = "CLEAR SELECTION";
+            this.BtnClearG4Repre.UseVisualStyleBackColor = true;
             // 
-            // label18
+            // LblG4R3
             // 
-            this.label18.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(20, 7);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(387, 38);
-            this.label18.TabIndex = 8;
-            this.label18.Text = "GRADE 4 REPRESENTATIVE";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblG4R3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG4R3.ForeColor = System.Drawing.Color.Black;
+            this.LblG4R3.Location = new System.Drawing.Point(278, 249);
+            this.LblG4R3.Name = "LblG4R3";
+            this.LblG4R3.Size = new System.Drawing.Size(331, 23);
+            this.LblG4R3.TabIndex = 21;
+            this.LblG4R3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblG4R3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblG4R2
+            // 
+            this.LblG4R2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG4R2.ForeColor = System.Drawing.Color.Black;
+            this.LblG4R2.Location = new System.Drawing.Point(278, 165);
+            this.LblG4R2.Name = "LblG4R2";
+            this.LblG4R2.Size = new System.Drawing.Size(331, 23);
+            this.LblG4R2.TabIndex = 20;
+            this.LblG4R2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblG4R2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblG4R1
+            // 
+            this.LblG4R1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG4R1.ForeColor = System.Drawing.Color.Black;
+            this.LblG4R1.Location = new System.Drawing.Point(278, 87);
+            this.LblG4R1.Name = "LblG4R1";
+            this.LblG4R1.Size = new System.Drawing.Size(331, 23);
+            this.LblG4R1.TabIndex = 19;
+            this.LblG4R1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblG4R1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoG4R3
+            // 
+            this.RdoG4R3.ForeColor = System.Drawing.Color.Black;
+            this.RdoG4R3.Location = new System.Drawing.Point(42, 244);
+            this.RdoG4R3.Name = "RdoG4R3";
+            this.RdoG4R3.Size = new System.Drawing.Size(16, 24);
+            this.RdoG4R3.TabIndex = 18;
+            this.RdoG4R3.TabStop = true;
+            this.RdoG4R3.UseVisualStyleBackColor = true;
+            // 
+            // RdoG4R2
+            // 
+            this.RdoG4R2.ForeColor = System.Drawing.Color.Black;
+            this.RdoG4R2.Location = new System.Drawing.Point(42, 166);
+            this.RdoG4R2.Name = "RdoG4R2";
+            this.RdoG4R2.Size = new System.Drawing.Size(16, 24);
+            this.RdoG4R2.TabIndex = 17;
+            this.RdoG4R2.TabStop = true;
+            this.RdoG4R2.UseVisualStyleBackColor = true;
+            // 
+            // RdoG4R1
+            // 
+            this.RdoG4R1.ForeColor = System.Drawing.Color.Black;
+            this.RdoG4R1.Location = new System.Drawing.Point(42, 88);
+            this.RdoG4R1.Name = "RdoG4R1";
+            this.RdoG4R1.Size = new System.Drawing.Size(16, 24);
+            this.RdoG4R1.TabIndex = 16;
+            this.RdoG4R1.TabStop = true;
+            this.RdoG4R1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFG4R3
+            // 
+            this.BtnPFG4R3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFG4R3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFG4R3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFG4R3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFG4R3.Location = new System.Drawing.Point(79, 240);
+            this.BtnPFG4R3.Name = "BtnPFG4R3";
+            this.BtnPFG4R3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFG4R3.TabIndex = 15;
+            this.BtnPFG4R3.Text = "PLATFORM";
+            this.BtnPFG4R3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFG4R2
+            // 
+            this.BtnPFG4R2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFG4R2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFG4R2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFG4R2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFG4R2.Location = new System.Drawing.Point(79, 162);
+            this.BtnPFG4R2.Name = "BtnPFG4R2";
+            this.BtnPFG4R2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFG4R2.TabIndex = 14;
+            this.BtnPFG4R2.Text = "PLATFORM";
+            this.BtnPFG4R2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFG4R1
+            // 
+            this.BtnPFG4R1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFG4R1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFG4R1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFG4R1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFG4R1.Location = new System.Drawing.Point(79, 84);
+            this.BtnPFG4R1.Name = "BtnPFG4R1";
+            this.BtnPFG4R1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFG4R1.TabIndex = 13;
+            this.BtnPFG4R1.Text = "PLATFORM";
+            this.BtnPFG4R1.UseVisualStyleBackColor = true;
+            // 
+            // PicBoxG4R2
+            // 
+            this.PicBoxG4R2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxG4R2.Location = new System.Drawing.Point(200, 149);
+            this.PicBoxG4R2.Name = "PicBoxG4R2";
+            this.PicBoxG4R2.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxG4R2.TabIndex = 12;
+            this.PicBoxG4R2.TabStop = false;
+            // 
+            // PicBoxG4R3
+            // 
+            this.PicBoxG4R3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxG4R3.Location = new System.Drawing.Point(200, 226);
+            this.PicBoxG4R3.Name = "PicBoxG4R3";
+            this.PicBoxG4R3.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxG4R3.TabIndex = 11;
+            this.PicBoxG4R3.TabStop = false;
+            // 
+            // PicBoxG4R1
+            // 
+            this.PicBoxG4R1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxG4R1.Location = new System.Drawing.Point(200, 72);
+            this.PicBoxG4R1.Name = "PicBoxG4R1";
+            this.PicBoxG4R1.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxG4R1.TabIndex = 10;
+            this.PicBoxG4R1.TabStop = false;
+            // 
+            // LblG4RepreDesc
+            // 
+            this.LblG4RepreDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG4RepreDesc.ForeColor = System.Drawing.Color.Black;
+            this.LblG4RepreDesc.Location = new System.Drawing.Point(22, 41);
+            this.LblG4RepreDesc.Name = "LblG4RepreDesc";
+            this.LblG4RepreDesc.Size = new System.Drawing.Size(228, 20);
+            this.LblG4RepreDesc.TabIndex = 9;
+            this.LblG4RepreDesc.Text = "Select only one candidate.";
+            this.LblG4RepreDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblG4Repre
+            // 
+            this.LblG4Repre.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblG4Repre.ForeColor = System.Drawing.Color.Black;
+            this.LblG4Repre.Location = new System.Drawing.Point(20, 7);
+            this.LblG4Repre.Name = "LblG4Repre";
+            this.LblG4Repre.Size = new System.Drawing.Size(387, 38);
+            this.LblG4Repre.TabIndex = 8;
+            this.LblG4Repre.Text = "GRADE 4 REPRESENTATIVE";
+            this.LblG4Repre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlPO
             // 
             this.PnlPO.BackColor = System.Drawing.Color.White;
-            this.PnlPO.Controls.Add(this.button37);
-            this.PnlPO.Controls.Add(this.label41);
-            this.PnlPO.Controls.Add(this.label42);
-            this.PnlPO.Controls.Add(this.label43);
-            this.PnlPO.Controls.Add(this.radioButton28);
-            this.PnlPO.Controls.Add(this.radioButton29);
-            this.PnlPO.Controls.Add(this.radioButton30);
-            this.PnlPO.Controls.Add(this.button19);
-            this.PnlPO.Controls.Add(this.button20);
-            this.PnlPO.Controls.Add(this.button21);
-            this.PnlPO.Controls.Add(this.pictureBox22);
-            this.PnlPO.Controls.Add(this.pictureBox21);
-            this.PnlPO.Controls.Add(this.pictureBox10);
-            this.PnlPO.Controls.Add(this.label15);
-            this.PnlPO.Controls.Add(this.label16);
+            this.PnlPO.Controls.Add(this.BtnClearPO);
+            this.PnlPO.Controls.Add(this.LblPO3);
+            this.PnlPO.Controls.Add(this.LblPO2);
+            this.PnlPO.Controls.Add(this.LblPO1);
+            this.PnlPO.Controls.Add(this.RdoPO3);
+            this.PnlPO.Controls.Add(this.RdoPO2);
+            this.PnlPO.Controls.Add(this.RdoPO1);
+            this.PnlPO.Controls.Add(this.BtnPFPO3);
+            this.PnlPO.Controls.Add(this.BtnPFPO2);
+            this.PnlPO.Controls.Add(this.BtnPFPO1);
+            this.PnlPO.Controls.Add(this.PicBoxPO2);
+            this.PnlPO.Controls.Add(this.PicBoxPO3);
+            this.PnlPO.Controls.Add(this.PicBoxPO1);
+            this.PnlPO.Controls.Add(this.LblPODesc);
+            this.PnlPO.Controls.Add(this.LblPO);
             this.PnlPO.Location = new System.Drawing.Point(42, 2037);
             this.PnlPO.Name = "PnlPO";
             this.PnlPO.Size = new System.Drawing.Size(814, 309);
             this.PnlPO.TabIndex = 5;
             // 
-            // label15
+            // BtnClearPO
             // 
-            this.label15.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(22, 41);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(228, 20);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "Select only two candidates.\r\n";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearPO.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearPO.FlatAppearance.BorderSize = 0;
+            this.BtnClearPO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearPO.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearPO.ForeColor = System.Drawing.Color.White;
+            this.BtnClearPO.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearPO.Name = "BtnClearPO";
+            this.BtnClearPO.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearPO.TabIndex = 25;
+            this.BtnClearPO.Text = "CLEAR SELECTION";
+            this.BtnClearPO.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // LblPO3
             // 
-            this.label16.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(20, 7);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(387, 38);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "PEACE OFFICER";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblPO3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPO3.ForeColor = System.Drawing.Color.Black;
+            this.LblPO3.Location = new System.Drawing.Point(278, 252);
+            this.LblPO3.Name = "LblPO3";
+            this.LblPO3.Size = new System.Drawing.Size(331, 23);
+            this.LblPO3.TabIndex = 24;
+            this.LblPO3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblPO3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblPO2
+            // 
+            this.LblPO2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPO2.ForeColor = System.Drawing.Color.Black;
+            this.LblPO2.Location = new System.Drawing.Point(278, 168);
+            this.LblPO2.Name = "LblPO2";
+            this.LblPO2.Size = new System.Drawing.Size(331, 23);
+            this.LblPO2.TabIndex = 23;
+            this.LblPO2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblPO2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblPO1
+            // 
+            this.LblPO1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPO1.ForeColor = System.Drawing.Color.Black;
+            this.LblPO1.Location = new System.Drawing.Point(278, 90);
+            this.LblPO1.Name = "LblPO1";
+            this.LblPO1.Size = new System.Drawing.Size(331, 23);
+            this.LblPO1.TabIndex = 22;
+            this.LblPO1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblPO1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoPO3
+            // 
+            this.RdoPO3.ForeColor = System.Drawing.Color.Black;
+            this.RdoPO3.Location = new System.Drawing.Point(42, 247);
+            this.RdoPO3.Name = "RdoPO3";
+            this.RdoPO3.Size = new System.Drawing.Size(16, 24);
+            this.RdoPO3.TabIndex = 21;
+            this.RdoPO3.TabStop = true;
+            this.RdoPO3.UseVisualStyleBackColor = true;
+            // 
+            // RdoPO2
+            // 
+            this.RdoPO2.ForeColor = System.Drawing.Color.Black;
+            this.RdoPO2.Location = new System.Drawing.Point(42, 169);
+            this.RdoPO2.Name = "RdoPO2";
+            this.RdoPO2.Size = new System.Drawing.Size(16, 24);
+            this.RdoPO2.TabIndex = 20;
+            this.RdoPO2.TabStop = true;
+            this.RdoPO2.UseVisualStyleBackColor = true;
+            // 
+            // RdoPO1
+            // 
+            this.RdoPO1.ForeColor = System.Drawing.Color.Black;
+            this.RdoPO1.Location = new System.Drawing.Point(42, 91);
+            this.RdoPO1.Name = "RdoPO1";
+            this.RdoPO1.Size = new System.Drawing.Size(16, 24);
+            this.RdoPO1.TabIndex = 19;
+            this.RdoPO1.TabStop = true;
+            this.RdoPO1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFPO3
+            // 
+            this.BtnPFPO3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFPO3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFPO3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFPO3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFPO3.Location = new System.Drawing.Point(79, 243);
+            this.BtnPFPO3.Name = "BtnPFPO3";
+            this.BtnPFPO3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFPO3.TabIndex = 13;
+            this.BtnPFPO3.Text = "PLATFORM";
+            this.BtnPFPO3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFPO2
+            // 
+            this.BtnPFPO2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFPO2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFPO2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFPO2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFPO2.Location = new System.Drawing.Point(79, 165);
+            this.BtnPFPO2.Name = "BtnPFPO2";
+            this.BtnPFPO2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFPO2.TabIndex = 12;
+            this.BtnPFPO2.Text = "PLATFORM";
+            this.BtnPFPO2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFPO1
+            // 
+            this.BtnPFPO1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFPO1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFPO1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFPO1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFPO1.Location = new System.Drawing.Point(79, 87);
+            this.BtnPFPO1.Name = "BtnPFPO1";
+            this.BtnPFPO1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFPO1.TabIndex = 11;
+            this.BtnPFPO1.Text = "PLATFORM";
+            this.BtnPFPO1.UseVisualStyleBackColor = true;
+            // 
+            // PicBoxPO2
+            // 
+            this.PicBoxPO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxPO2.Location = new System.Drawing.Point(200, 149);
+            this.PicBoxPO2.Name = "PicBoxPO2";
+            this.PicBoxPO2.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxPO2.TabIndex = 10;
+            this.PicBoxPO2.TabStop = false;
+            // 
+            // PicBoxPO3
+            // 
+            this.PicBoxPO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxPO3.Location = new System.Drawing.Point(200, 226);
+            this.PicBoxPO3.Name = "PicBoxPO3";
+            this.PicBoxPO3.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxPO3.TabIndex = 9;
+            this.PicBoxPO3.TabStop = false;
+            // 
+            // PicBoxPO1
+            // 
+            this.PicBoxPO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxPO1.Location = new System.Drawing.Point(200, 72);
+            this.PicBoxPO1.Name = "PicBoxPO1";
+            this.PicBoxPO1.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxPO1.TabIndex = 8;
+            this.PicBoxPO1.TabStop = false;
+            // 
+            // LblPODesc
+            // 
+            this.LblPODesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPODesc.ForeColor = System.Drawing.Color.Black;
+            this.LblPODesc.Location = new System.Drawing.Point(22, 41);
+            this.LblPODesc.Name = "LblPODesc";
+            this.LblPODesc.Size = new System.Drawing.Size(228, 20);
+            this.LblPODesc.TabIndex = 7;
+            this.LblPODesc.Text = "Select only one candidates.\r\n";
+            this.LblPODesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblPO
+            // 
+            this.LblPO.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPO.ForeColor = System.Drawing.Color.Black;
+            this.LblPO.Location = new System.Drawing.Point(20, 7);
+            this.LblPO.Name = "LblPO";
+            this.LblPO.Size = new System.Drawing.Size(387, 38);
+            this.LblPO.TabIndex = 6;
+            this.LblPO.Text = "PEACE OFFICER";
+            this.LblPO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlPIO
             // 
             this.PnlPIO.BackColor = System.Drawing.Color.White;
-            this.PnlPIO.Controls.Add(this.button36);
-            this.PnlPIO.Controls.Add(this.label38);
-            this.PnlPIO.Controls.Add(this.label39);
-            this.PnlPIO.Controls.Add(this.label40);
-            this.PnlPIO.Controls.Add(this.radioButton16);
-            this.PnlPIO.Controls.Add(this.radioButton17);
-            this.PnlPIO.Controls.Add(this.radioButton18);
-            this.PnlPIO.Controls.Add(this.button16);
-            this.PnlPIO.Controls.Add(this.button17);
-            this.PnlPIO.Controls.Add(this.button18);
-            this.PnlPIO.Controls.Add(this.pictureBox27);
-            this.PnlPIO.Controls.Add(this.pictureBox26);
-            this.PnlPIO.Controls.Add(this.pictureBox9);
-            this.PnlPIO.Controls.Add(this.label13);
-            this.PnlPIO.Controls.Add(this.label14);
+            this.PnlPIO.Controls.Add(this.BtnClearPIO);
+            this.PnlPIO.Controls.Add(this.LblPIO3);
+            this.PnlPIO.Controls.Add(this.LblPIO2);
+            this.PnlPIO.Controls.Add(this.LblPIO1);
+            this.PnlPIO.Controls.Add(this.RdoPIO3);
+            this.PnlPIO.Controls.Add(this.RdoPIO2);
+            this.PnlPIO.Controls.Add(this.RdoPIO1);
+            this.PnlPIO.Controls.Add(this.BtnPFPIO3);
+            this.PnlPIO.Controls.Add(this.BtnPFPIO2);
+            this.PnlPIO.Controls.Add(this.BtnPFPIO1);
+            this.PnlPIO.Controls.Add(this.PicBoxPIO2);
+            this.PnlPIO.Controls.Add(this.PicBoxPIO3);
+            this.PnlPIO.Controls.Add(this.PicBoxPIO1);
+            this.PnlPIO.Controls.Add(this.LblPIODesc);
+            this.PnlPIO.Controls.Add(this.LblPIO);
             this.PnlPIO.Location = new System.Drawing.Point(42, 1714);
             this.PnlPIO.Name = "PnlPIO";
             this.PnlPIO.Size = new System.Drawing.Size(814, 309);
             this.PnlPIO.TabIndex = 4;
             // 
-            // label13
+            // BtnClearPIO
             // 
-            this.label13.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(22, 41);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(228, 20);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Select only one candidate.";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearPIO.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearPIO.FlatAppearance.BorderSize = 0;
+            this.BtnClearPIO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearPIO.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearPIO.ForeColor = System.Drawing.Color.White;
+            this.BtnClearPIO.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearPIO.Name = "BtnClearPIO";
+            this.BtnClearPIO.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearPIO.TabIndex = 22;
+            this.BtnClearPIO.Text = "CLEAR SELECTION";
+            this.BtnClearPIO.UseVisualStyleBackColor = true;
             // 
-            // label14
+            // LblPIO3
             // 
-            this.label14.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(20, 7);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(387, 38);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "PUBLIC INFORMATION OFFICER";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblPIO3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPIO3.ForeColor = System.Drawing.Color.Black;
+            this.LblPIO3.Location = new System.Drawing.Point(278, 254);
+            this.LblPIO3.Name = "LblPIO3";
+            this.LblPIO3.Size = new System.Drawing.Size(331, 23);
+            this.LblPIO3.TabIndex = 21;
+            this.LblPIO3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblPIO3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblPIO2
+            // 
+            this.LblPIO2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPIO2.ForeColor = System.Drawing.Color.Black;
+            this.LblPIO2.Location = new System.Drawing.Point(278, 170);
+            this.LblPIO2.Name = "LblPIO2";
+            this.LblPIO2.Size = new System.Drawing.Size(331, 23);
+            this.LblPIO2.TabIndex = 20;
+            this.LblPIO2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblPIO2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblPIO1
+            // 
+            this.LblPIO1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPIO1.ForeColor = System.Drawing.Color.Black;
+            this.LblPIO1.Location = new System.Drawing.Point(278, 92);
+            this.LblPIO1.Name = "LblPIO1";
+            this.LblPIO1.Size = new System.Drawing.Size(331, 23);
+            this.LblPIO1.TabIndex = 19;
+            this.LblPIO1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblPIO1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoPIO3
+            // 
+            this.RdoPIO3.ForeColor = System.Drawing.Color.Black;
+            this.RdoPIO3.Location = new System.Drawing.Point(42, 245);
+            this.RdoPIO3.Name = "RdoPIO3";
+            this.RdoPIO3.Size = new System.Drawing.Size(16, 24);
+            this.RdoPIO3.TabIndex = 18;
+            this.RdoPIO3.TabStop = true;
+            this.RdoPIO3.UseVisualStyleBackColor = true;
+            // 
+            // RdoPIO2
+            // 
+            this.RdoPIO2.ForeColor = System.Drawing.Color.Black;
+            this.RdoPIO2.Location = new System.Drawing.Point(42, 167);
+            this.RdoPIO2.Name = "RdoPIO2";
+            this.RdoPIO2.Size = new System.Drawing.Size(16, 24);
+            this.RdoPIO2.TabIndex = 17;
+            this.RdoPIO2.TabStop = true;
+            this.RdoPIO2.UseVisualStyleBackColor = true;
+            // 
+            // RdoPIO1
+            // 
+            this.RdoPIO1.ForeColor = System.Drawing.Color.Black;
+            this.RdoPIO1.Location = new System.Drawing.Point(42, 89);
+            this.RdoPIO1.Name = "RdoPIO1";
+            this.RdoPIO1.Size = new System.Drawing.Size(16, 24);
+            this.RdoPIO1.TabIndex = 16;
+            this.RdoPIO1.TabStop = true;
+            this.RdoPIO1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFPIO3
+            // 
+            this.BtnPFPIO3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFPIO3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFPIO3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFPIO3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFPIO3.Location = new System.Drawing.Point(79, 241);
+            this.BtnPFPIO3.Name = "BtnPFPIO3";
+            this.BtnPFPIO3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFPIO3.TabIndex = 15;
+            this.BtnPFPIO3.Text = "PLATFORM";
+            this.BtnPFPIO3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFPIO2
+            // 
+            this.BtnPFPIO2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFPIO2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFPIO2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFPIO2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFPIO2.Location = new System.Drawing.Point(79, 163);
+            this.BtnPFPIO2.Name = "BtnPFPIO2";
+            this.BtnPFPIO2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFPIO2.TabIndex = 14;
+            this.BtnPFPIO2.Text = "PLATFORM";
+            this.BtnPFPIO2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFPIO1
+            // 
+            this.BtnPFPIO1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFPIO1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFPIO1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFPIO1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFPIO1.Location = new System.Drawing.Point(79, 85);
+            this.BtnPFPIO1.Name = "BtnPFPIO1";
+            this.BtnPFPIO1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFPIO1.TabIndex = 13;
+            this.BtnPFPIO1.Text = "PLATFORM";
+            this.BtnPFPIO1.UseVisualStyleBackColor = true;
+            // 
+            // PicBoxPIO2
+            // 
+            this.PicBoxPIO2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxPIO2.Location = new System.Drawing.Point(200, 153);
+            this.PicBoxPIO2.Name = "PicBoxPIO2";
+            this.PicBoxPIO2.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxPIO2.TabIndex = 12;
+            this.PicBoxPIO2.TabStop = false;
+            // 
+            // PicBoxPIO3
+            // 
+            this.PicBoxPIO3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxPIO3.Location = new System.Drawing.Point(200, 230);
+            this.PicBoxPIO3.Name = "PicBoxPIO3";
+            this.PicBoxPIO3.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxPIO3.TabIndex = 11;
+            this.PicBoxPIO3.TabStop = false;
+            // 
+            // PicBoxPIO1
+            // 
+            this.PicBoxPIO1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxPIO1.Location = new System.Drawing.Point(200, 76);
+            this.PicBoxPIO1.Name = "PicBoxPIO1";
+            this.PicBoxPIO1.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxPIO1.TabIndex = 6;
+            this.PicBoxPIO1.TabStop = false;
+            // 
+            // LblPIODesc
+            // 
+            this.LblPIODesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPIODesc.ForeColor = System.Drawing.Color.Black;
+            this.LblPIODesc.Location = new System.Drawing.Point(22, 41);
+            this.LblPIODesc.Name = "LblPIODesc";
+            this.LblPIODesc.Size = new System.Drawing.Size(228, 20);
+            this.LblPIODesc.TabIndex = 5;
+            this.LblPIODesc.Text = "Select only one candidate.";
+            this.LblPIODesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblPIO
+            // 
+            this.LblPIO.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPIO.ForeColor = System.Drawing.Color.Black;
+            this.LblPIO.Location = new System.Drawing.Point(20, 7);
+            this.LblPIO.Name = "LblPIO";
+            this.LblPIO.Size = new System.Drawing.Size(478, 38);
+            this.LblPIO.TabIndex = 4;
+            this.LblPIO.Text = "PUBLIC INFORMATION OFFICER";
+            this.LblPIO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlAudit
             // 
             this.PnlAudit.BackColor = System.Drawing.Color.White;
-            this.PnlAudit.Controls.Add(this.button35);
-            this.PnlAudit.Controls.Add(this.label35);
-            this.PnlAudit.Controls.Add(this.label36);
-            this.PnlAudit.Controls.Add(this.label37);
-            this.PnlAudit.Controls.Add(this.radioButton13);
-            this.PnlAudit.Controls.Add(this.radioButton14);
-            this.PnlAudit.Controls.Add(this.radioButton15);
-            this.PnlAudit.Controls.Add(this.button13);
-            this.PnlAudit.Controls.Add(this.button14);
-            this.PnlAudit.Controls.Add(this.button15);
-            this.PnlAudit.Controls.Add(this.pictureBox20);
-            this.PnlAudit.Controls.Add(this.pictureBox19);
-            this.PnlAudit.Controls.Add(this.pictureBox8);
-            this.PnlAudit.Controls.Add(this.label11);
-            this.PnlAudit.Controls.Add(this.label12);
+            this.PnlAudit.Controls.Add(this.BtnClearAudit);
+            this.PnlAudit.Controls.Add(this.LblAudit3);
+            this.PnlAudit.Controls.Add(this.LblAudit2);
+            this.PnlAudit.Controls.Add(this.LblAudit1);
+            this.PnlAudit.Controls.Add(this.RdoAudit3);
+            this.PnlAudit.Controls.Add(this.RdoAudit2);
+            this.PnlAudit.Controls.Add(this.RdoAudit1);
+            this.PnlAudit.Controls.Add(this.BtnPFAudit3);
+            this.PnlAudit.Controls.Add(this.BtnPFAudit2);
+            this.PnlAudit.Controls.Add(this.BtnPFAudit1);
+            this.PnlAudit.Controls.Add(this.PicBoxAudit2);
+            this.PnlAudit.Controls.Add(this.PicBoxAudit3);
+            this.PnlAudit.Controls.Add(this.PicBoxAudit1);
+            this.PnlAudit.Controls.Add(this.LblAuditDesc);
+            this.PnlAudit.Controls.Add(this.LblAudit);
             this.PnlAudit.Location = new System.Drawing.Point(42, 1391);
             this.PnlAudit.Name = "PnlAudit";
             this.PnlAudit.Size = new System.Drawing.Size(814, 309);
             this.PnlAudit.TabIndex = 3;
             // 
-            // label11
+            // BtnClearAudit
             // 
-            this.label11.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(22, 41);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(228, 20);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Select only one candidate.";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearAudit.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearAudit.FlatAppearance.BorderSize = 0;
+            this.BtnClearAudit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearAudit.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearAudit.ForeColor = System.Drawing.Color.White;
+            this.BtnClearAudit.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearAudit.Name = "BtnClearAudit";
+            this.BtnClearAudit.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearAudit.TabIndex = 20;
+            this.BtnClearAudit.Text = "CLEAR SELECTION";
+            this.BtnClearAudit.UseVisualStyleBackColor = true;
             // 
-            // label12
+            // LblAudit3
             // 
-            this.label12.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(20, 7);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(387, 38);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "AUDITOR";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblAudit3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAudit3.ForeColor = System.Drawing.Color.Black;
+            this.LblAudit3.Location = new System.Drawing.Point(278, 252);
+            this.LblAudit3.Name = "LblAudit3";
+            this.LblAudit3.Size = new System.Drawing.Size(331, 23);
+            this.LblAudit3.TabIndex = 19;
+            this.LblAudit3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblAudit3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblAudit2
+            // 
+            this.LblAudit2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAudit2.ForeColor = System.Drawing.Color.Black;
+            this.LblAudit2.Location = new System.Drawing.Point(278, 168);
+            this.LblAudit2.Name = "LblAudit2";
+            this.LblAudit2.Size = new System.Drawing.Size(331, 23);
+            this.LblAudit2.TabIndex = 18;
+            this.LblAudit2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblAudit2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblAudit1
+            // 
+            this.LblAudit1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAudit1.ForeColor = System.Drawing.Color.Black;
+            this.LblAudit1.Location = new System.Drawing.Point(278, 90);
+            this.LblAudit1.Name = "LblAudit1";
+            this.LblAudit1.Size = new System.Drawing.Size(331, 23);
+            this.LblAudit1.TabIndex = 17;
+            this.LblAudit1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblAudit1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoAudit3
+            // 
+            this.RdoAudit3.ForeColor = System.Drawing.Color.Black;
+            this.RdoAudit3.Location = new System.Drawing.Point(42, 245);
+            this.RdoAudit3.Name = "RdoAudit3";
+            this.RdoAudit3.Size = new System.Drawing.Size(16, 24);
+            this.RdoAudit3.TabIndex = 16;
+            this.RdoAudit3.TabStop = true;
+            this.RdoAudit3.UseVisualStyleBackColor = true;
+            // 
+            // RdoAudit2
+            // 
+            this.RdoAudit2.ForeColor = System.Drawing.Color.Black;
+            this.RdoAudit2.Location = new System.Drawing.Point(42, 167);
+            this.RdoAudit2.Name = "RdoAudit2";
+            this.RdoAudit2.Size = new System.Drawing.Size(16, 24);
+            this.RdoAudit2.TabIndex = 15;
+            this.RdoAudit2.TabStop = true;
+            this.RdoAudit2.UseVisualStyleBackColor = true;
+            // 
+            // RdoAudit1
+            // 
+            this.RdoAudit1.ForeColor = System.Drawing.Color.Black;
+            this.RdoAudit1.Location = new System.Drawing.Point(42, 89);
+            this.RdoAudit1.Name = "RdoAudit1";
+            this.RdoAudit1.Size = new System.Drawing.Size(16, 24);
+            this.RdoAudit1.TabIndex = 14;
+            this.RdoAudit1.TabStop = true;
+            this.RdoAudit1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFAudit3
+            // 
+            this.BtnPFAudit3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFAudit3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFAudit3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFAudit3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFAudit3.Location = new System.Drawing.Point(79, 241);
+            this.BtnPFAudit3.Name = "BtnPFAudit3";
+            this.BtnPFAudit3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFAudit3.TabIndex = 13;
+            this.BtnPFAudit3.Text = "PLATFORM";
+            this.BtnPFAudit3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFAudit2
+            // 
+            this.BtnPFAudit2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFAudit2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFAudit2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFAudit2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFAudit2.Location = new System.Drawing.Point(79, 163);
+            this.BtnPFAudit2.Name = "BtnPFAudit2";
+            this.BtnPFAudit2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFAudit2.TabIndex = 12;
+            this.BtnPFAudit2.Text = "PLATFORM";
+            this.BtnPFAudit2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFAudit1
+            // 
+            this.BtnPFAudit1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFAudit1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFAudit1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFAudit1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFAudit1.Location = new System.Drawing.Point(79, 85);
+            this.BtnPFAudit1.Name = "BtnPFAudit1";
+            this.BtnPFAudit1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFAudit1.TabIndex = 11;
+            this.BtnPFAudit1.Text = "PLATFORM";
+            this.BtnPFAudit1.UseVisualStyleBackColor = true;
+            // 
+            // PicBoxAudit2
+            // 
+            this.PicBoxAudit2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxAudit2.Location = new System.Drawing.Point(200, 151);
+            this.PicBoxAudit2.Name = "PicBoxAudit2";
+            this.PicBoxAudit2.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxAudit2.TabIndex = 8;
+            this.PicBoxAudit2.TabStop = false;
+            // 
+            // PicBoxAudit3
+            // 
+            this.PicBoxAudit3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxAudit3.Location = new System.Drawing.Point(200, 228);
+            this.PicBoxAudit3.Name = "PicBoxAudit3";
+            this.PicBoxAudit3.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxAudit3.TabIndex = 7;
+            this.PicBoxAudit3.TabStop = false;
+            // 
+            // PicBoxAudit1
+            // 
+            this.PicBoxAudit1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxAudit1.Location = new System.Drawing.Point(200, 74);
+            this.PicBoxAudit1.Name = "PicBoxAudit1";
+            this.PicBoxAudit1.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxAudit1.TabIndex = 6;
+            this.PicBoxAudit1.TabStop = false;
+            // 
+            // LblAuditDesc
+            // 
+            this.LblAuditDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAuditDesc.ForeColor = System.Drawing.Color.Black;
+            this.LblAuditDesc.Location = new System.Drawing.Point(22, 41);
+            this.LblAuditDesc.Name = "LblAuditDesc";
+            this.LblAuditDesc.Size = new System.Drawing.Size(228, 20);
+            this.LblAuditDesc.TabIndex = 5;
+            this.LblAuditDesc.Text = "Select only one candidate.";
+            this.LblAuditDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblAudit
+            // 
+            this.LblAudit.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAudit.ForeColor = System.Drawing.Color.Black;
+            this.LblAudit.Location = new System.Drawing.Point(20, 7);
+            this.LblAudit.Name = "LblAudit";
+            this.LblAudit.Size = new System.Drawing.Size(387, 38);
+            this.LblAudit.TabIndex = 4;
+            this.LblAudit.Text = "AUDITOR";
+            this.LblAudit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlTreas
             // 
             this.PnlTreas.BackColor = System.Drawing.Color.White;
-            this.PnlTreas.Controls.Add(this.button34);
-            this.PnlTreas.Controls.Add(this.label32);
-            this.PnlTreas.Controls.Add(this.label33);
-            this.PnlTreas.Controls.Add(this.label34);
-            this.PnlTreas.Controls.Add(this.radioButton10);
-            this.PnlTreas.Controls.Add(this.radioButton11);
-            this.PnlTreas.Controls.Add(this.radioButton12);
-            this.PnlTreas.Controls.Add(this.button10);
-            this.PnlTreas.Controls.Add(this.button11);
-            this.PnlTreas.Controls.Add(this.button12);
+            this.PnlTreas.Controls.Add(this.BtnClearTreas);
+            this.PnlTreas.Controls.Add(this.LblTreas3);
+            this.PnlTreas.Controls.Add(this.LblTreas2);
+            this.PnlTreas.Controls.Add(this.LblTreas1);
+            this.PnlTreas.Controls.Add(this.RdoTreas3);
+            this.PnlTreas.Controls.Add(this.RdoTreas2);
+            this.PnlTreas.Controls.Add(this.RdoTreas1);
+            this.PnlTreas.Controls.Add(this.BtnPFTreas3);
+            this.PnlTreas.Controls.Add(this.BtnPFTreas2);
+            this.PnlTreas.Controls.Add(this.BtnPFTreas1);
             this.PnlTreas.Controls.Add(this.pictureBox18);
             this.PnlTreas.Controls.Add(this.pictureBox17);
             this.PnlTreas.Controls.Add(this.pictureBox7);
-            this.PnlTreas.Controls.Add(this.label9);
-            this.PnlTreas.Controls.Add(this.label10);
+            this.PnlTreas.Controls.Add(this.LblTreasDesc);
+            this.PnlTreas.Controls.Add(this.LblTreas);
             this.PnlTreas.Location = new System.Drawing.Point(42, 1068);
             this.PnlTreas.Name = "PnlTreas";
             this.PnlTreas.Size = new System.Drawing.Size(814, 309);
             this.PnlTreas.TabIndex = 2;
             // 
-            // label9
+            // BtnClearTreas
             // 
-            this.label9.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(22, 41);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(228, 20);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Select only one candidate.";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearTreas.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearTreas.FlatAppearance.BorderSize = 0;
+            this.BtnClearTreas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearTreas.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearTreas.ForeColor = System.Drawing.Color.White;
+            this.BtnClearTreas.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearTreas.Name = "BtnClearTreas";
+            this.BtnClearTreas.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearTreas.TabIndex = 20;
+            this.BtnClearTreas.Text = "CLEAR SELECTION";
+            this.BtnClearTreas.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // LblTreas3
             // 
-            this.label10.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(20, 7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(387, 38);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "TREASURER";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblTreas3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTreas3.ForeColor = System.Drawing.Color.Black;
+            this.LblTreas3.Location = new System.Drawing.Point(278, 250);
+            this.LblTreas3.Name = "LblTreas3";
+            this.LblTreas3.Size = new System.Drawing.Size(331, 23);
+            this.LblTreas3.TabIndex = 19;
+            this.LblTreas3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblTreas3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblTreas2
+            // 
+            this.LblTreas2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTreas2.ForeColor = System.Drawing.Color.Black;
+            this.LblTreas2.Location = new System.Drawing.Point(278, 166);
+            this.LblTreas2.Name = "LblTreas2";
+            this.LblTreas2.Size = new System.Drawing.Size(331, 23);
+            this.LblTreas2.TabIndex = 18;
+            this.LblTreas2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblTreas2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblTreas1
+            // 
+            this.LblTreas1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTreas1.ForeColor = System.Drawing.Color.Black;
+            this.LblTreas1.Location = new System.Drawing.Point(278, 88);
+            this.LblTreas1.Name = "LblTreas1";
+            this.LblTreas1.Size = new System.Drawing.Size(331, 23);
+            this.LblTreas1.TabIndex = 17;
+            this.LblTreas1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblTreas1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoTreas3
+            // 
+            this.RdoTreas3.ForeColor = System.Drawing.Color.Black;
+            this.RdoTreas3.Location = new System.Drawing.Point(42, 245);
+            this.RdoTreas3.Name = "RdoTreas3";
+            this.RdoTreas3.Size = new System.Drawing.Size(16, 24);
+            this.RdoTreas3.TabIndex = 16;
+            this.RdoTreas3.TabStop = true;
+            this.RdoTreas3.UseVisualStyleBackColor = true;
+            // 
+            // RdoTreas2
+            // 
+            this.RdoTreas2.ForeColor = System.Drawing.Color.Black;
+            this.RdoTreas2.Location = new System.Drawing.Point(42, 167);
+            this.RdoTreas2.Name = "RdoTreas2";
+            this.RdoTreas2.Size = new System.Drawing.Size(16, 24);
+            this.RdoTreas2.TabIndex = 15;
+            this.RdoTreas2.TabStop = true;
+            this.RdoTreas2.UseVisualStyleBackColor = true;
+            // 
+            // RdoTreas1
+            // 
+            this.RdoTreas1.ForeColor = System.Drawing.Color.Black;
+            this.RdoTreas1.Location = new System.Drawing.Point(42, 89);
+            this.RdoTreas1.Name = "RdoTreas1";
+            this.RdoTreas1.Size = new System.Drawing.Size(16, 24);
+            this.RdoTreas1.TabIndex = 14;
+            this.RdoTreas1.TabStop = true;
+            this.RdoTreas1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFTreas3
+            // 
+            this.BtnPFTreas3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFTreas3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFTreas3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFTreas3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFTreas3.Location = new System.Drawing.Point(79, 241);
+            this.BtnPFTreas3.Name = "BtnPFTreas3";
+            this.BtnPFTreas3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFTreas3.TabIndex = 13;
+            this.BtnPFTreas3.Text = "PLATFORM";
+            this.BtnPFTreas3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFTreas2
+            // 
+            this.BtnPFTreas2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFTreas2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFTreas2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFTreas2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFTreas2.Location = new System.Drawing.Point(79, 163);
+            this.BtnPFTreas2.Name = "BtnPFTreas2";
+            this.BtnPFTreas2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFTreas2.TabIndex = 12;
+            this.BtnPFTreas2.Text = "PLATFORM";
+            this.BtnPFTreas2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFTreas1
+            // 
+            this.BtnPFTreas1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFTreas1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFTreas1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFTreas1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFTreas1.Location = new System.Drawing.Point(79, 85);
+            this.BtnPFTreas1.Name = "BtnPFTreas1";
+            this.BtnPFTreas1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFTreas1.TabIndex = 11;
+            this.BtnPFTreas1.Text = "PLATFORM";
+            this.BtnPFTreas1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox18.Location = new System.Drawing.Point(200, 149);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox18.TabIndex = 8;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox17.Location = new System.Drawing.Point(200, 226);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox17.TabIndex = 7;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox7.Location = new System.Drawing.Point(200, 72);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
+            // LblTreasDesc
+            // 
+            this.LblTreasDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTreasDesc.ForeColor = System.Drawing.Color.Black;
+            this.LblTreasDesc.Location = new System.Drawing.Point(22, 41);
+            this.LblTreasDesc.Name = "LblTreasDesc";
+            this.LblTreasDesc.Size = new System.Drawing.Size(228, 20);
+            this.LblTreasDesc.TabIndex = 5;
+            this.LblTreasDesc.Text = "Select only one candidate.";
+            this.LblTreasDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblTreas
+            // 
+            this.LblTreas.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTreas.ForeColor = System.Drawing.Color.Black;
+            this.LblTreas.Location = new System.Drawing.Point(20, 7);
+            this.LblTreas.Name = "LblTreas";
+            this.LblTreas.Size = new System.Drawing.Size(387, 38);
+            this.LblTreas.TabIndex = 4;
+            this.LblTreas.Text = "TREASURER";
+            this.LblTreas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlSec
             // 
             this.PnlSec.BackColor = System.Drawing.Color.White;
-            this.PnlSec.Controls.Add(this.button33);
-            this.PnlSec.Controls.Add(this.label29);
-            this.PnlSec.Controls.Add(this.label30);
-            this.PnlSec.Controls.Add(this.label31);
-            this.PnlSec.Controls.Add(this.radioButton7);
-            this.PnlSec.Controls.Add(this.radioButton8);
-            this.PnlSec.Controls.Add(this.radioButton9);
-            this.PnlSec.Controls.Add(this.button7);
-            this.PnlSec.Controls.Add(this.button8);
-            this.PnlSec.Controls.Add(this.button9);
-            this.PnlSec.Controls.Add(this.pictureBox16);
-            this.PnlSec.Controls.Add(this.pictureBox15);
-            this.PnlSec.Controls.Add(this.pictureBox6);
-            this.PnlSec.Controls.Add(this.label7);
-            this.PnlSec.Controls.Add(this.label8);
+            this.PnlSec.Controls.Add(this.BtnClearSecretary);
+            this.PnlSec.Controls.Add(this.LblSec3);
+            this.PnlSec.Controls.Add(this.LblSec2);
+            this.PnlSec.Controls.Add(this.LblSec1);
+            this.PnlSec.Controls.Add(this.RdoSec3);
+            this.PnlSec.Controls.Add(this.RdoSec2);
+            this.PnlSec.Controls.Add(this.RdoSec1);
+            this.PnlSec.Controls.Add(this.BtnPFSec3);
+            this.PnlSec.Controls.Add(this.BtnPFSec2);
+            this.PnlSec.Controls.Add(this.BtnPFSec1);
+            this.PnlSec.Controls.Add(this.PicBoxSec3);
+            this.PnlSec.Controls.Add(this.PicBoxSec2);
+            this.PnlSec.Controls.Add(this.PicBoxSec1);
+            this.PnlSec.Controls.Add(this.LblSecDesc);
+            this.PnlSec.Controls.Add(this.LblSec);
             this.PnlSec.Location = new System.Drawing.Point(42, 745);
             this.PnlSec.Name = "PnlSec";
             this.PnlSec.Size = new System.Drawing.Size(814, 309);
             this.PnlSec.TabIndex = 2;
             // 
-            // label7
+            // BtnClearSecretary
             // 
-            this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(22, 41);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(228, 20);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Select only one candidate.";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearSecretary.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearSecretary.FlatAppearance.BorderSize = 0;
+            this.BtnClearSecretary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearSecretary.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearSecretary.ForeColor = System.Drawing.Color.White;
+            this.BtnClearSecretary.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearSecretary.Name = "BtnClearSecretary";
+            this.BtnClearSecretary.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearSecretary.TabIndex = 20;
+            this.BtnClearSecretary.Text = "CLEAR SELECTION";
+            this.BtnClearSecretary.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // LblSec3
             // 
-            this.label8.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(20, 7);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(387, 38);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "SECRETARY";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblSec3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSec3.ForeColor = System.Drawing.Color.Black;
+            this.LblSec3.Location = new System.Drawing.Point(278, 250);
+            this.LblSec3.Name = "LblSec3";
+            this.LblSec3.Size = new System.Drawing.Size(331, 23);
+            this.LblSec3.TabIndex = 19;
+            this.LblSec3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblSec3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblSec2
+            // 
+            this.LblSec2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSec2.ForeColor = System.Drawing.Color.Black;
+            this.LblSec2.Location = new System.Drawing.Point(278, 166);
+            this.LblSec2.Name = "LblSec2";
+            this.LblSec2.Size = new System.Drawing.Size(331, 23);
+            this.LblSec2.TabIndex = 18;
+            this.LblSec2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblSec2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblSec1
+            // 
+            this.LblSec1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSec1.ForeColor = System.Drawing.Color.Black;
+            this.LblSec1.Location = new System.Drawing.Point(278, 88);
+            this.LblSec1.Name = "LblSec1";
+            this.LblSec1.Size = new System.Drawing.Size(331, 23);
+            this.LblSec1.TabIndex = 17;
+            this.LblSec1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblSec1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoSec3
+            // 
+            this.RdoSec3.ForeColor = System.Drawing.Color.Black;
+            this.RdoSec3.Location = new System.Drawing.Point(42, 243);
+            this.RdoSec3.Name = "RdoSec3";
+            this.RdoSec3.Size = new System.Drawing.Size(16, 24);
+            this.RdoSec3.TabIndex = 16;
+            this.RdoSec3.TabStop = true;
+            this.RdoSec3.UseVisualStyleBackColor = true;
+            // 
+            // RdoSec2
+            // 
+            this.RdoSec2.ForeColor = System.Drawing.Color.Black;
+            this.RdoSec2.Location = new System.Drawing.Point(42, 165);
+            this.RdoSec2.Name = "RdoSec2";
+            this.RdoSec2.Size = new System.Drawing.Size(16, 24);
+            this.RdoSec2.TabIndex = 15;
+            this.RdoSec2.TabStop = true;
+            this.RdoSec2.UseVisualStyleBackColor = true;
+            // 
+            // RdoSec1
+            // 
+            this.RdoSec1.ForeColor = System.Drawing.Color.Black;
+            this.RdoSec1.Location = new System.Drawing.Point(42, 87);
+            this.RdoSec1.Name = "RdoSec1";
+            this.RdoSec1.Size = new System.Drawing.Size(16, 24);
+            this.RdoSec1.TabIndex = 14;
+            this.RdoSec1.TabStop = true;
+            this.RdoSec1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFSec3
+            // 
+            this.BtnPFSec3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFSec3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFSec3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFSec3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFSec3.Location = new System.Drawing.Point(79, 239);
+            this.BtnPFSec3.Name = "BtnPFSec3";
+            this.BtnPFSec3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFSec3.TabIndex = 13;
+            this.BtnPFSec3.Text = "PLATFORM";
+            this.BtnPFSec3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFSec2
+            // 
+            this.BtnPFSec2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFSec2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFSec2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFSec2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFSec2.Location = new System.Drawing.Point(79, 161);
+            this.BtnPFSec2.Name = "BtnPFSec2";
+            this.BtnPFSec2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFSec2.TabIndex = 12;
+            this.BtnPFSec2.Text = "PLATFORM";
+            this.BtnPFSec2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFSec1
+            // 
+            this.BtnPFSec1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFSec1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFSec1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFSec1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFSec1.Location = new System.Drawing.Point(79, 83);
+            this.BtnPFSec1.Name = "BtnPFSec1";
+            this.BtnPFSec1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFSec1.TabIndex = 11;
+            this.BtnPFSec1.Text = "PLATFORM";
+            this.BtnPFSec1.UseVisualStyleBackColor = true;
+            // 
+            // PicBoxSec3
+            // 
+            this.PicBoxSec3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxSec3.Location = new System.Drawing.Point(200, 228);
+            this.PicBoxSec3.Name = "PicBoxSec3";
+            this.PicBoxSec3.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxSec3.TabIndex = 6;
+            this.PicBoxSec3.TabStop = false;
+            // 
+            // PicBoxSec2
+            // 
+            this.PicBoxSec2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxSec2.Location = new System.Drawing.Point(200, 151);
+            this.PicBoxSec2.Name = "PicBoxSec2";
+            this.PicBoxSec2.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxSec2.TabIndex = 5;
+            this.PicBoxSec2.TabStop = false;
+            // 
+            // PicBoxSec1
+            // 
+            this.PicBoxSec1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxSec1.Location = new System.Drawing.Point(200, 74);
+            this.PicBoxSec1.Name = "PicBoxSec1";
+            this.PicBoxSec1.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxSec1.TabIndex = 4;
+            this.PicBoxSec1.TabStop = false;
+            // 
+            // LblSecDesc
+            // 
+            this.LblSecDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSecDesc.ForeColor = System.Drawing.Color.Black;
+            this.LblSecDesc.Location = new System.Drawing.Point(22, 41);
+            this.LblSecDesc.Name = "LblSecDesc";
+            this.LblSecDesc.Size = new System.Drawing.Size(228, 20);
+            this.LblSecDesc.TabIndex = 3;
+            this.LblSecDesc.Text = "Select only one candidate.";
+            this.LblSecDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblSec
+            // 
+            this.LblSec.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSec.ForeColor = System.Drawing.Color.Black;
+            this.LblSec.Location = new System.Drawing.Point(20, 7);
+            this.LblSec.Name = "LblSec";
+            this.LblSec.Size = new System.Drawing.Size(387, 38);
+            this.LblSec.TabIndex = 2;
+            this.LblSec.Text = "SECRETARY";
+            this.LblSec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlVice
             // 
             this.PnlVice.BackColor = System.Drawing.Color.White;
-            this.PnlVice.Controls.Add(this.button32);
-            this.PnlVice.Controls.Add(this.label26);
-            this.PnlVice.Controls.Add(this.label27);
-            this.PnlVice.Controls.Add(this.label28);
-            this.PnlVice.Controls.Add(this.radioButton4);
-            this.PnlVice.Controls.Add(this.radioButton5);
-            this.PnlVice.Controls.Add(this.radioButton6);
-            this.PnlVice.Controls.Add(this.button4);
-            this.PnlVice.Controls.Add(this.button5);
-            this.PnlVice.Controls.Add(this.button6);
-            this.PnlVice.Controls.Add(this.pictureBox14);
-            this.PnlVice.Controls.Add(this.pictureBox13);
-            this.PnlVice.Controls.Add(this.pictureBox5);
-            this.PnlVice.Controls.Add(this.label5);
-            this.PnlVice.Controls.Add(this.label6);
+            this.PnlVice.Controls.Add(this.BtnClearVice);
+            this.PnlVice.Controls.Add(this.LblVice3);
+            this.PnlVice.Controls.Add(this.LblVice2);
+            this.PnlVice.Controls.Add(this.LblVice1);
+            this.PnlVice.Controls.Add(this.RdoVice3);
+            this.PnlVice.Controls.Add(this.RdoVice2);
+            this.PnlVice.Controls.Add(this.RdoVice1);
+            this.PnlVice.Controls.Add(this.BtnPFVIce3);
+            this.PnlVice.Controls.Add(this.BtnPFVice2);
+            this.PnlVice.Controls.Add(this.BtnPFVice1);
+            this.PnlVice.Controls.Add(this.PicBoxVice2);
+            this.PnlVice.Controls.Add(this.PicBoxVice3);
+            this.PnlVice.Controls.Add(this.PicBoxVice1);
+            this.PnlVice.Controls.Add(this.LblVIceDesc);
+            this.PnlVice.Controls.Add(this.LblVice);
             this.PnlVice.Location = new System.Drawing.Point(42, 420);
             this.PnlVice.Name = "PnlVice";
             this.PnlVice.Size = new System.Drawing.Size(814, 309);
             this.PnlVice.TabIndex = 1;
             // 
-            // label5
+            // BtnClearVice
             // 
-            this.label5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(22, 41);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(228, 20);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Select only one candidate.";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearVice.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearVice.FlatAppearance.BorderSize = 0;
+            this.BtnClearVice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearVice.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearVice.ForeColor = System.Drawing.Color.White;
+            this.BtnClearVice.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearVice.Name = "BtnClearVice";
+            this.BtnClearVice.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearVice.TabIndex = 17;
+            this.BtnClearVice.Text = "CLEAR SELECTION";
+            this.BtnClearVice.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // LblVice3
             // 
-            this.label6.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(20, 7);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(387, 38);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "VICE PRESIDENT";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblVice3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVice3.ForeColor = System.Drawing.Color.Black;
+            this.LblVice3.Location = new System.Drawing.Point(278, 252);
+            this.LblVice3.Name = "LblVice3";
+            this.LblVice3.Size = new System.Drawing.Size(331, 23);
+            this.LblVice3.TabIndex = 16;
+            this.LblVice3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblVice3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblVice2
+            // 
+            this.LblVice2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVice2.ForeColor = System.Drawing.Color.Black;
+            this.LblVice2.Location = new System.Drawing.Point(278, 168);
+            this.LblVice2.Name = "LblVice2";
+            this.LblVice2.Size = new System.Drawing.Size(331, 23);
+            this.LblVice2.TabIndex = 15;
+            this.LblVice2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblVice2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblVice1
+            // 
+            this.LblVice1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVice1.ForeColor = System.Drawing.Color.Black;
+            this.LblVice1.Location = new System.Drawing.Point(278, 90);
+            this.LblVice1.Name = "LblVice1";
+            this.LblVice1.Size = new System.Drawing.Size(331, 23);
+            this.LblVice1.TabIndex = 14;
+            this.LblVice1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblVice1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoVice3
+            // 
+            this.RdoVice3.ForeColor = System.Drawing.Color.Black;
+            this.RdoVice3.Location = new System.Drawing.Point(42, 245);
+            this.RdoVice3.Name = "RdoVice3";
+            this.RdoVice3.Size = new System.Drawing.Size(16, 24);
+            this.RdoVice3.TabIndex = 13;
+            this.RdoVice3.TabStop = true;
+            this.RdoVice3.UseVisualStyleBackColor = true;
+            // 
+            // RdoVice2
+            // 
+            this.RdoVice2.ForeColor = System.Drawing.Color.Black;
+            this.RdoVice2.Location = new System.Drawing.Point(42, 167);
+            this.RdoVice2.Name = "RdoVice2";
+            this.RdoVice2.Size = new System.Drawing.Size(16, 24);
+            this.RdoVice2.TabIndex = 12;
+            this.RdoVice2.TabStop = true;
+            this.RdoVice2.UseVisualStyleBackColor = true;
+            // 
+            // RdoVice1
+            // 
+            this.RdoVice1.ForeColor = System.Drawing.Color.Black;
+            this.RdoVice1.Location = new System.Drawing.Point(42, 89);
+            this.RdoVice1.Name = "RdoVice1";
+            this.RdoVice1.Size = new System.Drawing.Size(16, 24);
+            this.RdoVice1.TabIndex = 11;
+            this.RdoVice1.TabStop = true;
+            this.RdoVice1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFVIce3
+            // 
+            this.BtnPFVIce3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFVIce3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFVIce3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFVIce3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFVIce3.Location = new System.Drawing.Point(79, 241);
+            this.BtnPFVIce3.Name = "BtnPFVIce3";
+            this.BtnPFVIce3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFVIce3.TabIndex = 10;
+            this.BtnPFVIce3.Text = "PLATFORM";
+            this.BtnPFVIce3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFVice2
+            // 
+            this.BtnPFVice2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFVice2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFVice2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFVice2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFVice2.Location = new System.Drawing.Point(79, 163);
+            this.BtnPFVice2.Name = "BtnPFVice2";
+            this.BtnPFVice2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFVice2.TabIndex = 9;
+            this.BtnPFVice2.Text = "PLATFORM";
+            this.BtnPFVice2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFVice1
+            // 
+            this.BtnPFVice1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFVice1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFVice1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFVice1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFVice1.Location = new System.Drawing.Point(79, 85);
+            this.BtnPFVice1.Name = "BtnPFVice1";
+            this.BtnPFVice1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFVice1.TabIndex = 8;
+            this.BtnPFVice1.Text = "PLATFORM";
+            this.BtnPFVice1.UseVisualStyleBackColor = true;
+            // 
+            // PicBoxVice2
+            // 
+            this.PicBoxVice2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxVice2.Location = new System.Drawing.Point(200, 151);
+            this.PicBoxVice2.Name = "PicBoxVice2";
+            this.PicBoxVice2.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxVice2.TabIndex = 6;
+            this.PicBoxVice2.TabStop = false;
+            // 
+            // PicBoxVice3
+            // 
+            this.PicBoxVice3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxVice3.Location = new System.Drawing.Point(200, 228);
+            this.PicBoxVice3.Name = "PicBoxVice3";
+            this.PicBoxVice3.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxVice3.TabIndex = 5;
+            this.PicBoxVice3.TabStop = false;
+            // 
+            // PicBoxVice1
+            // 
+            this.PicBoxVice1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxVice1.Location = new System.Drawing.Point(200, 74);
+            this.PicBoxVice1.Name = "PicBoxVice1";
+            this.PicBoxVice1.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxVice1.TabIndex = 4;
+            this.PicBoxVice1.TabStop = false;
+            // 
+            // LblVIceDesc
+            // 
+            this.LblVIceDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVIceDesc.ForeColor = System.Drawing.Color.Black;
+            this.LblVIceDesc.Location = new System.Drawing.Point(22, 41);
+            this.LblVIceDesc.Name = "LblVIceDesc";
+            this.LblVIceDesc.Size = new System.Drawing.Size(228, 20);
+            this.LblVIceDesc.TabIndex = 3;
+            this.LblVIceDesc.Text = "Select only one candidate.";
+            this.LblVIceDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblVice
+            // 
+            this.LblVice.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVice.ForeColor = System.Drawing.Color.Black;
+            this.LblVice.Location = new System.Drawing.Point(20, 7);
+            this.LblVice.Name = "LblVice";
+            this.LblVice.Size = new System.Drawing.Size(387, 38);
+            this.LblVice.TabIndex = 2;
+            this.LblVice.Text = "VICE PRESIDENT";
+            this.LblVice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlPres
             // 
             this.PnlPres.BackColor = System.Drawing.Color.White;
-            this.PnlPres.Controls.Add(this.button31);
-            this.PnlPres.Controls.Add(this.label25);
-            this.PnlPres.Controls.Add(this.label24);
-            this.PnlPres.Controls.Add(this.label23);
-            this.PnlPres.Controls.Add(this.radioButton3);
-            this.PnlPres.Controls.Add(this.radioButton2);
-            this.PnlPres.Controls.Add(this.radioButton1);
-            this.PnlPres.Controls.Add(this.button3);
-            this.PnlPres.Controls.Add(this.button2);
-            this.PnlPres.Controls.Add(this.button1);
-            this.PnlPres.Controls.Add(this.pictureBox4);
-            this.PnlPres.Controls.Add(this.pictureBox3);
-            this.PnlPres.Controls.Add(this.pictureBox2);
-            this.PnlPres.Controls.Add(this.label4);
+            this.PnlPres.Controls.Add(this.BtnClearPres);
+            this.PnlPres.Controls.Add(this.LblPres3);
+            this.PnlPres.Controls.Add(this.LblPres2);
+            this.PnlPres.Controls.Add(this.LblPres1);
+            this.PnlPres.Controls.Add(this.RdoPres3);
+            this.PnlPres.Controls.Add(this.RdoPres2);
+            this.PnlPres.Controls.Add(this.RdoPres1);
+            this.PnlPres.Controls.Add(this.BtnPFPres3);
+            this.PnlPres.Controls.Add(this.BtnPFPres2);
+            this.PnlPres.Controls.Add(this.BtnPFPres1);
+            this.PnlPres.Controls.Add(this.PicBoxPres3);
+            this.PnlPres.Controls.Add(this.PicBoxPres2);
+            this.PnlPres.Controls.Add(this.PicBoxPres1);
+            this.PnlPres.Controls.Add(this.LblPresDesc);
             this.PnlPres.Controls.Add(this.LblPres);
             this.PnlPres.Location = new System.Drawing.Point(42, 97);
             this.PnlPres.Name = "PnlPres";
             this.PnlPres.Size = new System.Drawing.Size(814, 309);
             this.PnlPres.TabIndex = 0;
             // 
-            // label4
+            // BtnClearPres
             // 
-            this.label4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(22, 41);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(228, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Select only one candidate.";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClearPres.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearPres.FlatAppearance.BorderSize = 0;
+            this.BtnClearPres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearPres.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearPres.ForeColor = System.Drawing.Color.White;
+            this.BtnClearPres.Location = new System.Drawing.Point(590, 15);
+            this.BtnClearPres.Name = "BtnClearPres";
+            this.BtnClearPres.Size = new System.Drawing.Size(206, 30);
+            this.BtnClearPres.TabIndex = 14;
+            this.BtnClearPres.Text = "CLEAR SELECTION";
+            this.BtnClearPres.UseVisualStyleBackColor = true;
+            // 
+            // LblPres3
+            // 
+            this.LblPres3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPres3.ForeColor = System.Drawing.Color.Black;
+            this.LblPres3.Location = new System.Drawing.Point(278, 250);
+            this.LblPres3.Name = "LblPres3";
+            this.LblPres3.Size = new System.Drawing.Size(331, 23);
+            this.LblPres3.TabIndex = 13;
+            this.LblPres3.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblPres3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblPres2
+            // 
+            this.LblPres2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPres2.ForeColor = System.Drawing.Color.Black;
+            this.LblPres2.Location = new System.Drawing.Point(278, 166);
+            this.LblPres2.Name = "LblPres2";
+            this.LblPres2.Size = new System.Drawing.Size(331, 23);
+            this.LblPres2.TabIndex = 12;
+            this.LblPres2.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblPres2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblPres1
+            // 
+            this.LblPres1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPres1.ForeColor = System.Drawing.Color.Black;
+            this.LblPres1.Location = new System.Drawing.Point(278, 88);
+            this.LblPres1.Name = "LblPres1";
+            this.LblPres1.Size = new System.Drawing.Size(331, 23);
+            this.LblPres1.TabIndex = 11;
+            this.LblPres1.Text = "SURNAME, FIRSTNAME, MI.";
+            this.LblPres1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // RdoPres3
+            // 
+            this.RdoPres3.ForeColor = System.Drawing.Color.Black;
+            this.RdoPres3.Location = new System.Drawing.Point(42, 245);
+            this.RdoPres3.Name = "RdoPres3";
+            this.RdoPres3.Size = new System.Drawing.Size(16, 24);
+            this.RdoPres3.TabIndex = 10;
+            this.RdoPres3.TabStop = true;
+            this.RdoPres3.UseVisualStyleBackColor = true;
+            // 
+            // RdoPres2
+            // 
+            this.RdoPres2.ForeColor = System.Drawing.Color.Black;
+            this.RdoPres2.Location = new System.Drawing.Point(42, 167);
+            this.RdoPres2.Name = "RdoPres2";
+            this.RdoPres2.Size = new System.Drawing.Size(16, 24);
+            this.RdoPres2.TabIndex = 9;
+            this.RdoPres2.TabStop = true;
+            this.RdoPres2.UseVisualStyleBackColor = true;
+            // 
+            // RdoPres1
+            // 
+            this.RdoPres1.ForeColor = System.Drawing.Color.Black;
+            this.RdoPres1.Location = new System.Drawing.Point(42, 89);
+            this.RdoPres1.Name = "RdoPres1";
+            this.RdoPres1.Size = new System.Drawing.Size(16, 24);
+            this.RdoPres1.TabIndex = 8;
+            this.RdoPres1.TabStop = true;
+            this.RdoPres1.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFPres3
+            // 
+            this.BtnPFPres3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFPres3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFPres3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFPres3.ForeColor = System.Drawing.Color.White;
+            this.BtnPFPres3.Location = new System.Drawing.Point(79, 241);
+            this.BtnPFPres3.Name = "BtnPFPres3";
+            this.BtnPFPres3.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFPres3.TabIndex = 7;
+            this.BtnPFPres3.Text = "PLATFORM";
+            this.BtnPFPres3.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFPres2
+            // 
+            this.BtnPFPres2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFPres2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFPres2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFPres2.ForeColor = System.Drawing.Color.White;
+            this.BtnPFPres2.Location = new System.Drawing.Point(79, 163);
+            this.BtnPFPres2.Name = "BtnPFPres2";
+            this.BtnPFPres2.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFPres2.TabIndex = 6;
+            this.BtnPFPres2.Text = "PLATFORM";
+            this.BtnPFPres2.UseVisualStyleBackColor = true;
+            // 
+            // BtnPFPres1
+            // 
+            this.BtnPFPres1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnPFPres1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPFPres1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPFPres1.ForeColor = System.Drawing.Color.White;
+            this.BtnPFPres1.Location = new System.Drawing.Point(79, 85);
+            this.BtnPFPres1.Name = "BtnPFPres1";
+            this.BtnPFPres1.Size = new System.Drawing.Size(102, 33);
+            this.BtnPFPres1.TabIndex = 5;
+            this.BtnPFPres1.Text = "PLATFORM";
+            this.BtnPFPres1.UseVisualStyleBackColor = true;
+            // 
+            // PicBoxPres3
+            // 
+            this.PicBoxPres3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxPres3.Location = new System.Drawing.Point(200, 226);
+            this.PicBoxPres3.Name = "PicBoxPres3";
+            this.PicBoxPres3.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxPres3.TabIndex = 4;
+            this.PicBoxPres3.TabStop = false;
+            // 
+            // PicBoxPres2
+            // 
+            this.PicBoxPres2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxPres2.Location = new System.Drawing.Point(200, 149);
+            this.PicBoxPres2.Name = "PicBoxPres2";
+            this.PicBoxPres2.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxPres2.TabIndex = 3;
+            this.PicBoxPres2.TabStop = false;
+            // 
+            // PicBoxPres1
+            // 
+            this.PicBoxPres1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxPres1.Location = new System.Drawing.Point(200, 72);
+            this.PicBoxPres1.Name = "PicBoxPres1";
+            this.PicBoxPres1.Size = new System.Drawing.Size(60, 60);
+            this.PicBoxPres1.TabIndex = 2;
+            this.PicBoxPres1.TabStop = false;
+            // 
+            // LblPresDesc
+            // 
+            this.LblPresDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPresDesc.ForeColor = System.Drawing.Color.Black;
+            this.LblPresDesc.Location = new System.Drawing.Point(22, 41);
+            this.LblPresDesc.Name = "LblPresDesc";
+            this.LblPresDesc.Size = new System.Drawing.Size(228, 20);
+            this.LblPresDesc.TabIndex = 1;
+            this.LblPresDesc.Text = "Select only one candidate.";
+            this.LblPresDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LblPres
             // 
@@ -879,1347 +2313,7 @@
             this.label3.Text = "CAST YOUR VOTE WISELY!";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox8.TabIndex = 6;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox9.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox10.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox10.TabIndex = 8;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox11.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox11.TabIndex = 8;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox12.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox12.TabIndex = 8;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox13.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox13.TabIndex = 5;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox14.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox14.TabIndex = 6;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox15.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox15.TabIndex = 5;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox16.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox16.TabIndex = 6;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox17.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox17.TabIndex = 7;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox18.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox18.TabIndex = 8;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox19.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox19.TabIndex = 7;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox20.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox20.TabIndex = 8;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox21.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox21.TabIndex = 9;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox22.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox22.TabIndex = 10;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox23.Location = new System.Drawing.Point(170, 73);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox23.TabIndex = 10;
-            this.pictureBox23.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox24.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox24.TabIndex = 11;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox25.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox25.TabIndex = 12;
-            this.pictureBox25.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox26.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox26.TabIndex = 11;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox27.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox27.TabIndex = 12;
-            this.pictureBox27.TabStop = false;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox28.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox28.TabIndex = 11;
-            this.pictureBox28.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox29.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox29.TabIndex = 12;
-            this.pictureBox29.TabStop = false;
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox30.Location = new System.Drawing.Point(170, 227);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox30.TabIndex = 11;
-            this.pictureBox30.TabStop = false;
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox31.Location = new System.Drawing.Point(170, 150);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox31.TabIndex = 12;
-            this.pictureBox31.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(79, 85);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 33);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(79, 163);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(79, 241);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 33);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(79, 241);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 33);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(79, 163);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 33);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(79, 85);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 33);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(79, 239);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 33);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(79, 161);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 33);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(79, 83);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 33);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(79, 241);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 33);
-            this.button10.TabIndex = 13;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(79, 163);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 33);
-            this.button11.TabIndex = 12;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(79, 85);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 33);
-            this.button12.TabIndex = 11;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(79, 241);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 33);
-            this.button13.TabIndex = 13;
-            this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Location = new System.Drawing.Point(79, 163);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 33);
-            this.button14.TabIndex = 12;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Location = new System.Drawing.Point(79, 85);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 33);
-            this.button15.TabIndex = 11;
-            this.button15.Text = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Location = new System.Drawing.Point(79, 241);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 33);
-            this.button16.TabIndex = 15;
-            this.button16.Text = "button16";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            this.button17.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Location = new System.Drawing.Point(79, 163);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 33);
-            this.button17.TabIndex = 14;
-            this.button17.Text = "button17";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            this.button18.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Location = new System.Drawing.Point(79, 85);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 33);
-            this.button18.TabIndex = 13;
-            this.button18.Text = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Location = new System.Drawing.Point(79, 243);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 33);
-            this.button19.TabIndex = 13;
-            this.button19.Text = "button19";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Location = new System.Drawing.Point(79, 165);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 33);
-            this.button20.TabIndex = 12;
-            this.button20.Text = "button20";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Location = new System.Drawing.Point(79, 87);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 33);
-            this.button21.TabIndex = 11;
-            this.button21.Text = "button21";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            this.button22.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.Location = new System.Drawing.Point(79, 240);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 33);
-            this.button22.TabIndex = 15;
-            this.button22.Text = "button22";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            this.button23.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button23.ForeColor = System.Drawing.Color.White;
-            this.button23.Location = new System.Drawing.Point(79, 162);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 33);
-            this.button23.TabIndex = 14;
-            this.button23.Text = "button23";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button24.ForeColor = System.Drawing.Color.White;
-            this.button24.Location = new System.Drawing.Point(79, 84);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 33);
-            this.button24.TabIndex = 13;
-            this.button24.Text = "button24";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button25.ForeColor = System.Drawing.Color.White;
-            this.button25.Location = new System.Drawing.Point(79, 241);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(75, 33);
-            this.button25.TabIndex = 15;
-            this.button25.Text = "button25";
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button26.ForeColor = System.Drawing.Color.White;
-            this.button26.Location = new System.Drawing.Point(79, 163);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 33);
-            this.button26.TabIndex = 14;
-            this.button26.Text = "button26";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            this.button27.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button27.ForeColor = System.Drawing.Color.White;
-            this.button27.Location = new System.Drawing.Point(79, 85);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(75, 33);
-            this.button27.TabIndex = 13;
-            this.button27.Text = "button27";
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            this.button28.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button28.ForeColor = System.Drawing.Color.White;
-            this.button28.Location = new System.Drawing.Point(79, 242);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 33);
-            this.button28.TabIndex = 15;
-            this.button28.Text = "button28";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // button29
-            // 
-            this.button29.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button29.ForeColor = System.Drawing.Color.White;
-            this.button29.Location = new System.Drawing.Point(79, 164);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(75, 33);
-            this.button29.TabIndex = 14;
-            this.button29.Text = "button29";
-            this.button29.UseVisualStyleBackColor = true;
-            // 
-            // button30
-            // 
-            this.button30.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.Location = new System.Drawing.Point(79, 86);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(75, 33);
-            this.button30.TabIndex = 13;
-            this.button30.Text = "button30";
-            this.button30.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.ForeColor = System.Drawing.Color.Black;
-            this.radioButton1.Location = new System.Drawing.Point(42, 89);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(16, 24);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.ForeColor = System.Drawing.Color.Black;
-            this.radioButton2.Location = new System.Drawing.Point(42, 167);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(16, 24);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.ForeColor = System.Drawing.Color.Black;
-            this.radioButton3.Location = new System.Drawing.Point(42, 245);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(16, 24);
-            this.radioButton3.TabIndex = 10;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.ForeColor = System.Drawing.Color.Black;
-            this.radioButton4.Location = new System.Drawing.Point(42, 245);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(16, 24);
-            this.radioButton4.TabIndex = 13;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.ForeColor = System.Drawing.Color.Black;
-            this.radioButton5.Location = new System.Drawing.Point(42, 167);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(16, 24);
-            this.radioButton5.TabIndex = 12;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.ForeColor = System.Drawing.Color.Black;
-            this.radioButton6.Location = new System.Drawing.Point(42, 89);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(16, 24);
-            this.radioButton6.TabIndex = 11;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.ForeColor = System.Drawing.Color.Black;
-            this.radioButton7.Location = new System.Drawing.Point(42, 243);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(16, 24);
-            this.radioButton7.TabIndex = 16;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.ForeColor = System.Drawing.Color.Black;
-            this.radioButton8.Location = new System.Drawing.Point(42, 165);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(16, 24);
-            this.radioButton8.TabIndex = 15;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.ForeColor = System.Drawing.Color.Black;
-            this.radioButton9.Location = new System.Drawing.Point(42, 87);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(16, 24);
-            this.radioButton9.TabIndex = 14;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.ForeColor = System.Drawing.Color.Black;
-            this.radioButton10.Location = new System.Drawing.Point(42, 245);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(16, 24);
-            this.radioButton10.TabIndex = 16;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.UseVisualStyleBackColor = true;
-            // 
-            // radioButton11
-            // 
-            this.radioButton11.ForeColor = System.Drawing.Color.Black;
-            this.radioButton11.Location = new System.Drawing.Point(42, 167);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(16, 24);
-            this.radioButton11.TabIndex = 15;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.ForeColor = System.Drawing.Color.Black;
-            this.radioButton12.Location = new System.Drawing.Point(42, 89);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(16, 24);
-            this.radioButton12.TabIndex = 14;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // radioButton13
-            // 
-            this.radioButton13.ForeColor = System.Drawing.Color.Black;
-            this.radioButton13.Location = new System.Drawing.Point(42, 245);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(16, 24);
-            this.radioButton13.TabIndex = 16;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.UseVisualStyleBackColor = true;
-            // 
-            // radioButton14
-            // 
-            this.radioButton14.ForeColor = System.Drawing.Color.Black;
-            this.radioButton14.Location = new System.Drawing.Point(42, 167);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(16, 24);
-            this.radioButton14.TabIndex = 15;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.UseVisualStyleBackColor = true;
-            // 
-            // radioButton15
-            // 
-            this.radioButton15.ForeColor = System.Drawing.Color.Black;
-            this.radioButton15.Location = new System.Drawing.Point(42, 89);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(16, 24);
-            this.radioButton15.TabIndex = 14;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.UseVisualStyleBackColor = true;
-            // 
-            // radioButton16
-            // 
-            this.radioButton16.ForeColor = System.Drawing.Color.Black;
-            this.radioButton16.Location = new System.Drawing.Point(42, 245);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(16, 24);
-            this.radioButton16.TabIndex = 18;
-            this.radioButton16.TabStop = true;
-            this.radioButton16.UseVisualStyleBackColor = true;
-            // 
-            // radioButton17
-            // 
-            this.radioButton17.ForeColor = System.Drawing.Color.Black;
-            this.radioButton17.Location = new System.Drawing.Point(42, 167);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(16, 24);
-            this.radioButton17.TabIndex = 17;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.UseVisualStyleBackColor = true;
-            // 
-            // radioButton18
-            // 
-            this.radioButton18.ForeColor = System.Drawing.Color.Black;
-            this.radioButton18.Location = new System.Drawing.Point(42, 89);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(16, 24);
-            this.radioButton18.TabIndex = 16;
-            this.radioButton18.TabStop = true;
-            this.radioButton18.UseVisualStyleBackColor = true;
-            // 
-            // radioButton19
-            // 
-            this.radioButton19.ForeColor = System.Drawing.Color.Black;
-            this.radioButton19.Location = new System.Drawing.Point(42, 244);
-            this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(16, 24);
-            this.radioButton19.TabIndex = 18;
-            this.radioButton19.TabStop = true;
-            this.radioButton19.UseVisualStyleBackColor = true;
-            // 
-            // radioButton20
-            // 
-            this.radioButton20.ForeColor = System.Drawing.Color.Black;
-            this.radioButton20.Location = new System.Drawing.Point(42, 166);
-            this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(16, 24);
-            this.radioButton20.TabIndex = 17;
-            this.radioButton20.TabStop = true;
-            this.radioButton20.UseVisualStyleBackColor = true;
-            // 
-            // radioButton21
-            // 
-            this.radioButton21.ForeColor = System.Drawing.Color.Black;
-            this.radioButton21.Location = new System.Drawing.Point(42, 88);
-            this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(16, 24);
-            this.radioButton21.TabIndex = 16;
-            this.radioButton21.TabStop = true;
-            this.radioButton21.UseVisualStyleBackColor = true;
-            // 
-            // radioButton22
-            // 
-            this.radioButton22.ForeColor = System.Drawing.Color.Black;
-            this.radioButton22.Location = new System.Drawing.Point(42, 245);
-            this.radioButton22.Name = "radioButton22";
-            this.radioButton22.Size = new System.Drawing.Size(16, 24);
-            this.radioButton22.TabIndex = 21;
-            this.radioButton22.TabStop = true;
-            this.radioButton22.UseVisualStyleBackColor = true;
-            // 
-            // radioButton23
-            // 
-            this.radioButton23.ForeColor = System.Drawing.Color.Black;
-            this.radioButton23.Location = new System.Drawing.Point(42, 167);
-            this.radioButton23.Name = "radioButton23";
-            this.radioButton23.Size = new System.Drawing.Size(16, 24);
-            this.radioButton23.TabIndex = 20;
-            this.radioButton23.TabStop = true;
-            this.radioButton23.UseVisualStyleBackColor = true;
-            // 
-            // radioButton24
-            // 
-            this.radioButton24.ForeColor = System.Drawing.Color.Black;
-            this.radioButton24.Location = new System.Drawing.Point(42, 89);
-            this.radioButton24.Name = "radioButton24";
-            this.radioButton24.Size = new System.Drawing.Size(16, 24);
-            this.radioButton24.TabIndex = 19;
-            this.radioButton24.TabStop = true;
-            this.radioButton24.UseVisualStyleBackColor = true;
-            // 
-            // radioButton25
-            // 
-            this.radioButton25.ForeColor = System.Drawing.Color.Black;
-            this.radioButton25.Location = new System.Drawing.Point(42, 246);
-            this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(16, 24);
-            this.radioButton25.TabIndex = 21;
-            this.radioButton25.TabStop = true;
-            this.radioButton25.UseVisualStyleBackColor = true;
-            // 
-            // radioButton26
-            // 
-            this.radioButton26.ForeColor = System.Drawing.Color.Black;
-            this.radioButton26.Location = new System.Drawing.Point(42, 168);
-            this.radioButton26.Name = "radioButton26";
-            this.radioButton26.Size = new System.Drawing.Size(16, 24);
-            this.radioButton26.TabIndex = 20;
-            this.radioButton26.TabStop = true;
-            this.radioButton26.UseVisualStyleBackColor = true;
-            // 
-            // radioButton27
-            // 
-            this.radioButton27.ForeColor = System.Drawing.Color.Black;
-            this.radioButton27.Location = new System.Drawing.Point(42, 90);
-            this.radioButton27.Name = "radioButton27";
-            this.radioButton27.Size = new System.Drawing.Size(16, 24);
-            this.radioButton27.TabIndex = 19;
-            this.radioButton27.TabStop = true;
-            this.radioButton27.UseVisualStyleBackColor = true;
-            // 
-            // radioButton28
-            // 
-            this.radioButton28.ForeColor = System.Drawing.Color.Black;
-            this.radioButton28.Location = new System.Drawing.Point(42, 247);
-            this.radioButton28.Name = "radioButton28";
-            this.radioButton28.Size = new System.Drawing.Size(16, 24);
-            this.radioButton28.TabIndex = 21;
-            this.radioButton28.TabStop = true;
-            this.radioButton28.UseVisualStyleBackColor = true;
-            // 
-            // radioButton29
-            // 
-            this.radioButton29.ForeColor = System.Drawing.Color.Black;
-            this.radioButton29.Location = new System.Drawing.Point(42, 169);
-            this.radioButton29.Name = "radioButton29";
-            this.radioButton29.Size = new System.Drawing.Size(16, 24);
-            this.radioButton29.TabIndex = 20;
-            this.radioButton29.TabStop = true;
-            this.radioButton29.UseVisualStyleBackColor = true;
-            // 
-            // radioButton30
-            // 
-            this.radioButton30.ForeColor = System.Drawing.Color.Black;
-            this.radioButton30.Location = new System.Drawing.Point(42, 91);
-            this.radioButton30.Name = "radioButton30";
-            this.radioButton30.Size = new System.Drawing.Size(16, 24);
-            this.radioButton30.TabIndex = 19;
-            this.radioButton30.TabStop = true;
-            this.radioButton30.UseVisualStyleBackColor = true;
-            // 
-            // label23
-            // 
-            this.label23.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(248, 89);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(331, 23);
-            this.label23.TabIndex = 11;
-            this.label23.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label24
-            // 
-            this.label24.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(248, 167);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(331, 23);
-            this.label24.TabIndex = 12;
-            this.label24.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label25
-            // 
-            this.label25.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(248, 251);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(331, 23);
-            this.label25.TabIndex = 13;
-            this.label25.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label26
-            // 
-            this.label26.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(248, 251);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(331, 23);
-            this.label26.TabIndex = 16;
-            this.label26.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label27
-            // 
-            this.label27.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(248, 167);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(331, 23);
-            this.label27.TabIndex = 15;
-            this.label27.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label28
-            // 
-            this.label28.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(248, 89);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(331, 23);
-            this.label28.TabIndex = 14;
-            this.label28.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label29
-            // 
-            this.label29.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(248, 249);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(331, 23);
-            this.label29.TabIndex = 19;
-            this.label29.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label30
-            // 
-            this.label30.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(248, 165);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(331, 23);
-            this.label30.TabIndex = 18;
-            this.label30.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label31
-            // 
-            this.label31.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(248, 87);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(241, 23);
-            this.label31.TabIndex = 17;
-            this.label31.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label32
-            // 
-            this.label32.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(248, 251);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(331, 23);
-            this.label32.TabIndex = 19;
-            this.label32.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label33
-            // 
-            this.label33.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.Black;
-            this.label33.Location = new System.Drawing.Point(248, 167);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(331, 23);
-            this.label33.TabIndex = 18;
-            this.label33.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label34
-            // 
-            this.label34.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(248, 89);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(331, 23);
-            this.label34.TabIndex = 17;
-            this.label34.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label35
-            // 
-            this.label35.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.Black;
-            this.label35.Location = new System.Drawing.Point(248, 251);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(331, 23);
-            this.label35.TabIndex = 19;
-            this.label35.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label36
-            // 
-            this.label36.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(248, 167);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(331, 23);
-            this.label36.TabIndex = 18;
-            this.label36.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label37
-            // 
-            this.label37.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.Black;
-            this.label37.Location = new System.Drawing.Point(248, 89);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(331, 23);
-            this.label37.TabIndex = 17;
-            this.label37.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label38
-            // 
-            this.label38.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.Black;
-            this.label38.Location = new System.Drawing.Point(248, 251);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(331, 23);
-            this.label38.TabIndex = 21;
-            this.label38.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label39
-            // 
-            this.label39.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Black;
-            this.label39.Location = new System.Drawing.Point(248, 167);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(331, 23);
-            this.label39.TabIndex = 20;
-            this.label39.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label40
-            // 
-            this.label40.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.Black;
-            this.label40.Location = new System.Drawing.Point(248, 89);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(331, 23);
-            this.label40.TabIndex = 19;
-            this.label40.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label41
-            // 
-            this.label41.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.Black;
-            this.label41.Location = new System.Drawing.Point(248, 253);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(331, 23);
-            this.label41.TabIndex = 24;
-            this.label41.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label42
-            // 
-            this.label42.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(248, 169);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(331, 23);
-            this.label42.TabIndex = 23;
-            this.label42.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label43
-            // 
-            this.label43.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.Black;
-            this.label43.Location = new System.Drawing.Point(248, 91);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(331, 23);
-            this.label43.TabIndex = 22;
-            this.label43.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label44
-            // 
-            this.label44.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(248, 250);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(331, 23);
-            this.label44.TabIndex = 21;
-            this.label44.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label45
-            // 
-            this.label45.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.Black;
-            this.label45.Location = new System.Drawing.Point(248, 166);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(331, 23);
-            this.label45.TabIndex = 20;
-            this.label45.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label46
-            // 
-            this.label46.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(248, 88);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(331, 23);
-            this.label46.TabIndex = 19;
-            this.label46.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label47
-            // 
-            this.label47.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(248, 251);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(331, 23);
-            this.label47.TabIndex = 24;
-            this.label47.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label48
-            // 
-            this.label48.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Black;
-            this.label48.Location = new System.Drawing.Point(248, 167);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(331, 23);
-            this.label48.TabIndex = 23;
-            this.label48.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label49
-            // 
-            this.label49.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(248, 89);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(331, 23);
-            this.label49.TabIndex = 22;
-            this.label49.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label50
-            // 
-            this.label50.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.Black;
-            this.label50.Location = new System.Drawing.Point(248, 252);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(331, 23);
-            this.label50.TabIndex = 24;
-            this.label50.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label51
-            // 
-            this.label51.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.Color.Black;
-            this.label51.Location = new System.Drawing.Point(248, 168);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(331, 23);
-            this.label51.TabIndex = 23;
-            this.label51.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label52
-            // 
-            this.label52.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(248, 90);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(331, 23);
-            this.label52.TabIndex = 22;
-            this.label52.Text = "SURNAME, FIRSTNAME, MI.";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button31
-            // 
-            this.button31.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button31.ForeColor = System.Drawing.Color.White;
-            this.button31.Location = new System.Drawing.Point(633, 15);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(163, 30);
-            this.button31.TabIndex = 14;
-            this.button31.Text = "CLEAR SELECTION";
-            this.button31.UseVisualStyleBackColor = true;
-            // 
-            // button32
-            // 
-            this.button32.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button32.ForeColor = System.Drawing.Color.White;
-            this.button32.Location = new System.Drawing.Point(633, 15);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(163, 30);
-            this.button32.TabIndex = 17;
-            this.button32.Text = "CLEAR SELECTION";
-            this.button32.UseVisualStyleBackColor = true;
-            // 
-            // button33
-            // 
-            this.button33.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button33.ForeColor = System.Drawing.Color.White;
-            this.button33.Location = new System.Drawing.Point(633, 15);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(163, 30);
-            this.button33.TabIndex = 20;
-            this.button33.Text = "CLEAR SELECTION";
-            this.button33.UseVisualStyleBackColor = true;
-            // 
-            // button34
-            // 
-            this.button34.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button34.ForeColor = System.Drawing.Color.White;
-            this.button34.Location = new System.Drawing.Point(633, 15);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(163, 30);
-            this.button34.TabIndex = 20;
-            this.button34.Text = "CLEAR SELECTION";
-            this.button34.UseVisualStyleBackColor = true;
-            // 
-            // button35
-            // 
-            this.button35.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button35.ForeColor = System.Drawing.Color.White;
-            this.button35.Location = new System.Drawing.Point(633, 15);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(163, 30);
-            this.button35.TabIndex = 20;
-            this.button35.Text = "CLEAR SELECTION";
-            this.button35.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button36.ForeColor = System.Drawing.Color.White;
-            this.button36.Location = new System.Drawing.Point(633, 15);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(163, 30);
-            this.button36.TabIndex = 22;
-            this.button36.Text = "CLEAR SELECTION";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button37.ForeColor = System.Drawing.Color.White;
-            this.button37.Location = new System.Drawing.Point(633, 15);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(163, 30);
-            this.button37.TabIndex = 25;
-            this.button37.Text = "CLEAR SELECTION";
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button38.ForeColor = System.Drawing.Color.White;
-            this.button38.Location = new System.Drawing.Point(633, 15);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(163, 30);
-            this.button38.TabIndex = 22;
-            this.button38.Text = "CLEAR SELECTION";
-            this.button38.UseVisualStyleBackColor = true;
-            // 
-            // button39
-            // 
-            this.button39.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button39.ForeColor = System.Drawing.Color.White;
-            this.button39.Location = new System.Drawing.Point(633, 15);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(163, 30);
-            this.button39.TabIndex = 25;
-            this.button39.Text = "CLEAR SELECTION";
-            this.button39.UseVisualStyleBackColor = true;
-            // 
-            // button40
-            // 
-            this.button40.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.button40.ForeColor = System.Drawing.Color.White;
-            this.button40.Location = new System.Drawing.Point(633, 15);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(163, 30);
-            this.button40.TabIndex = 25;
-            this.button40.Text = "CLEAR SELECTION";
-            this.button40.UseVisualStyleBackColor = true;
-            // 
-            // Form2
+            // VoteNow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -2230,7 +2324,7 @@
             this.Controls.Add(this.PnlHeading);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "VoteNow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STUDENT MAIN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -2239,45 +2333,45 @@
             this.PnlVoting.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.PnlG6Repre.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG6R2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG6R3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG6R1)).EndInit();
             this.PnlG5Repre.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5R2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5R3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5R1)).EndInit();
             this.PnlG4Repre.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG4R2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG4R3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxG4R1)).EndInit();
             this.PnlPO.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPO2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPO3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPO1)).EndInit();
             this.PnlPIO.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO1)).EndInit();
             this.PnlAudit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit1)).EndInit();
             this.PnlTreas.ResumeLayout(false);
-            this.PnlSec.ResumeLayout(false);
-            this.PnlVice.ResumeLayout(false);
-            this.PnlPres.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.PnlSec.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec1)).EndInit();
+            this.PnlVice.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxVice2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxVice3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxVice1)).EndInit();
+            this.PnlPres.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPres3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPres2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPres1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2305,155 +2399,155 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button BtnSubmit;
         private System.Windows.Forms.Button BtnReview;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LblPresDesc;
         private System.Windows.Forms.Label LblPres;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label LblAuditDesc;
+        private System.Windows.Forms.Label LblAudit;
+        private System.Windows.Forms.Label LblTreas;
+        private System.Windows.Forms.Label LblSecDesc;
+        private System.Windows.Forms.Label LblSec;
+        private System.Windows.Forms.Label LblVIceDesc;
+        private System.Windows.Forms.Label LblVice;
+        private System.Windows.Forms.Label LblPODesc;
+        private System.Windows.Forms.Label LblPO;
+        private System.Windows.Forms.Label LblPIODesc;
+        private System.Windows.Forms.Label LblPIO;
+        private System.Windows.Forms.Label LblG6RepreDesc;
+        private System.Windows.Forms.Label LblG6Repre;
+        private System.Windows.Forms.Label LblG5RepreDesc;
+        private System.Windows.Forms.Label LblG5Repre;
+        private System.Windows.Forms.Label LblG4RepreDesc;
+        private System.Windows.Forms.Label LblG4Repre;
+        private System.Windows.Forms.PictureBox PicBoxPres3;
+        private System.Windows.Forms.PictureBox PicBoxPres2;
+        private System.Windows.Forms.PictureBox PicBoxPres1;
+        private System.Windows.Forms.PictureBox PicBoxG5R1;
+        private System.Windows.Forms.PictureBox PicBoxPO2;
+        private System.Windows.Forms.PictureBox PicBoxPO3;
+        private System.Windows.Forms.PictureBox PicBoxPO1;
+        private System.Windows.Forms.PictureBox PicBoxPIO1;
+        private System.Windows.Forms.PictureBox PicBoxAudit2;
+        private System.Windows.Forms.PictureBox PicBoxAudit3;
+        private System.Windows.Forms.PictureBox PicBoxAudit1;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox31;
-        private System.Windows.Forms.PictureBox pictureBox30;
-        private System.Windows.Forms.PictureBox pictureBox29;
-        private System.Windows.Forms.PictureBox pictureBox28;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox24;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.PictureBox pictureBox27;
-        private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton radioButton25;
-        private System.Windows.Forms.RadioButton radioButton26;
-        private System.Windows.Forms.RadioButton radioButton27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.RadioButton radioButton22;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.RadioButton radioButton23;
-        private System.Windows.Forms.RadioButton radioButton24;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.RadioButton radioButton19;
-        private System.Windows.Forms.RadioButton radioButton20;
-        private System.Windows.Forms.RadioButton radioButton21;
-        private System.Windows.Forms.RadioButton radioButton28;
-        private System.Windows.Forms.RadioButton radioButton29;
-        private System.Windows.Forms.RadioButton radioButton30;
-        private System.Windows.Forms.RadioButton radioButton16;
-        private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton18;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.PictureBox PicBoxSec3;
+        private System.Windows.Forms.PictureBox PicBoxSec2;
+        private System.Windows.Forms.PictureBox PicBoxSec1;
+        private System.Windows.Forms.PictureBox PicBoxVice2;
+        private System.Windows.Forms.PictureBox PicBoxVice3;
+        private System.Windows.Forms.PictureBox PicBoxVice1;
+        private System.Windows.Forms.PictureBox PicBoxG6R2;
+        private System.Windows.Forms.PictureBox PicBoxG6R3;
+        private System.Windows.Forms.PictureBox PicBoxG5R2;
+        private System.Windows.Forms.PictureBox PicBoxG5R3;
+        private System.Windows.Forms.Button BtnPFG4R3;
+        private System.Windows.Forms.Button BtnPFG4R2;
+        private System.Windows.Forms.Button BtnPFG4R1;
+        private System.Windows.Forms.PictureBox PicBoxG4R2;
+        private System.Windows.Forms.PictureBox PicBoxG4R3;
+        private System.Windows.Forms.PictureBox PicBoxG4R1;
+        private System.Windows.Forms.Button BtnPFPO3;
+        private System.Windows.Forms.Button BtnPFPO2;
+        private System.Windows.Forms.Button BtnPFPO1;
+        private System.Windows.Forms.Button BtnPFPIO3;
+        private System.Windows.Forms.Button BtnPFPIO2;
+        private System.Windows.Forms.Button BtnPFPIO1;
+        private System.Windows.Forms.PictureBox PicBoxPIO2;
+        private System.Windows.Forms.PictureBox PicBoxPIO3;
+        private System.Windows.Forms.Button BtnPFAudit3;
+        private System.Windows.Forms.Button BtnPFAudit2;
+        private System.Windows.Forms.Button BtnPFAudit1;
+        private System.Windows.Forms.Button BtnPFTreas3;
+        private System.Windows.Forms.Button BtnPFTreas2;
+        private System.Windows.Forms.Button BtnPFTreas1;
+        private System.Windows.Forms.Button BtnPFSec3;
+        private System.Windows.Forms.Button BtnPFSec2;
+        private System.Windows.Forms.Button BtnPFSec1;
+        private System.Windows.Forms.Button BtnPFVIce3;
+        private System.Windows.Forms.Button BtnPFVice2;
+        private System.Windows.Forms.Button BtnPFVice1;
+        private System.Windows.Forms.Button BtnPFPres3;
+        private System.Windows.Forms.Button BtnPFPres2;
+        private System.Windows.Forms.Button BtnPFPres1;
+        private System.Windows.Forms.RadioButton RdoG6R3;
+        private System.Windows.Forms.RadioButton RdoG6R2;
+        private System.Windows.Forms.RadioButton RdoG6R1;
+        private System.Windows.Forms.Button BtnPFG6R3;
+        private System.Windows.Forms.Button BtnPFG6R2;
+        private System.Windows.Forms.Button BtnPFG6R1;
+        private System.Windows.Forms.RadioButton RdoG5R3;
+        private System.Windows.Forms.Button BtnPFG5R3;
+        private System.Windows.Forms.RadioButton RdoG5R2;
+        private System.Windows.Forms.RadioButton RdoG5R1;
+        private System.Windows.Forms.Button BtnPFG5R2;
+        private System.Windows.Forms.Button BtnPFG5R1;
+        private System.Windows.Forms.RadioButton RdoG4R3;
+        private System.Windows.Forms.RadioButton RdoG4R2;
+        private System.Windows.Forms.RadioButton RdoG4R1;
+        private System.Windows.Forms.RadioButton RdoPO3;
+        private System.Windows.Forms.RadioButton RdoPO1;
+        private System.Windows.Forms.RadioButton RdoPIO3;
+        private System.Windows.Forms.RadioButton RdoPIO2;
+        private System.Windows.Forms.RadioButton RdoPIO1;
+        private System.Windows.Forms.RadioButton RdoAudit2;
+        private System.Windows.Forms.RadioButton RdoAudit1;
+        private System.Windows.Forms.RadioButton RdoTreas3;
+        private System.Windows.Forms.RadioButton RdoTreas2;
+        private System.Windows.Forms.RadioButton RdoTreas1;
+        private System.Windows.Forms.RadioButton RdoSec3;
+        private System.Windows.Forms.RadioButton RdoSec2;
+        private System.Windows.Forms.RadioButton RdoSec1;
+        private System.Windows.Forms.RadioButton RdoVice3;
+        private System.Windows.Forms.RadioButton RdoVice2;
+        private System.Windows.Forms.RadioButton RdoVice1;
+        private System.Windows.Forms.RadioButton RdoPres3;
+        private System.Windows.Forms.RadioButton RdoPres2;
+        private System.Windows.Forms.RadioButton RdoPres1;
+        private System.Windows.Forms.Label LblG5R3;
+        private System.Windows.Forms.Label LblG5R2;
+        private System.Windows.Forms.Label LblG5R1;
+        private System.Windows.Forms.Label LblG4R3;
+        private System.Windows.Forms.Label LblG4R2;
+        private System.Windows.Forms.Label LblG4R1;
+        private System.Windows.Forms.Label LblPO3;
+        private System.Windows.Forms.Label LblPO2;
+        private System.Windows.Forms.Label LblPO1;
+        private System.Windows.Forms.Label LblPIO3;
+        private System.Windows.Forms.Label LblPIO2;
+        private System.Windows.Forms.Label LblPIO1;
+        private System.Windows.Forms.Label LblAudit3;
+        private System.Windows.Forms.Label LblAudit2;
+        private System.Windows.Forms.Label LblAudit1;
+        private System.Windows.Forms.Label LblTreas3;
+        private System.Windows.Forms.Label LblTreas2;
+        private System.Windows.Forms.Label LblTreas1;
+        private System.Windows.Forms.Label LblSec3;
+        private System.Windows.Forms.Label LblSec2;
+        private System.Windows.Forms.Label LblSec1;
+        private System.Windows.Forms.Label LblVice3;
+        private System.Windows.Forms.Label LblVice2;
+        private System.Windows.Forms.Label LblVice1;
+        private System.Windows.Forms.Label LblPres3;
+        private System.Windows.Forms.Label LblPres2;
+        private System.Windows.Forms.Label LblPres1;
+        private System.Windows.Forms.Label LblG6R3;
+        private System.Windows.Forms.Label LblG6R2;
+        private System.Windows.Forms.Label LblG6R1;
+        private System.Windows.Forms.Button BtnClearVice;
+        private System.Windows.Forms.Button BtnClearPres;
+        private System.Windows.Forms.Button BtnClearG6Repre;
+        private System.Windows.Forms.Button BtnClearG5Rrepre;
+        private System.Windows.Forms.Button BtnClearG4Repre;
+        private System.Windows.Forms.Button BtnClearPO;
+        private System.Windows.Forms.Button BtnClearPIO;
+        private System.Windows.Forms.Button BtnClearAudit;
+        private System.Windows.Forms.Button BtnClearTreas;
+        private System.Windows.Forms.Button BtnClearSecretary;
+        private System.Windows.Forms.Label LblTreasDesc;
+        private System.Windows.Forms.RadioButton RdoAudit3;
+        private System.Windows.Forms.RadioButton RdoPO2;
+        private System.Windows.Forms.PictureBox PicBoxG6R1;
     }
 }

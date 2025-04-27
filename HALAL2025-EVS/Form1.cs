@@ -42,7 +42,7 @@ namespace HALAL2025_EVS
                             if (studentReader.Read())
                             {
                                 MessageBox.Show("Login Success!");
-                                Form2 form2 = new Form2();
+                                VoteNow form2 = new VoteNow();
                                 this.Hide();
                                 form2.Show();
                                 return;
