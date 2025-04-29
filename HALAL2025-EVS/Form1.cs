@@ -23,6 +23,13 @@ namespace HALAL2025_EVS
 
         public void Login()
         {
+            if(TxtStudentID.Text == "admin" && TxtPassword.Text == "root")
+            {
+                MessageBox.Show("Login Success! (Admin)");
+                Overview form6 = new Overview();
+                this.Hide();
+                form6.Show();
+            }
             //string adminQuery = "SELECT * FROM admin WHERE admin_name = @id AND admin_password = @pass";
             string studentQuery = "SELECT * FROM student WHERE student_id = @id AND student_password = @pass";
 

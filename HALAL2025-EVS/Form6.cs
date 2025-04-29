@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HALAL2025_EVS
 {
-    public partial class VoteNow : Form
+    public partial class Overview : Form
     {
-        public VoteNow()
+        public Overview()
         {
             InitializeComponent();
         }
@@ -22,19 +22,6 @@ namespace HALAL2025_EVS
             LOGIN form1 = new LOGIN();
             this.Hide();
             form1.Show();
-        }
-
-        private void BtnReview_Click(object sender, EventArgs e)
-        {
-            Review form3 = new Review();
-            form3.Show();
-        }
-
-        private void BtnSubmit_Click(object sender, EventArgs e)
-        {
-            VoteStatus form4 = new VoteStatus();
-            this.Hide();
-            form4.Show();
         }
     }
 }

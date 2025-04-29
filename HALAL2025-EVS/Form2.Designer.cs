@@ -359,7 +359,8 @@
             // PnlVoting
             // 
             this.PnlVoting.AutoScroll = true;
-            this.PnlVoting.BackColor = System.Drawing.Color.Silver;
+            this.PnlVoting.BackColor = System.Drawing.Color.Transparent;
+            this.PnlVoting.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
             this.PnlVoting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PnlVoting.Controls.Add(this.panel12);
             this.PnlVoting.Controls.Add(this.PnlG6Repre);
