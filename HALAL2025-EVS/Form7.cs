@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HALAL2025_EVS
 {
-    public partial class Overview : Form
+    public partial class StudentInfo : Form
     {
-        public Overview()
+        public StudentInfo()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void BtnLogout_Click(object sender, EventArgs e)
@@ -22,13 +27,6 @@ namespace HALAL2025_EVS
             LOGIN form1 = new LOGIN();
             this.Hide();
             form1.Show();
-        }
-
-        private void BtnStudents_Click(object sender, EventArgs e)
-        {
-            StudentInfo form7 = new StudentInfo();
-            this.Hide();
-            form7.Show();
         }
     }
 }
