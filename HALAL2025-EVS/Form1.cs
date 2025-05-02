@@ -23,14 +23,8 @@ namespace HALAL2025_EVS
 
         public void Login()
         {
-            if(TxtStudentID.Text == "admin" && TxtPassword.Text == "root")
-            {
-                MessageBox.Show("Login Success! (Admin)");
-                Overview form6 = new Overview();
-                this.Hide();
-                form6.Show();
-            }
-            //string adminQuery = "SELECT * FROM admin WHERE admin_name = @id AND admin_password = @pass";
+
+            string adminQuery = "SELECT * FROM admin WHERE admin_name = @id AND admin_password = @pass";
             string studentQuery = "SELECT * FROM student WHERE student_id = @id AND student_password = @pass";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -57,8 +51,7 @@ namespace HALAL2025_EVS
                         }
                     }
 
-                    // FOR ADMIN
-                    /*using (MySqlCommand adminCmd = new MySqlCommand(adminQuery, connection))
+                    using (MySqlCommand adminCmd = new MySqlCommand(adminQuery, connection))
                     {
                         adminCmd.Parameters.AddWithValue("@id", TxtStudentID.Text);
                         adminCmd.Parameters.AddWithValue("@pass", TxtPassword.Text);
@@ -68,13 +61,13 @@ namespace HALAL2025_EVS
                             if (adminReader.Read())
                             {
                                 MessageBox.Show("Login Success! (Admin)");
-                                Admin_Home adminForm = new Admin_Home();
+                                Overview form6 = new Overview();
                                 this.Hide();
-                                adminForm.Show();
+                                form6.Show();
                                 return;
                             }
                         }
-                    }*/
+                    }
 
                     MessageBox.Show("Invalid credentials, please try again.");
                     TxtStudentID.Clear();
