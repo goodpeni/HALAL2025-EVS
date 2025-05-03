@@ -7,14 +7,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace HALAL2025_EVS
 {
     public partial class Candidates : Form
     {
+        string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=evotingdb";
         public Candidates()
         {
             InitializeComponent();
+            LoadData(); 
+        }
+
+        private void LoadData()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT c.candidate_id, s.first_name, s.middle_name, s.last_name, p.position_name, pl.partylist_name FROM candidate c INNER JOIN student s ON c.student_id = s.student_id\r\nINNER JOIN position p ON c.position_id = p.position_id INNER JOIN partylist pl ON c.partylist_id = pl.partylist_id";
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    // ✨ Tell the DataGridView to NOT auto-generate columns
+                    DgvCandidatesList.AutoGenerateColumns = false;
+
+                    // 🧠 Now bind the data
+                    DgvCandidatesList.DataSource = dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
 
         private void BtnAddCandid_Click(object sender, EventArgs e)
