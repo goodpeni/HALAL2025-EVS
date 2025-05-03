@@ -30,8 +30,7 @@ namespace HALAL2025_EVS
                 {
                     conn.Open();
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    int candidateCount = Convert.ToInt32(cmd.ExecuteScalar()); // Safe cast for MySQL
-
+                    int candidateCount = Convert.ToInt32(cmd.ExecuteScalar()); 
                     LblTotalCandid.Text = candidateCount.ToString();
                 }
                 catch (Exception ex)
@@ -51,8 +50,7 @@ namespace HALAL2025_EVS
                 {
                     conn.Open();
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    int studentCount = Convert.ToInt32(cmd.ExecuteScalar()); // Safe cast for MySQL
-
+                    int studentCount = Convert.ToInt32(cmd.ExecuteScalar()); 
                     LblTotalStud.Text = studentCount.ToString();
                 }
                 catch (Exception ex)
@@ -72,8 +70,7 @@ namespace HALAL2025_EVS
                 {
                     conn.Open();
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    int studentVotedCount = Convert.ToInt32(cmd.ExecuteScalar()); // Safe cast for MySQL
-
+                    int studentVotedCount = Convert.ToInt32(cmd.ExecuteScalar()); 
                     LblTotalStud.Text = studentVotedCount.ToString();
                 }
                 catch (Exception ex)
