@@ -19,6 +19,7 @@ namespace HALAL2025_EVS
         public LOGIN()
         {
             InitializeComponent();
+            this.AcceptButton = BtnLogin;
         }
 
         public void Login()
