@@ -16,6 +16,13 @@ namespace HALAL2025_EVS
         {
             InitializeComponent();
         }
+        private void CenterPanel()
+        {
+            int x = (this.ClientSize.Width - PnlVoting.Width) / 2;
+            int y = (int)((this.ClientSize.Height * 0.65) - (PnlVoting.Height / 2));
+
+            PnlVoting.Location = new Point(Math.Max(0, x), Math.Max(0, y));
+        }
 
         private void BtnLogout_Click(object sender, EventArgs e)
         {
@@ -50,6 +57,9 @@ namespace HALAL2025_EVS
             form12.Show();
         }
 
-       
+        private void VoteNow_Load(object sender, EventArgs e)
+        {
+            CenterPanel();
+        }
     }
 }

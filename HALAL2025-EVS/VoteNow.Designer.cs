@@ -123,6 +123,7 @@
             this.PnlAudit = new System.Windows.Forms.Panel();
             this.BtnClearAudit = new System.Windows.Forms.Button();
             this.LblAudit3 = new System.Windows.Forms.Label();
+            this.PicBoxAudit1 = new System.Windows.Forms.PictureBox();
             this.LblAudit2 = new System.Windows.Forms.Label();
             this.LblAudit1 = new System.Windows.Forms.Label();
             this.RdoAudit3 = new System.Windows.Forms.RadioButton();
@@ -133,7 +134,6 @@
             this.BtnPFAudit1 = new System.Windows.Forms.Button();
             this.PicBoxAudit2 = new System.Windows.Forms.PictureBox();
             this.PicBoxAudit3 = new System.Windows.Forms.PictureBox();
-            this.PicBoxAudit1 = new System.Windows.Forms.PictureBox();
             this.LblAuditDesc = new System.Windows.Forms.Label();
             this.LblAudit = new System.Windows.Forms.Label();
             this.PnlTreas = new System.Windows.Forms.Panel();
@@ -226,9 +226,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO1)).BeginInit();
             this.PnlAudit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit1)).BeginInit();
             this.PnlTreas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxTreas2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxTreas3)).BeginInit();
@@ -262,7 +262,7 @@
             this.PnlHeading.Location = new System.Drawing.Point(0, 0);
             this.PnlHeading.Margin = new System.Windows.Forms.Padding(2);
             this.PnlHeading.Name = "PnlHeading";
-            this.PnlHeading.Size = new System.Drawing.Size(1455, 67);
+            this.PnlHeading.Size = new System.Drawing.Size(1369, 67);
             this.PnlHeading.TabIndex = 1;
             // 
             // BtnLogout
@@ -382,7 +382,7 @@
             this.PnlVoting.Controls.Add(this.PnlPres);
             this.PnlVoting.Controls.Add(this.lblVoteWisely);
             this.PnlVoting.ForeColor = System.Drawing.Color.RosyBrown;
-            this.PnlVoting.Location = new System.Drawing.Point(448, 77);
+            this.PnlVoting.Location = new System.Drawing.Point(314, 73);
             this.PnlVoting.Margin = new System.Windows.Forms.Padding(2);
             this.PnlVoting.Name = "PnlVoting";
             this.PnlVoting.Size = new System.Drawing.Size(689, 778);
@@ -1504,6 +1504,16 @@
             this.LblAudit3.Text = "SURNAME, FIRSTNAME, MI.";
             this.LblAudit3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // PicBoxAudit1
+            // 
+            this.PicBoxAudit1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicBoxAudit1.Location = new System.Drawing.Point(0, 0);
+            this.PicBoxAudit1.Margin = new System.Windows.Forms.Padding(2);
+            this.PicBoxAudit1.Name = "PicBoxAudit1";
+            this.PicBoxAudit1.Size = new System.Drawing.Size(46, 49);
+            this.PicBoxAudit1.TabIndex = 6;
+            this.PicBoxAudit1.TabStop = false;
+            // 
             // LblAudit2
             // 
             this.LblAudit2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1622,16 +1632,6 @@
             this.PicBoxAudit3.Size = new System.Drawing.Size(46, 49);
             this.PicBoxAudit3.TabIndex = 7;
             this.PicBoxAudit3.TabStop = false;
-            // 
-            // PicBoxAudit1
-            // 
-            this.PicBoxAudit1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PicBoxAudit1.Location = new System.Drawing.Point(0, 0);
-            this.PicBoxAudit1.Margin = new System.Windows.Forms.Padding(2);
-            this.PicBoxAudit1.Name = "PicBoxAudit1";
-            this.PicBoxAudit1.Size = new System.Drawing.Size(46, 49);
-            this.PicBoxAudit1.TabIndex = 6;
-            this.PicBoxAudit1.TabStop = false;
             // 
             // LblAuditDesc
             // 
@@ -2491,9 +2491,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.darkmode;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1455, 878);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.PnlVoting);
             this.Controls.Add(this.PnlHeading);
             this.DoubleBuffered = true;
@@ -2503,6 +2504,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STUDENT MAIN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.VoteNow_Load);
             this.PnlHeading.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo)).EndInit();
             this.PnlVoting.ResumeLayout(false);
@@ -2528,9 +2530,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO1)).EndInit();
             this.PnlAudit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicBoxAudit1)).EndInit();
             this.PnlTreas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxTreas2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxTreas3)).EndInit();
