@@ -47,7 +47,7 @@ namespace HALAL2025_EVS
             }
         }
 
-        private void LoadFilteredData(string gradeLevel, string section, string voteStatus)
+        private void LoadFilteredData(string gradeLevel, string section, string voteStatus, string studentId)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -78,6 +78,12 @@ namespace HALAL2025_EVS
                         cmd.Parameters.AddWithValue("@voteStatus", voteValue);
                     }
 
+                    if (!string.IsNullOrWhiteSpace(studentId))
+                    {
+                        query += " AND student_id LIKE @studentId";
+                        cmd.Parameters.AddWithValue("@studentId", studentId + "%");
+                    }
+
                     cmd.CommandText = query;
 
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
@@ -93,12 +99,15 @@ namespace HALAL2025_EVS
                 }
             }
         }
+
         private void ApplyFilters()
         {
             string selectedGrade = CmbGLevel.SelectedItem?.ToString();
             string selectedSection = CmbSection.SelectedItem?.ToString();
             string selectedVoteStatus = CmbVoteStatus.SelectedItem?.ToString();
-            LoadFilteredData(selectedGrade, selectedSection, selectedVoteStatus);
+            string searchId = TxtSearch.Text?.Trim();
+
+            LoadFilteredData(selectedGrade, selectedSection, selectedVoteStatus, searchId);
         }
 
         private void BtnLogout_Click(object sender, EventArgs e)
@@ -148,6 +157,11 @@ namespace HALAL2025_EVS
         }
 
         private void CmbVoteStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ApplyFilters();
+        }
+
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
             ApplyFilters();
         }
