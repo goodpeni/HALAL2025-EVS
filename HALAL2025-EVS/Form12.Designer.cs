@@ -171,6 +171,7 @@
             this.BtnBack.TabIndex = 69;
             this.BtnBack.Text = "BACK";
             this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // Platform
             // 

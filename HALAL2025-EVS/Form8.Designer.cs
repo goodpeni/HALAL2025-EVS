@@ -116,7 +116,6 @@
             this.PnlAddStud.Controls.Add(this.BtnAdd);
             this.PnlAddStud.Controls.Add(this.BtnBack);
             this.PnlAddStud.Controls.Add(this.ChkShowPass);
-            this.PnlAddStud.Controls.Add(this.LblConfirmPass);
             this.PnlAddStud.Controls.Add(this.TxtConfirmPass);
             this.PnlAddStud.Controls.Add(this.CmbSection);
             this.PnlAddStud.Controls.Add(this.CmbGrade);
@@ -132,6 +131,7 @@
             this.PnlAddStud.Controls.Add(this.TxtStudentID);
             this.PnlAddStud.Controls.Add(this.LblStudentID);
             this.PnlAddStud.Controls.Add(this.LblSection);
+            this.PnlAddStud.Controls.Add(this.LblConfirmPass);
             this.PnlAddStud.Location = new System.Drawing.Point(48, 135);
             this.PnlAddStud.Name = "PnlAddStud";
             this.PnlAddStud.Size = new System.Drawing.Size(528, 521);
@@ -189,7 +189,7 @@
             this.LblConfirmPass.ForeColor = System.Drawing.Color.White;
             this.LblConfirmPass.Location = new System.Drawing.Point(27, 403);
             this.LblConfirmPass.Name = "LblConfirmPass";
-            this.LblConfirmPass.Size = new System.Drawing.Size(206, 23);
+            this.LblConfirmPass.Size = new System.Drawing.Size(321, 23);
             this.LblConfirmPass.TabIndex = 22;
             this.LblConfirmPass.Text = "CONFIRM PASSWORD";
             this.LblConfirmPass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -345,7 +345,7 @@
             this.LblSection.ForeColor = System.Drawing.Color.White;
             this.LblSection.Location = new System.Drawing.Point(246, 266);
             this.LblSection.Name = "LblSection";
-            this.LblSection.Size = new System.Drawing.Size(88, 23);
+            this.LblSection.Size = new System.Drawing.Size(115, 23);
             this.LblSection.TabIndex = 18;
             this.LblSection.Text = "SECTION";
             this.LblSection.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

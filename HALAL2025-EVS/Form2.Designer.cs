@@ -267,7 +267,6 @@
             // BtnLogout
             // 
             this.BtnLogout.BackColor = System.Drawing.Color.Transparent;
-            this.BtnLogout.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
             this.BtnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogout.FlatAppearance.BorderSize = 0;

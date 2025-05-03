@@ -16,5 +16,12 @@ namespace HALAL2025_EVS
         {
             InitializeComponent();
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            VoteNow form2 = new VoteNow();
+            this.Hide();
+            form2.Show();
+        }
     }
 }
