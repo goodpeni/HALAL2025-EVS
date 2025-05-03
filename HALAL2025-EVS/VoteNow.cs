@@ -49,5 +49,7 @@ namespace HALAL2025_EVS
             Platform form12 = new Platform();
             form12.Show();
         }
+
+       
     }
 }

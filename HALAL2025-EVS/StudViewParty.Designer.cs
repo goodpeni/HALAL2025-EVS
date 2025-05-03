@@ -64,7 +64,7 @@
             this.PicBoxPO = new System.Windows.Forms.PictureBox();
             this.PicBoxVice = new System.Windows.Forms.PictureBox();
             this.PicBoxTreas = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.PicBoxSpaces = new System.Windows.Forms.PictureBox();
             this.PicBoxG5Rep = new System.Windows.Forms.PictureBox();
             this.PicboxPIO = new System.Windows.Forms.PictureBox();
             this.PicBoxSec = new System.Windows.Forms.PictureBox();
@@ -81,7 +81,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxPO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxVice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxTreas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxSpaces)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicboxPIO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec)).BeginInit();
@@ -101,8 +101,9 @@
             this.PnlHeading.Controls.Add(this.LblTitle1);
             this.PnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeading.Location = new System.Drawing.Point(0, 0);
+            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlHeading.Name = "PnlHeading";
-            this.PnlHeading.Size = new System.Drawing.Size(1942, 82);
+            this.PnlHeading.Size = new System.Drawing.Size(1455, 67);
             this.PnlHeading.TabIndex = 3;
             // 
             // BtnLogout
@@ -115,9 +116,10 @@
             this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLogout.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogout.ForeColor = System.Drawing.Color.White;
-            this.BtnLogout.Location = new System.Drawing.Point(1950, 22);
+            this.BtnLogout.Location = new System.Drawing.Point(1462, 18);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnLogout.Name = "BtnLogout";
-            this.BtnLogout.Size = new System.Drawing.Size(94, 40);
+            this.BtnLogout.Size = new System.Drawing.Size(70, 32);
             this.BtnLogout.TabIndex = 7;
             this.BtnLogout.Text = "LOGOUT";
             this.BtnLogout.UseVisualStyleBackColor = false;
@@ -135,9 +137,10 @@
             this.BtnPartylists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPartylists.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPartylists.ForeColor = System.Drawing.Color.White;
-            this.BtnPartylists.Location = new System.Drawing.Point(1403, 22);
+            this.BtnPartylists.Location = new System.Drawing.Point(1052, 18);
+            this.BtnPartylists.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnPartylists.Name = "BtnPartylists";
-            this.BtnPartylists.Size = new System.Drawing.Size(117, 40);
+            this.BtnPartylists.Size = new System.Drawing.Size(88, 32);
             this.BtnPartylists.TabIndex = 5;
             this.BtnPartylists.Text = "PARTYLISTS";
             this.BtnPartylists.UseVisualStyleBackColor = false;
@@ -153,9 +156,10 @@
             this.BtnVoteNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVoteNow.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVoteNow.ForeColor = System.Drawing.Color.White;
-            this.BtnVoteNow.Location = new System.Drawing.Point(1273, 22);
+            this.BtnVoteNow.Location = new System.Drawing.Point(955, 18);
+            this.BtnVoteNow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnVoteNow.Name = "BtnVoteNow";
-            this.BtnVoteNow.Size = new System.Drawing.Size(117, 40);
+            this.BtnVoteNow.Size = new System.Drawing.Size(88, 32);
             this.BtnVoteNow.TabIndex = 1;
             this.BtnVoteNow.Text = "VOTE NOW";
             this.BtnVoteNow.UseVisualStyleBackColor = false;
@@ -166,9 +170,10 @@
             this.LblTitle2.BackColor = System.Drawing.Color.Transparent;
             this.LblTitle2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitle2.ForeColor = System.Drawing.Color.White;
-            this.LblTitle2.Location = new System.Drawing.Point(92, 38);
+            this.LblTitle2.Location = new System.Drawing.Point(69, 31);
+            this.LblTitle2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblTitle2.Name = "LblTitle2";
-            this.LblTitle2.Size = new System.Drawing.Size(413, 24);
+            this.LblTitle2.Size = new System.Drawing.Size(310, 20);
             this.LblTitle2.TabIndex = 2;
             this.LblTitle2.Text = "IBAYO ELEMENTARY SCHOOL";
             this.LblTitle2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -178,9 +183,10 @@
             this.PicBoxLogo.BackColor = System.Drawing.Color.Transparent;
             this.PicBoxLogo.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.halal20225;
             this.PicBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PicBoxLogo.Location = new System.Drawing.Point(13, 1);
+            this.PicBoxLogo.Location = new System.Drawing.Point(10, 1);
+            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxLogo.Name = "PicBoxLogo";
-            this.PicBoxLogo.Size = new System.Drawing.Size(75, 75);
+            this.PicBoxLogo.Size = new System.Drawing.Size(56, 61);
             this.PicBoxLogo.TabIndex = 1;
             this.PicBoxLogo.TabStop = false;
             // 
@@ -189,9 +195,10 @@
             this.LblTitle1.BackColor = System.Drawing.Color.Transparent;
             this.LblTitle1.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitle1.ForeColor = System.Drawing.Color.White;
-            this.LblTitle1.Location = new System.Drawing.Point(90, 12);
+            this.LblTitle1.Location = new System.Drawing.Point(68, 10);
+            this.LblTitle1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblTitle1.Name = "LblTitle1";
-            this.LblTitle1.Size = new System.Drawing.Size(502, 34);
+            this.LblTitle1.Size = new System.Drawing.Size(376, 28);
             this.LblTitle1.TabIndex = 0;
             this.LblTitle1.Text = "HALAL 2025 E-VOTING SYSTEM\r\n";
             this.LblTitle1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,9 +208,10 @@
             this.LblViewPartylist.BackColor = System.Drawing.Color.Transparent;
             this.LblViewPartylist.Font = new System.Drawing.Font("Arial Black", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblViewPartylist.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.LblViewPartylist.Location = new System.Drawing.Point(611, 106);
+            this.LblViewPartylist.Location = new System.Drawing.Point(458, 86);
+            this.LblViewPartylist.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblViewPartylist.Name = "LblViewPartylist";
-            this.LblViewPartylist.Size = new System.Drawing.Size(851, 63);
+            this.LblViewPartylist.Size = new System.Drawing.Size(638, 51);
             this.LblViewPartylist.TabIndex = 10;
             this.LblViewPartylist.Text = "VIEW PARTYLIST";
             this.LblViewPartylist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -212,9 +220,10 @@
             // 
             this.CmbFilter.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbFilter.FormattingEnabled = true;
-            this.CmbFilter.Location = new System.Drawing.Point(944, 185);
+            this.CmbFilter.Location = new System.Drawing.Point(708, 150);
+            this.CmbFilter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmbFilter.Name = "CmbFilter";
-            this.CmbFilter.Size = new System.Drawing.Size(333, 46);
+            this.CmbFilter.Size = new System.Drawing.Size(251, 38);
             this.CmbFilter.TabIndex = 12;
             // 
             // LblFilter
@@ -222,9 +231,10 @@
             this.LblFilter.BackColor = System.Drawing.Color.Transparent;
             this.LblFilter.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFilter.ForeColor = System.Drawing.Color.White;
-            this.LblFilter.Location = new System.Drawing.Point(813, 185);
+            this.LblFilter.Location = new System.Drawing.Point(610, 150);
+            this.LblFilter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblFilter.Name = "LblFilter";
-            this.LblFilter.Size = new System.Drawing.Size(125, 46);
+            this.LblFilter.Size = new System.Drawing.Size(94, 37);
             this.LblFilter.TabIndex = 13;
             this.LblFilter.Text = "FILTER";
             this.LblFilter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -259,7 +269,7 @@
             this.PnlPartylists.Controls.Add(this.PicBoxPO);
             this.PnlPartylists.Controls.Add(this.PicBoxVice);
             this.PnlPartylists.Controls.Add(this.PicBoxTreas);
-            this.PnlPartylists.Controls.Add(this.pictureBox5);
+            this.PnlPartylists.Controls.Add(this.PicBoxSpaces);
             this.PnlPartylists.Controls.Add(this.PicBoxG5Rep);
             this.PnlPartylists.Controls.Add(this.PicboxPIO);
             this.PnlPartylists.Controls.Add(this.PicBoxSec);
@@ -267,9 +277,10 @@
             this.PnlPartylists.Controls.Add(this.LblPartylist);
             this.PnlPartylists.Controls.Add(this.LblPartylistName);
             this.PnlPartylists.Controls.Add(this.LblPres);
-            this.PnlPartylists.Location = new System.Drawing.Point(611, 250);
+            this.PnlPartylists.Location = new System.Drawing.Point(458, 203);
+            this.PnlPartylists.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlPartylists.Name = "PnlPartylists";
-            this.PnlPartylists.Size = new System.Drawing.Size(851, 818);
+            this.PnlPartylists.Size = new System.Drawing.Size(638, 665);
             this.PnlPartylists.TabIndex = 14;
             // 
             // LblG6RepName
@@ -277,9 +288,10 @@
             this.LblG6RepName.BackColor = System.Drawing.Color.Transparent;
             this.LblG6RepName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblG6RepName.ForeColor = System.Drawing.Color.White;
-            this.LblG6RepName.Location = new System.Drawing.Point(574, 1129);
+            this.LblG6RepName.Location = new System.Drawing.Point(430, 917);
+            this.LblG6RepName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblG6RepName.Name = "LblG6RepName";
-            this.LblG6RepName.Size = new System.Drawing.Size(200, 24);
+            this.LblG6RepName.Size = new System.Drawing.Size(150, 20);
             this.LblG6RepName.TabIndex = 46;
             this.LblG6RepName.Text = "FULL NAME";
             this.LblG6RepName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,9 +301,10 @@
             this.LblG6Rep.BackColor = System.Drawing.Color.Transparent;
             this.LblG6Rep.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblG6Rep.ForeColor = System.Drawing.Color.White;
-            this.LblG6Rep.Location = new System.Drawing.Point(574, 1148);
+            this.LblG6Rep.Location = new System.Drawing.Point(430, 933);
+            this.LblG6Rep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblG6Rep.Name = "LblG6Rep";
-            this.LblG6Rep.Size = new System.Drawing.Size(200, 24);
+            this.LblG6Rep.Size = new System.Drawing.Size(150, 20);
             this.LblG6Rep.TabIndex = 47;
             this.LblG6Rep.Text = "POSITION";
             this.LblG6Rep.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,9 +314,10 @@
             this.LblG4RepName.BackColor = System.Drawing.Color.Transparent;
             this.LblG4RepName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblG4RepName.ForeColor = System.Drawing.Color.White;
-            this.LblG4RepName.Location = new System.Drawing.Point(57, 1129);
+            this.LblG4RepName.Location = new System.Drawing.Point(43, 917);
+            this.LblG4RepName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblG4RepName.Name = "LblG4RepName";
-            this.LblG4RepName.Size = new System.Drawing.Size(200, 24);
+            this.LblG4RepName.Size = new System.Drawing.Size(150, 20);
             this.LblG4RepName.TabIndex = 44;
             this.LblG4RepName.Text = "FULL NAME";
             this.LblG4RepName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -313,9 +327,10 @@
             this.LblG4Rep.BackColor = System.Drawing.Color.Transparent;
             this.LblG4Rep.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblG4Rep.ForeColor = System.Drawing.Color.White;
-            this.LblG4Rep.Location = new System.Drawing.Point(57, 1148);
+            this.LblG4Rep.Location = new System.Drawing.Point(43, 933);
+            this.LblG4Rep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblG4Rep.Name = "LblG4Rep";
-            this.LblG4Rep.Size = new System.Drawing.Size(200, 24);
+            this.LblG4Rep.Size = new System.Drawing.Size(150, 20);
             this.LblG4Rep.TabIndex = 45;
             this.LblG4Rep.Text = "POSITION";
             this.LblG4Rep.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -325,9 +340,10 @@
             this.LblG5RepName.BackColor = System.Drawing.Color.Transparent;
             this.LblG5RepName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblG5RepName.ForeColor = System.Drawing.Color.White;
-            this.LblG5RepName.Location = new System.Drawing.Point(313, 1129);
+            this.LblG5RepName.Location = new System.Drawing.Point(235, 917);
+            this.LblG5RepName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblG5RepName.Name = "LblG5RepName";
-            this.LblG5RepName.Size = new System.Drawing.Size(200, 24);
+            this.LblG5RepName.Size = new System.Drawing.Size(150, 20);
             this.LblG5RepName.TabIndex = 42;
             this.LblG5RepName.Text = "FULL NAME";
             this.LblG5RepName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -337,9 +353,10 @@
             this.LblG5Rep.BackColor = System.Drawing.Color.Transparent;
             this.LblG5Rep.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblG5Rep.ForeColor = System.Drawing.Color.White;
-            this.LblG5Rep.Location = new System.Drawing.Point(313, 1148);
+            this.LblG5Rep.Location = new System.Drawing.Point(235, 933);
+            this.LblG5Rep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblG5Rep.Name = "LblG5Rep";
-            this.LblG5Rep.Size = new System.Drawing.Size(200, 24);
+            this.LblG5Rep.Size = new System.Drawing.Size(150, 20);
             this.LblG5Rep.TabIndex = 43;
             this.LblG5Rep.Text = "POSITION";
             this.LblG5Rep.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -349,9 +366,10 @@
             this.LblPOName.BackColor = System.Drawing.Color.Transparent;
             this.LblPOName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPOName.ForeColor = System.Drawing.Color.White;
-            this.LblPOName.Location = new System.Drawing.Point(574, 847);
+            this.LblPOName.Location = new System.Drawing.Point(430, 688);
+            this.LblPOName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPOName.Name = "LblPOName";
-            this.LblPOName.Size = new System.Drawing.Size(200, 24);
+            this.LblPOName.Size = new System.Drawing.Size(150, 20);
             this.LblPOName.TabIndex = 40;
             this.LblPOName.Text = "FULL NAME";
             this.LblPOName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -361,9 +379,10 @@
             this.LblPO.BackColor = System.Drawing.Color.Transparent;
             this.LblPO.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPO.ForeColor = System.Drawing.Color.White;
-            this.LblPO.Location = new System.Drawing.Point(574, 866);
+            this.LblPO.Location = new System.Drawing.Point(430, 704);
+            this.LblPO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPO.Name = "LblPO";
-            this.LblPO.Size = new System.Drawing.Size(200, 24);
+            this.LblPO.Size = new System.Drawing.Size(150, 20);
             this.LblPO.TabIndex = 41;
             this.LblPO.Text = "POSITION";
             this.LblPO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -373,9 +392,10 @@
             this.LblAuditName.BackColor = System.Drawing.Color.Transparent;
             this.LblAuditName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblAuditName.ForeColor = System.Drawing.Color.White;
-            this.LblAuditName.Location = new System.Drawing.Point(60, 847);
+            this.LblAuditName.Location = new System.Drawing.Point(45, 688);
+            this.LblAuditName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblAuditName.Name = "LblAuditName";
-            this.LblAuditName.Size = new System.Drawing.Size(200, 24);
+            this.LblAuditName.Size = new System.Drawing.Size(150, 20);
             this.LblAuditName.TabIndex = 38;
             this.LblAuditName.Text = "FULL NAME";
             this.LblAuditName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -385,9 +405,10 @@
             this.LblAudit.BackColor = System.Drawing.Color.Transparent;
             this.LblAudit.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblAudit.ForeColor = System.Drawing.Color.White;
-            this.LblAudit.Location = new System.Drawing.Point(60, 866);
+            this.LblAudit.Location = new System.Drawing.Point(45, 704);
+            this.LblAudit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblAudit.Name = "LblAudit";
-            this.LblAudit.Size = new System.Drawing.Size(200, 24);
+            this.LblAudit.Size = new System.Drawing.Size(150, 20);
             this.LblAudit.TabIndex = 39;
             this.LblAudit.Text = "POSITION";
             this.LblAudit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -397,9 +418,10 @@
             this.LblPIOName.BackColor = System.Drawing.Color.Transparent;
             this.LblPIOName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPIOName.ForeColor = System.Drawing.Color.White;
-            this.LblPIOName.Location = new System.Drawing.Point(316, 847);
+            this.LblPIOName.Location = new System.Drawing.Point(237, 688);
+            this.LblPIOName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPIOName.Name = "LblPIOName";
-            this.LblPIOName.Size = new System.Drawing.Size(200, 24);
+            this.LblPIOName.Size = new System.Drawing.Size(150, 20);
             this.LblPIOName.TabIndex = 36;
             this.LblPIOName.Text = "FULL NAME";
             this.LblPIOName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -409,9 +431,10 @@
             this.LblPIO.BackColor = System.Drawing.Color.Transparent;
             this.LblPIO.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPIO.ForeColor = System.Drawing.Color.White;
-            this.LblPIO.Location = new System.Drawing.Point(316, 866);
+            this.LblPIO.Location = new System.Drawing.Point(237, 704);
+            this.LblPIO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPIO.Name = "LblPIO";
-            this.LblPIO.Size = new System.Drawing.Size(200, 24);
+            this.LblPIO.Size = new System.Drawing.Size(150, 20);
             this.LblPIO.TabIndex = 37;
             this.LblPIO.Text = "POSITION";
             this.LblPIO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -421,9 +444,10 @@
             this.LblTreasName.BackColor = System.Drawing.Color.Transparent;
             this.LblTreasName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTreasName.ForeColor = System.Drawing.Color.White;
-            this.LblTreasName.Location = new System.Drawing.Point(571, 572);
+            this.LblTreasName.Location = new System.Drawing.Point(428, 465);
+            this.LblTreasName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblTreasName.Name = "LblTreasName";
-            this.LblTreasName.Size = new System.Drawing.Size(200, 24);
+            this.LblTreasName.Size = new System.Drawing.Size(150, 20);
             this.LblTreasName.TabIndex = 34;
             this.LblTreasName.Text = "FULL NAME";
             this.LblTreasName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -433,9 +457,10 @@
             this.LblTreas.BackColor = System.Drawing.Color.Transparent;
             this.LblTreas.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTreas.ForeColor = System.Drawing.Color.White;
-            this.LblTreas.Location = new System.Drawing.Point(571, 591);
+            this.LblTreas.Location = new System.Drawing.Point(428, 480);
+            this.LblTreas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblTreas.Name = "LblTreas";
-            this.LblTreas.Size = new System.Drawing.Size(200, 24);
+            this.LblTreas.Size = new System.Drawing.Size(150, 20);
             this.LblTreas.TabIndex = 35;
             this.LblTreas.Text = "POSITION";
             this.LblTreas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -445,9 +470,10 @@
             this.LblViceName.BackColor = System.Drawing.Color.Transparent;
             this.LblViceName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblViceName.ForeColor = System.Drawing.Color.White;
-            this.LblViceName.Location = new System.Drawing.Point(57, 572);
+            this.LblViceName.Location = new System.Drawing.Point(43, 465);
+            this.LblViceName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblViceName.Name = "LblViceName";
-            this.LblViceName.Size = new System.Drawing.Size(200, 24);
+            this.LblViceName.Size = new System.Drawing.Size(150, 20);
             this.LblViceName.TabIndex = 32;
             this.LblViceName.Text = "FULL NAME";
             this.LblViceName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -457,9 +483,10 @@
             this.LblVice.BackColor = System.Drawing.Color.Transparent;
             this.LblVice.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblVice.ForeColor = System.Drawing.Color.White;
-            this.LblVice.Location = new System.Drawing.Point(57, 591);
+            this.LblVice.Location = new System.Drawing.Point(43, 480);
+            this.LblVice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblVice.Name = "LblVice";
-            this.LblVice.Size = new System.Drawing.Size(200, 24);
+            this.LblVice.Size = new System.Drawing.Size(150, 20);
             this.LblVice.TabIndex = 33;
             this.LblVice.Text = "POSITION";
             this.LblVice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -469,9 +496,10 @@
             this.LblSecName.BackColor = System.Drawing.Color.Transparent;
             this.LblSecName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSecName.ForeColor = System.Drawing.Color.White;
-            this.LblSecName.Location = new System.Drawing.Point(313, 572);
+            this.LblSecName.Location = new System.Drawing.Point(235, 465);
+            this.LblSecName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblSecName.Name = "LblSecName";
-            this.LblSecName.Size = new System.Drawing.Size(200, 24);
+            this.LblSecName.Size = new System.Drawing.Size(150, 20);
             this.LblSecName.TabIndex = 30;
             this.LblSecName.Text = "FULL NAME";
             this.LblSecName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -481,9 +509,10 @@
             this.LblSec.BackColor = System.Drawing.Color.Transparent;
             this.LblSec.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSec.ForeColor = System.Drawing.Color.White;
-            this.LblSec.Location = new System.Drawing.Point(313, 591);
+            this.LblSec.Location = new System.Drawing.Point(235, 480);
+            this.LblSec.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblSec.Name = "LblSec";
-            this.LblSec.Size = new System.Drawing.Size(200, 24);
+            this.LblSec.Size = new System.Drawing.Size(150, 20);
             this.LblSec.TabIndex = 31;
             this.LblSec.Text = "POSITION";
             this.LblSec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -493,9 +522,10 @@
             this.LblPresName.BackColor = System.Drawing.Color.Transparent;
             this.LblPresName.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPresName.ForeColor = System.Drawing.Color.White;
-            this.LblPresName.Location = new System.Drawing.Point(316, 298);
+            this.LblPresName.Location = new System.Drawing.Point(237, 242);
+            this.LblPresName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPresName.Name = "LblPresName";
-            this.LblPresName.Size = new System.Drawing.Size(200, 24);
+            this.LblPresName.Size = new System.Drawing.Size(150, 20);
             this.LblPresName.TabIndex = 28;
             this.LblPresName.Text = "FULL NAME";
             this.LblPresName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -504,9 +534,10 @@
             // 
             this.PicBoxG4Rep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxG4Rep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicBoxG4Rep.Location = new System.Drawing.Point(57, 926);
+            this.PicBoxG4Rep.Location = new System.Drawing.Point(43, 752);
+            this.PicBoxG4Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxG4Rep.Name = "PicBoxG4Rep";
-            this.PicBoxG4Rep.Size = new System.Drawing.Size(200, 200);
+            this.PicBoxG4Rep.Size = new System.Drawing.Size(151, 163);
             this.PicBoxG4Rep.TabIndex = 27;
             this.PicBoxG4Rep.TabStop = false;
             // 
@@ -514,9 +545,10 @@
             // 
             this.PicBoxG6Rep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxG6Rep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicBoxG6Rep.Location = new System.Drawing.Point(574, 926);
+            this.PicBoxG6Rep.Location = new System.Drawing.Point(430, 752);
+            this.PicBoxG6Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxG6Rep.Name = "PicBoxG6Rep";
-            this.PicBoxG6Rep.Size = new System.Drawing.Size(200, 200);
+            this.PicBoxG6Rep.Size = new System.Drawing.Size(151, 163);
             this.PicBoxG6Rep.TabIndex = 26;
             this.PicBoxG6Rep.TabStop = false;
             // 
@@ -524,9 +556,10 @@
             // 
             this.PicBoxAudit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxAudit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicBoxAudit.Location = new System.Drawing.Point(57, 644);
+            this.PicBoxAudit.Location = new System.Drawing.Point(43, 523);
+            this.PicBoxAudit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxAudit.Name = "PicBoxAudit";
-            this.PicBoxAudit.Size = new System.Drawing.Size(200, 200);
+            this.PicBoxAudit.Size = new System.Drawing.Size(151, 163);
             this.PicBoxAudit.TabIndex = 25;
             this.PicBoxAudit.TabStop = false;
             // 
@@ -534,9 +567,10 @@
             // 
             this.PicBoxPO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxPO.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicBoxPO.Location = new System.Drawing.Point(574, 644);
+            this.PicBoxPO.Location = new System.Drawing.Point(430, 523);
+            this.PicBoxPO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxPO.Name = "PicBoxPO";
-            this.PicBoxPO.Size = new System.Drawing.Size(200, 200);
+            this.PicBoxPO.Size = new System.Drawing.Size(151, 163);
             this.PicBoxPO.TabIndex = 24;
             this.PicBoxPO.TabStop = false;
             // 
@@ -544,9 +578,10 @@
             // 
             this.PicBoxVice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxVice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicBoxVice.Location = new System.Drawing.Point(57, 369);
+            this.PicBoxVice.Location = new System.Drawing.Point(43, 300);
+            this.PicBoxVice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxVice.Name = "PicBoxVice";
-            this.PicBoxVice.Size = new System.Drawing.Size(200, 200);
+            this.PicBoxVice.Size = new System.Drawing.Size(151, 163);
             this.PicBoxVice.TabIndex = 23;
             this.PicBoxVice.TabStop = false;
             // 
@@ -554,28 +589,31 @@
             // 
             this.PicBoxTreas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxTreas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicBoxTreas.Location = new System.Drawing.Point(574, 369);
+            this.PicBoxTreas.Location = new System.Drawing.Point(430, 300);
+            this.PicBoxTreas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxTreas.Name = "PicBoxTreas";
-            this.PicBoxTreas.Size = new System.Drawing.Size(200, 200);
+            this.PicBoxTreas.Size = new System.Drawing.Size(151, 163);
             this.PicBoxTreas.TabIndex = 22;
             this.PicBoxTreas.TabStop = false;
             // 
-            // pictureBox5
+            // PicBoxSpaces
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(23, 1171);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(784, 10);
-            this.pictureBox5.TabIndex = 21;
-            this.pictureBox5.TabStop = false;
+            this.PicBoxSpaces.BackColor = System.Drawing.Color.Transparent;
+            this.PicBoxSpaces.Location = new System.Drawing.Point(17, 951);
+            this.PicBoxSpaces.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxSpaces.Name = "PicBoxSpaces";
+            this.PicBoxSpaces.Size = new System.Drawing.Size(588, 8);
+            this.PicBoxSpaces.TabIndex = 21;
+            this.PicBoxSpaces.TabStop = false;
             // 
             // PicBoxG5Rep
             // 
             this.PicBoxG5Rep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxG5Rep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicBoxG5Rep.Location = new System.Drawing.Point(316, 926);
+            this.PicBoxG5Rep.Location = new System.Drawing.Point(237, 752);
+            this.PicBoxG5Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxG5Rep.Name = "PicBoxG5Rep";
-            this.PicBoxG5Rep.Size = new System.Drawing.Size(200, 200);
+            this.PicBoxG5Rep.Size = new System.Drawing.Size(151, 163);
             this.PicBoxG5Rep.TabIndex = 20;
             this.PicBoxG5Rep.TabStop = false;
             // 
@@ -583,9 +621,10 @@
             // 
             this.PicboxPIO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicboxPIO.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicboxPIO.Location = new System.Drawing.Point(316, 644);
+            this.PicboxPIO.Location = new System.Drawing.Point(237, 523);
+            this.PicboxPIO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicboxPIO.Name = "PicboxPIO";
-            this.PicboxPIO.Size = new System.Drawing.Size(200, 200);
+            this.PicboxPIO.Size = new System.Drawing.Size(151, 163);
             this.PicboxPIO.TabIndex = 19;
             this.PicboxPIO.TabStop = false;
             // 
@@ -593,9 +632,10 @@
             // 
             this.PicBoxSec.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxSec.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicBoxSec.Location = new System.Drawing.Point(316, 369);
+            this.PicBoxSec.Location = new System.Drawing.Point(237, 300);
+            this.PicBoxSec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxSec.Name = "PicBoxSec";
-            this.PicBoxSec.Size = new System.Drawing.Size(200, 200);
+            this.PicBoxSec.Size = new System.Drawing.Size(151, 163);
             this.PicBoxSec.TabIndex = 18;
             this.PicBoxSec.TabStop = false;
             // 
@@ -603,9 +643,10 @@
             // 
             this.PicBoxPres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxPres.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicBoxPres.Location = new System.Drawing.Point(316, 95);
+            this.PicBoxPres.Location = new System.Drawing.Point(237, 77);
+            this.PicBoxPres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxPres.Name = "PicBoxPres";
-            this.PicBoxPres.Size = new System.Drawing.Size(200, 200);
+            this.PicBoxPres.Size = new System.Drawing.Size(151, 163);
             this.PicBoxPres.TabIndex = 17;
             this.PicBoxPres.TabStop = false;
             // 
@@ -614,9 +655,10 @@
             this.LblPartylist.BackColor = System.Drawing.Color.Transparent;
             this.LblPartylist.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPartylist.ForeColor = System.Drawing.Color.White;
-            this.LblPartylist.Location = new System.Drawing.Point(252, 48);
+            this.LblPartylist.Location = new System.Drawing.Point(189, 39);
+            this.LblPartylist.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPartylist.Name = "LblPartylist";
-            this.LblPartylist.Size = new System.Drawing.Size(327, 35);
+            this.LblPartylist.Size = new System.Drawing.Size(245, 28);
             this.LblPartylist.TabIndex = 16;
             this.LblPartylist.Text = "PARTYLIST";
             this.LblPartylist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -626,9 +668,10 @@
             this.LblPartylistName.BackColor = System.Drawing.Color.Transparent;
             this.LblPartylistName.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPartylistName.ForeColor = System.Drawing.Color.White;
-            this.LblPartylistName.Location = new System.Drawing.Point(250, 13);
+            this.LblPartylistName.Location = new System.Drawing.Point(188, 11);
+            this.LblPartylistName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPartylistName.Name = "LblPartylistName";
-            this.LblPartylistName.Size = new System.Drawing.Size(329, 46);
+            this.LblPartylistName.Size = new System.Drawing.Size(247, 37);
             this.LblPartylistName.TabIndex = 15;
             this.LblPartylistName.Text = "PARTYLIST  NAME";
             this.LblPartylistName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -638,20 +681,21 @@
             this.LblPres.BackColor = System.Drawing.Color.Transparent;
             this.LblPres.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPres.ForeColor = System.Drawing.Color.White;
-            this.LblPres.Location = new System.Drawing.Point(316, 317);
+            this.LblPres.Location = new System.Drawing.Point(237, 258);
+            this.LblPres.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPres.Name = "LblPres";
-            this.LblPres.Size = new System.Drawing.Size(200, 24);
+            this.LblPres.Size = new System.Drawing.Size(150, 20);
             this.LblPres.TabIndex = 29;
             this.LblPres.Text = "POSITION";
             this.LblPres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ViewPartylist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.darkmode;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1942, 1080);
+            this.ClientSize = new System.Drawing.Size(1455, 878);
             this.Controls.Add(this.PnlPartylists);
             this.Controls.Add(this.CmbFilter);
             this.Controls.Add(this.LblViewPartylist);
@@ -659,6 +703,7 @@
             this.Controls.Add(this.LblFilter);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ViewPartylist";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Partylist";
@@ -672,7 +717,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxPO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxVice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxTreas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxSpaces)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicboxPIO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec)).EndInit();
@@ -703,7 +748,7 @@
         private System.Windows.Forms.PictureBox PicBoxPO;
         private System.Windows.Forms.PictureBox PicBoxVice;
         private System.Windows.Forms.PictureBox PicBoxTreas;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox PicBoxSpaces;
         private System.Windows.Forms.PictureBox PicBoxG5Rep;
         private System.Windows.Forms.PictureBox PicboxPIO;
         private System.Windows.Forms.PictureBox PicBoxSec;

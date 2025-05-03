@@ -59,10 +59,10 @@
             this.PnlLogin.Controls.Add(this.LblStudentID);
             this.PnlLogin.Controls.Add(this.LblPassword);
             this.PnlLogin.Controls.Add(this.LblLogin);
-            this.PnlLogin.Location = new System.Drawing.Point(301, 0);
-            this.PnlLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PnlLogin.Location = new System.Drawing.Point(226, 0);
+            this.PnlLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlLogin.Name = "PnlLogin";
-            this.PnlLogin.Size = new System.Drawing.Size(299, 400);
+            this.PnlLogin.Size = new System.Drawing.Size(224, 325);
             this.PnlLogin.TabIndex = 0;
             // 
             // ChkShowPass
@@ -72,10 +72,10 @@
             this.ChkShowPass.FlatAppearance.BorderSize = 0;
             this.ChkShowPass.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkShowPass.ForeColor = System.Drawing.Color.White;
-            this.ChkShowPass.Location = new System.Drawing.Point(93, 266);
-            this.ChkShowPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ChkShowPass.Location = new System.Drawing.Point(70, 216);
+            this.ChkShowPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChkShowPass.Name = "ChkShowPass";
-            this.ChkShowPass.Size = new System.Drawing.Size(116, 20);
+            this.ChkShowPass.Size = new System.Drawing.Size(101, 18);
             this.ChkShowPass.TabIndex = 8;
             this.ChkShowPass.Text = "show password";
             this.ChkShowPass.UseVisualStyleBackColor = false;
@@ -86,10 +86,10 @@
             this.PicBoxPass.BackColor = System.Drawing.Color.White;
             this.PicBoxPass.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.eye;
             this.PicBoxPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PicBoxPass.Location = new System.Drawing.Point(241, 234);
-            this.PicBoxPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PicBoxPass.Location = new System.Drawing.Point(181, 190);
+            this.PicBoxPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PicBoxPass.Name = "PicBoxPass";
-            this.PicBoxPass.Size = new System.Drawing.Size(19, 18);
+            this.PicBoxPass.Size = new System.Drawing.Size(14, 15);
             this.PicBoxPass.TabIndex = 7;
             this.PicBoxPass.TabStop = false;
             // 
@@ -101,10 +101,10 @@
             this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogin.ForeColor = System.Drawing.Color.White;
-            this.BtnLogin.Location = new System.Drawing.Point(153, 295);
-            this.BtnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnLogin.Location = new System.Drawing.Point(115, 240);
+            this.BtnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(111, 48);
+            this.BtnLogin.Size = new System.Drawing.Size(83, 39);
             this.BtnLogin.TabIndex = 6;
             this.BtnLogin.Text = "LOGIN";
             this.BtnLogin.UseVisualStyleBackColor = false;
@@ -118,10 +118,10 @@
             this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExit.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExit.ForeColor = System.Drawing.Color.White;
-            this.BtnExit.Location = new System.Drawing.Point(37, 295);
-            this.BtnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnExit.Location = new System.Drawing.Point(28, 240);
+            this.BtnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(111, 48);
+            this.BtnExit.Size = new System.Drawing.Size(83, 39);
             this.BtnExit.TabIndex = 5;
             this.BtnExit.Text = "EXIT";
             this.BtnExit.UseVisualStyleBackColor = false;
@@ -132,11 +132,11 @@
             this.TxtPassword.BackColor = System.Drawing.Color.White;
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPassword.Location = new System.Drawing.Point(37, 231);
-            this.TxtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtPassword.Location = new System.Drawing.Point(28, 188);
+            this.TxtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
-            this.TxtPassword.Size = new System.Drawing.Size(227, 23);
+            this.TxtPassword.Size = new System.Drawing.Size(170, 19);
             this.TxtPassword.TabIndex = 2;
             // 
             // TxtStudentID
@@ -144,20 +144,22 @@
             this.TxtStudentID.BackColor = System.Drawing.Color.White;
             this.TxtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtStudentID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtStudentID.Location = new System.Drawing.Point(37, 170);
-            this.TxtStudentID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtStudentID.Location = new System.Drawing.Point(28, 138);
+            this.TxtStudentID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtStudentID.Name = "TxtStudentID";
-            this.TxtStudentID.Size = new System.Drawing.Size(227, 23);
+            this.TxtStudentID.Size = new System.Drawing.Size(170, 19);
             this.TxtStudentID.TabIndex = 1;
+            
             // 
             // LblStudentID
             // 
             this.LblStudentID.BackColor = System.Drawing.Color.Transparent;
             this.LblStudentID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblStudentID.ForeColor = System.Drawing.Color.Transparent;
-            this.LblStudentID.Location = new System.Drawing.Point(35, 143);
+            this.LblStudentID.Location = new System.Drawing.Point(26, 116);
+            this.LblStudentID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblStudentID.Name = "LblStudentID";
-            this.LblStudentID.Size = new System.Drawing.Size(197, 30);
+            this.LblStudentID.Size = new System.Drawing.Size(148, 24);
             this.LblStudentID.TabIndex = 3;
             this.LblStudentID.Text = "USER ID";
             this.LblStudentID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,9 +169,10 @@
             this.LblPassword.BackColor = System.Drawing.Color.Transparent;
             this.LblPassword.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPassword.ForeColor = System.Drawing.Color.Transparent;
-            this.LblPassword.Location = new System.Drawing.Point(35, 206);
+            this.LblPassword.Location = new System.Drawing.Point(26, 167);
+            this.LblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPassword.Name = "LblPassword";
-            this.LblPassword.Size = new System.Drawing.Size(197, 30);
+            this.LblPassword.Size = new System.Drawing.Size(148, 24);
             this.LblPassword.TabIndex = 4;
             this.LblPassword.Text = "PASSWORD";
             this.LblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -179,9 +182,10 @@
             this.LblLogin.BackColor = System.Drawing.Color.Transparent;
             this.LblLogin.Font = new System.Drawing.Font("Impact", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblLogin.ForeColor = System.Drawing.Color.Transparent;
-            this.LblLogin.Location = new System.Drawing.Point(28, 17);
+            this.LblLogin.Location = new System.Drawing.Point(21, 14);
+            this.LblLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLogin.Name = "LblLogin";
-            this.LblLogin.Size = new System.Drawing.Size(247, 112);
+            this.LblLogin.Size = new System.Drawing.Size(185, 91);
             this.LblLogin.TabIndex = 0;
             this.LblLogin.Text = "LOGIN";
             this.LblLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -191,9 +195,10 @@
             this.LblHalal.BackColor = System.Drawing.Color.Transparent;
             this.LblHalal.Font = new System.Drawing.Font("Arial Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblHalal.ForeColor = System.Drawing.Color.Transparent;
-            this.LblHalal.Location = new System.Drawing.Point(27, 90);
+            this.LblHalal.Location = new System.Drawing.Point(20, 73);
+            this.LblHalal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblHalal.Name = "LblHalal";
-            this.LblHalal.Size = new System.Drawing.Size(265, 47);
+            this.LblHalal.Size = new System.Drawing.Size(199, 38);
             this.LblHalal.TabIndex = 7;
             this.LblHalal.Text = "HALAL";
             this.LblHalal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -203,9 +208,10 @@
             this.Lbl2025.BackColor = System.Drawing.Color.Transparent;
             this.Lbl2025.Font = new System.Drawing.Font("Arial Black", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl2025.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.Lbl2025.Location = new System.Drawing.Point(0, 103);
+            this.Lbl2025.Location = new System.Drawing.Point(0, 84);
+            this.Lbl2025.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl2025.Name = "Lbl2025";
-            this.Lbl2025.Size = new System.Drawing.Size(315, 121);
+            this.Lbl2025.Size = new System.Drawing.Size(236, 98);
             this.Lbl2025.TabIndex = 8;
             this.Lbl2025.Text = "2025";
             this.Lbl2025.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -215,20 +221,21 @@
             this.LblTagline.BackColor = System.Drawing.Color.Transparent;
             this.LblTagline.Font = new System.Drawing.Font("Arial", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTagline.ForeColor = System.Drawing.Color.White;
-            this.LblTagline.Location = new System.Drawing.Point(5, 226);
+            this.LblTagline.Location = new System.Drawing.Point(4, 184);
+            this.LblTagline.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblTagline.Name = "LblTagline";
-            this.LblTagline.Size = new System.Drawing.Size(295, 23);
+            this.LblTagline.Size = new System.Drawing.Size(221, 19);
             this.LblTagline.TabIndex = 7;
             this.LblTagline.Text = "One Click, One Vote, One Future.";
             this.LblTagline.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LOGIN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.darkmode;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.ClientSize = new System.Drawing.Size(450, 325);
             this.ControlBox = false;
             this.Controls.Add(this.LblHalal);
             this.Controls.Add(this.PnlLogin);
@@ -236,7 +243,7 @@
             this.Controls.Add(this.LblTagline);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LOGIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";

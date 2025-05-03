@@ -45,12 +45,12 @@
             this.BtnCandidates = new System.Windows.Forms.Button();
             this.BtnOverview = new System.Windows.Forms.Button();
             this.LblTitle2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PicBoxLogo2 = new System.Windows.Forms.PictureBox();
             this.LblTitle1 = new System.Windows.Forms.Label();
             this.LblStudentVoters = new System.Windows.Forms.Label();
             this.TxtSearch = new System.Windows.Forms.TextBox();
             this.LblSearch = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFilter = new System.Windows.Forms.Label();
             this.CmbAlphabet = new System.Windows.Forms.ComboBox();
             this.CmbSection = new System.Windows.Forms.ComboBox();
             this.CmbStatus = new System.Windows.Forms.ComboBox();
@@ -69,11 +69,11 @@
             this.TxtPages = new System.Windows.Forms.TextBox();
             this.BtnEdit = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PnlStudentVoters = new System.Windows.Forms.Panel();
             this.PnlHeading.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvStudentInfo)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.PnlStudentVoters.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlHeading
@@ -86,13 +86,13 @@
             this.PnlHeading.Controls.Add(this.BtnCandidates);
             this.PnlHeading.Controls.Add(this.BtnOverview);
             this.PnlHeading.Controls.Add(this.LblTitle2);
-            this.PnlHeading.Controls.Add(this.pictureBox1);
+            this.PnlHeading.Controls.Add(this.PicBoxLogo2);
             this.PnlHeading.Controls.Add(this.LblTitle1);
             this.PnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeading.Location = new System.Drawing.Point(0, 0);
-            this.PnlHeading.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlHeading.Name = "PnlHeading";
-            this.PnlHeading.Size = new System.Drawing.Size(1942, 82);
+            this.PnlHeading.Size = new System.Drawing.Size(1455, 67);
             this.PnlHeading.TabIndex = 3;
             // 
             // BtnStudents
@@ -108,10 +108,10 @@
             this.BtnStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnStudents.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnStudents.ForeColor = System.Drawing.Color.White;
-            this.BtnStudents.Location = new System.Drawing.Point(1539, 22);
-            this.BtnStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnStudents.Location = new System.Drawing.Point(1154, 18);
+            this.BtnStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnStudents.Name = "BtnStudents";
-            this.BtnStudents.Size = new System.Drawing.Size(117, 39);
+            this.BtnStudents.Size = new System.Drawing.Size(88, 32);
             this.BtnStudents.TabIndex = 9;
             this.BtnStudents.Text = "STUDENTS";
             this.BtnStudents.UseVisualStyleBackColor = false;
@@ -127,10 +127,10 @@
             this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLogout.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogout.ForeColor = System.Drawing.Color.White;
-            this.BtnLogout.Location = new System.Drawing.Point(1949, 22);
-            this.BtnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnLogout.Location = new System.Drawing.Point(1462, 18);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnLogout.Name = "BtnLogout";
-            this.BtnLogout.Size = new System.Drawing.Size(93, 39);
+            this.BtnLogout.Size = new System.Drawing.Size(70, 32);
             this.BtnLogout.TabIndex = 7;
             this.BtnLogout.Text = "LOGOUT";
             this.BtnLogout.UseVisualStyleBackColor = false;
@@ -148,10 +148,10 @@
             this.BtnCandidates.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCandidates.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCandidates.ForeColor = System.Drawing.Color.White;
-            this.BtnCandidates.Location = new System.Drawing.Point(1408, 22);
-            this.BtnCandidates.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnCandidates.Location = new System.Drawing.Point(1056, 18);
+            this.BtnCandidates.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnCandidates.Name = "BtnCandidates";
-            this.BtnCandidates.Size = new System.Drawing.Size(117, 39);
+            this.BtnCandidates.Size = new System.Drawing.Size(88, 32);
             this.BtnCandidates.TabIndex = 5;
             this.BtnCandidates.Text = "CANDIDATES";
             this.BtnCandidates.UseVisualStyleBackColor = false;
@@ -169,10 +169,10 @@
             this.BtnOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOverview.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnOverview.ForeColor = System.Drawing.Color.White;
-            this.BtnOverview.Location = new System.Drawing.Point(1273, 22);
-            this.BtnOverview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnOverview.Location = new System.Drawing.Point(955, 18);
+            this.BtnOverview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnOverview.Name = "BtnOverview";
-            this.BtnOverview.Size = new System.Drawing.Size(117, 39);
+            this.BtnOverview.Size = new System.Drawing.Size(88, 32);
             this.BtnOverview.TabIndex = 1;
             this.BtnOverview.Text = "OVERVIEW";
             this.BtnOverview.UseVisualStyleBackColor = false;
@@ -183,33 +183,35 @@
             this.LblTitle2.BackColor = System.Drawing.Color.Transparent;
             this.LblTitle2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitle2.ForeColor = System.Drawing.Color.White;
-            this.LblTitle2.Location = new System.Drawing.Point(92, 38);
+            this.LblTitle2.Location = new System.Drawing.Point(69, 31);
+            this.LblTitle2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblTitle2.Name = "LblTitle2";
-            this.LblTitle2.Size = new System.Drawing.Size(413, 25);
+            this.LblTitle2.Size = new System.Drawing.Size(310, 20);
             this.LblTitle2.TabIndex = 2;
             this.LblTitle2.Text = "IBAYO ELEMENTARY SCHOOL";
             this.LblTitle2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
+            // PicBoxLogo2
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.halal20225;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 75);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.PicBoxLogo2.BackColor = System.Drawing.Color.Transparent;
+            this.PicBoxLogo2.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.halal20225;
+            this.PicBoxLogo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PicBoxLogo2.Location = new System.Drawing.Point(10, 1);
+            this.PicBoxLogo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxLogo2.Name = "PicBoxLogo2";
+            this.PicBoxLogo2.Size = new System.Drawing.Size(56, 61);
+            this.PicBoxLogo2.TabIndex = 1;
+            this.PicBoxLogo2.TabStop = false;
             // 
             // LblTitle1
             // 
             this.LblTitle1.BackColor = System.Drawing.Color.Transparent;
             this.LblTitle1.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitle1.ForeColor = System.Drawing.Color.White;
-            this.LblTitle1.Location = new System.Drawing.Point(91, 12);
+            this.LblTitle1.Location = new System.Drawing.Point(68, 10);
+            this.LblTitle1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblTitle1.Name = "LblTitle1";
-            this.LblTitle1.Size = new System.Drawing.Size(501, 34);
+            this.LblTitle1.Size = new System.Drawing.Size(376, 28);
             this.LblTitle1.TabIndex = 0;
             this.LblTitle1.Text = "HALAL 2025 E-VOTING SYSTEM\r\n";
             this.LblTitle1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -219,9 +221,10 @@
             this.LblStudentVoters.BackColor = System.Drawing.Color.Transparent;
             this.LblStudentVoters.Font = new System.Drawing.Font("Arial Black", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblStudentVoters.ForeColor = System.Drawing.Color.White;
-            this.LblStudentVoters.Location = new System.Drawing.Point(597, 94);
+            this.LblStudentVoters.Location = new System.Drawing.Point(448, 76);
+            this.LblStudentVoters.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblStudentVoters.Name = "LblStudentVoters";
-            this.LblStudentVoters.Size = new System.Drawing.Size(845, 89);
+            this.LblStudentVoters.Size = new System.Drawing.Size(634, 72);
             this.LblStudentVoters.TabIndex = 10;
             this.LblStudentVoters.Text = "STUDENT VOTERS";
             this.LblStudentVoters.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -229,10 +232,10 @@
             // TxtSearch
             // 
             this.TxtSearch.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSearch.Location = new System.Drawing.Point(1364, 193);
-            this.TxtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtSearch.Location = new System.Drawing.Point(1023, 157);
+            this.TxtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtSearch.Name = "TxtSearch";
-            this.TxtSearch.Size = new System.Drawing.Size(161, 27);
+            this.TxtSearch.Size = new System.Drawing.Size(122, 23);
             this.TxtSearch.TabIndex = 13;
             // 
             // LblSearch
@@ -240,53 +243,55 @@
             this.LblSearch.BackColor = System.Drawing.Color.Transparent;
             this.LblSearch.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSearch.ForeColor = System.Drawing.Color.White;
-            this.LblSearch.Location = new System.Drawing.Point(1269, 193);
+            this.LblSearch.Location = new System.Drawing.Point(952, 157);
+            this.LblSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblSearch.Name = "LblSearch";
-            this.LblSearch.Size = new System.Drawing.Size(91, 27);
+            this.LblSearch.Size = new System.Drawing.Size(68, 22);
             this.LblSearch.TabIndex = 14;
             this.LblSearch.Text = "SEARCH";
             this.LblSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lblFilter
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(756, 193);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 27);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "FILTER";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblFilter.BackColor = System.Drawing.Color.Transparent;
+            this.lblFilter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilter.ForeColor = System.Drawing.Color.White;
+            this.lblFilter.Location = new System.Drawing.Point(567, 157);
+            this.lblFilter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFilter.Name = "lblFilter";
+            this.lblFilter.Size = new System.Drawing.Size(68, 22);
+            this.lblFilter.TabIndex = 15;
+            this.lblFilter.Text = "FILTER";
+            this.lblFilter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CmbAlphabet
             // 
             this.CmbAlphabet.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbAlphabet.FormattingEnabled = true;
-            this.CmbAlphabet.Location = new System.Drawing.Point(841, 193);
-            this.CmbAlphabet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CmbAlphabet.Location = new System.Drawing.Point(631, 157);
+            this.CmbAlphabet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmbAlphabet.Name = "CmbAlphabet";
-            this.CmbAlphabet.Size = new System.Drawing.Size(133, 27);
+            this.CmbAlphabet.Size = new System.Drawing.Size(101, 24);
             this.CmbAlphabet.TabIndex = 16;
             // 
             // CmbSection
             // 
             this.CmbSection.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbSection.FormattingEnabled = true;
-            this.CmbSection.Location = new System.Drawing.Point(980, 193);
-            this.CmbSection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CmbSection.Location = new System.Drawing.Point(735, 157);
+            this.CmbSection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmbSection.Name = "CmbSection";
-            this.CmbSection.Size = new System.Drawing.Size(133, 27);
+            this.CmbSection.Size = new System.Drawing.Size(101, 24);
             this.CmbSection.TabIndex = 17;
             // 
             // CmbStatus
             // 
             this.CmbStatus.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbStatus.FormattingEnabled = true;
-            this.CmbStatus.Location = new System.Drawing.Point(1118, 193);
-            this.CmbStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CmbStatus.Location = new System.Drawing.Point(838, 157);
+            this.CmbStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmbStatus.Name = "CmbStatus";
-            this.CmbStatus.Size = new System.Drawing.Size(133, 27);
+            this.CmbStatus.Size = new System.Drawing.Size(101, 24);
             this.CmbStatus.TabIndex = 18;
             // 
             // BtnAdd
@@ -298,10 +303,10 @@
             this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAdd.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAdd.ForeColor = System.Drawing.Color.White;
-            this.BtnAdd.Location = new System.Drawing.Point(537, 192);
-            this.BtnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnAdd.Location = new System.Drawing.Point(403, 156);
+            this.BtnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(83, 27);
+            this.BtnAdd.Size = new System.Drawing.Size(62, 22);
             this.BtnAdd.TabIndex = 15;
             this.BtnAdd.Text = "ADD";
             this.BtnAdd.UseVisualStyleBackColor = false;
@@ -316,10 +321,10 @@
             this.BtnImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnImport.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnImport.ForeColor = System.Drawing.Color.White;
-            this.BtnImport.Location = new System.Drawing.Point(629, 193);
-            this.BtnImport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnImport.Location = new System.Drawing.Point(472, 157);
+            this.BtnImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnImport.Name = "BtnImport";
-            this.BtnImport.Size = new System.Drawing.Size(111, 27);
+            this.BtnImport.Size = new System.Drawing.Size(83, 22);
             this.BtnImport.TabIndex = 19;
             this.BtnImport.Text = "IMPORT";
             this.BtnImport.UseVisualStyleBackColor = false;
@@ -351,8 +356,8 @@
             this.Section,
             this.VoteStatus});
             this.DgvStudentInfo.GridColor = System.Drawing.Color.Black;
-            this.DgvStudentInfo.Location = new System.Drawing.Point(52, 18);
-            this.DgvStudentInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DgvStudentInfo.Location = new System.Drawing.Point(39, 15);
+            this.DgvStudentInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DgvStudentInfo.Name = "DgvStudentInfo";
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
@@ -368,7 +373,7 @@
             this.DgvStudentInfo.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.DgvStudentInfo.RowTemplate.Height = 24;
             this.DgvStudentInfo.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.DgvStudentInfo.Size = new System.Drawing.Size(883, 514);
+            this.DgvStudentInfo.Size = new System.Drawing.Size(662, 418);
             this.DgvStudentInfo.TabIndex = 11;
             // 
             // StudentID
@@ -463,10 +468,10 @@
             this.BtnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPrevious.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPrevious.ForeColor = System.Drawing.Color.White;
-            this.BtnPrevious.Location = new System.Drawing.Point(49, 545);
-            this.BtnPrevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnPrevious.Location = new System.Drawing.Point(37, 443);
+            this.BtnPrevious.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnPrevious.Name = "BtnPrevious";
-            this.BtnPrevious.Size = new System.Drawing.Size(30, 30);
+            this.BtnPrevious.Size = new System.Drawing.Size(22, 24);
             this.BtnPrevious.TabIndex = 12;
             this.BtnPrevious.Text = "<";
             this.BtnPrevious.UseVisualStyleBackColor = false;
@@ -479,10 +484,10 @@
             this.BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnNext.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNext.ForeColor = System.Drawing.Color.White;
-            this.BtnNext.Location = new System.Drawing.Point(136, 545);
-            this.BtnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnNext.Location = new System.Drawing.Point(102, 443);
+            this.BtnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnNext.Name = "BtnNext";
-            this.BtnNext.Size = new System.Drawing.Size(30, 30);
+            this.BtnNext.Size = new System.Drawing.Size(22, 24);
             this.BtnNext.TabIndex = 13;
             this.BtnNext.Text = ">";
             this.BtnNext.UseVisualStyleBackColor = false;
@@ -491,10 +496,10 @@
             // 
             this.TxtPages.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPages.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPages.Location = new System.Drawing.Point(85, 546);
-            this.TxtPages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TxtPages.Location = new System.Drawing.Point(64, 444);
+            this.TxtPages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtPages.Name = "TxtPages";
-            this.TxtPages.Size = new System.Drawing.Size(45, 27);
+            this.TxtPages.Size = new System.Drawing.Size(34, 23);
             this.TxtPages.TabIndex = 14;
             this.TxtPages.Text = "1";
             this.TxtPages.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -507,10 +512,10 @@
             this.BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEdit.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEdit.ForeColor = System.Drawing.Color.White;
-            this.BtnEdit.Location = new System.Drawing.Point(780, 545);
-            this.BtnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnEdit.Location = new System.Drawing.Point(585, 443);
+            this.BtnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnEdit.Name = "BtnEdit";
-            this.BtnEdit.Size = new System.Drawing.Size(73, 27);
+            this.BtnEdit.Size = new System.Drawing.Size(55, 22);
             this.BtnEdit.TabIndex = 19;
             this.BtnEdit.Text = "EDIT";
             this.BtnEdit.UseVisualStyleBackColor = false;
@@ -523,61 +528,61 @@
             this.BtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDelete.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDelete.ForeColor = System.Drawing.Color.White;
-            this.BtnDelete.Location = new System.Drawing.Point(859, 545);
-            this.BtnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnDelete.Location = new System.Drawing.Point(644, 443);
+            this.BtnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(73, 27);
+            this.BtnDelete.Size = new System.Drawing.Size(55, 22);
             this.BtnDelete.TabIndex = 20;
             this.BtnDelete.Text = "DEL";
             this.BtnDelete.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // PnlStudentVoters
             // 
-            this.panel1.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.BtnDelete);
-            this.panel1.Controls.Add(this.BtnEdit);
-            this.panel1.Controls.Add(this.TxtPages);
-            this.panel1.Controls.Add(this.BtnNext);
-            this.panel1.Controls.Add(this.BtnPrevious);
-            this.panel1.Controls.Add(this.DgvStudentInfo);
-            this.panel1.Location = new System.Drawing.Point(537, 230);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(989, 588);
-            this.panel1.TabIndex = 12;
+            this.PnlStudentVoters.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.PnlStudentVoters.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlStudentVoters.Controls.Add(this.BtnDelete);
+            this.PnlStudentVoters.Controls.Add(this.BtnEdit);
+            this.PnlStudentVoters.Controls.Add(this.TxtPages);
+            this.PnlStudentVoters.Controls.Add(this.BtnNext);
+            this.PnlStudentVoters.Controls.Add(this.BtnPrevious);
+            this.PnlStudentVoters.Controls.Add(this.DgvStudentInfo);
+            this.PnlStudentVoters.Location = new System.Drawing.Point(403, 187);
+            this.PnlStudentVoters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlStudentVoters.Name = "PnlStudentVoters";
+            this.PnlStudentVoters.Size = new System.Drawing.Size(742, 478);
+            this.PnlStudentVoters.TabIndex = 12;
             // 
             // StudentInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.darkmode;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1942, 1080);
+            this.ClientSize = new System.Drawing.Size(1455, 878);
             this.ControlBox = false;
             this.Controls.Add(this.BtnImport);
             this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.CmbStatus);
             this.Controls.Add(this.CmbSection);
             this.Controls.Add(this.CmbAlphabet);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFilter);
             this.Controls.Add(this.LblSearch);
             this.Controls.Add(this.TxtSearch);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PnlStudentVoters);
             this.Controls.Add(this.LblStudentVoters);
             this.Controls.Add(this.PnlHeading);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StudentInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Info";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PnlHeading.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvStudentInfo)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.PnlStudentVoters.ResumeLayout(false);
+            this.PnlStudentVoters.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -590,13 +595,13 @@
         private System.Windows.Forms.Button BtnCandidates;
         private System.Windows.Forms.Button BtnOverview;
         private System.Windows.Forms.Label LblTitle2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PicBoxLogo2;
         private System.Windows.Forms.Label LblTitle1;
         private System.Windows.Forms.Label LblStudentVoters;
         private System.Windows.Forms.Button BtnStudents;
         private System.Windows.Forms.TextBox TxtSearch;
         private System.Windows.Forms.Label LblSearch;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFilter;
         private System.Windows.Forms.ComboBox CmbAlphabet;
         private System.Windows.Forms.ComboBox CmbSection;
         private System.Windows.Forms.ComboBox CmbStatus;
@@ -615,6 +620,6 @@
         private System.Windows.Forms.TextBox TxtPages;
         private System.Windows.Forms.Button BtnEdit;
         private System.Windows.Forms.Button BtnDelete;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PnlStudentVoters;
     }
 }
