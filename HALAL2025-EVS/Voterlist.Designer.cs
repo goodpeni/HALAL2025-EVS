@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PnlHeading = new System.Windows.Forms.Panel();
             this.BtnStudents = new System.Windows.Forms.Button();
             this.BtnLogout = new System.Windows.Forms.Button();
@@ -62,6 +62,7 @@
             this.BtnEdit = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
             this.PnlStudentVoters = new System.Windows.Forms.Panel();
+            this.BtnClearFilter = new System.Windows.Forms.Button();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MiddleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,7 +70,7 @@
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Section = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VoteStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnClearFilter = new System.Windows.Forms.Button();
+            this.CmbVoteStatus = new System.Windows.Forms.ComboBox();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvStudentInfo)).BeginInit();
@@ -256,7 +257,7 @@
             this.lblFilter.BackColor = System.Drawing.Color.Transparent;
             this.lblFilter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFilter.ForeColor = System.Drawing.Color.White;
-            this.lblFilter.Location = new System.Drawing.Point(458, 160);
+            this.lblFilter.Location = new System.Drawing.Point(414, 160);
             this.lblFilter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFilter.Name = "lblFilter";
             this.lblFilter.Size = new System.Drawing.Size(68, 22);
@@ -269,34 +270,36 @@
             this.CmbGLevel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbGLevel.FormattingEnabled = true;
             this.CmbGLevel.Items.AddRange(new object[] {
-            "Grade 1",
-            "Grade 2",
-            "Grade 3",
-            "Grade 4",
-            "Grade 5",
-            "Grade 6"});
-            this.CmbGLevel.Location = new System.Drawing.Point(522, 160);
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.CmbGLevel.Location = new System.Drawing.Point(478, 160);
             this.CmbGLevel.Margin = new System.Windows.Forms.Padding(2);
             this.CmbGLevel.Name = "CmbGLevel";
             this.CmbGLevel.Size = new System.Drawing.Size(119, 24);
             this.CmbGLevel.TabIndex = 16;
             this.CmbGLevel.Text = "  (Grade Level)";
+            this.CmbGLevel.SelectedIndexChanged += new System.EventHandler(this.CmbGLevel_SelectedIndexChanged);
             // 
             // CmbSection
             // 
             this.CmbSection.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbSection.FormattingEnabled = true;
             this.CmbSection.Items.AddRange(new object[] {
-            "Section A",
-            "Section B",
-            "Section C",
-            "Section D"});
-            this.CmbSection.Location = new System.Drawing.Point(647, 160);
+            "A",
+            "B",
+            "C",
+            "D"});
+            this.CmbSection.Location = new System.Drawing.Point(603, 160);
             this.CmbSection.Margin = new System.Windows.Forms.Padding(2);
             this.CmbSection.Name = "CmbSection";
             this.CmbSection.Size = new System.Drawing.Size(119, 24);
             this.CmbSection.TabIndex = 17;
             this.CmbSection.Text = "     (Section)";
+            this.CmbSection.SelectedIndexChanged += new System.EventHandler(this.CmbSection_SelectedIndexChanged);
             // 
             // BtnAdd
             // 
@@ -335,21 +338,21 @@
             // 
             // DgvStudentInfo
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.DgvStudentInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            this.DgvStudentInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
             this.DgvStudentInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(187)))), ((int)(((byte)(197)))));
             this.DgvStudentInfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(80)))), ((int)(((byte)(82)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvStudentInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(80)))), ((int)(((byte)(82)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvStudentInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.DgvStudentInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvStudentInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StudentID,
@@ -363,18 +366,18 @@
             this.DgvStudentInfo.Location = new System.Drawing.Point(39, 15);
             this.DgvStudentInfo.Margin = new System.Windows.Forms.Padding(2);
             this.DgvStudentInfo.Name = "DgvStudentInfo";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvStudentInfo.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvStudentInfo.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.DgvStudentInfo.RowHeadersVisible = false;
             this.DgvStudentInfo.RowHeadersWidth = 51;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DgvStudentInfo.RowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DgvStudentInfo.RowsDefaultCellStyle = dataGridViewCellStyle22;
             this.DgvStudentInfo.RowTemplate.Height = 24;
             this.DgvStudentInfo.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.DgvStudentInfo.Size = new System.Drawing.Size(1174, 418);
@@ -472,97 +475,6 @@
             this.PnlStudentVoters.Size = new System.Drawing.Size(1254, 478);
             this.PnlStudentVoters.TabIndex = 12;
             // 
-            // StudentID
-            // 
-            this.StudentID.DataPropertyName = "student_id";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.StudentID.DefaultCellStyle = dataGridViewCellStyle3;
-            this.StudentID.HeaderText = "Student ID";
-            this.StudentID.MinimumWidth = 6;
-            this.StudentID.Name = "StudentID";
-            this.StudentID.Width = 200;
-            // 
-            // FirstName
-            // 
-            this.FirstName.DataPropertyName = "first_name";
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.FirstName.DefaultCellStyle = dataGridViewCellStyle4;
-            this.FirstName.HeaderText = "First Name";
-            this.FirstName.MinimumWidth = 6;
-            this.FirstName.Name = "FirstName";
-            this.FirstName.Width = 225;
-            // 
-            // MiddleName
-            // 
-            this.MiddleName.DataPropertyName = "middle_name";
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.MiddleName.DefaultCellStyle = dataGridViewCellStyle5;
-            this.MiddleName.HeaderText = "Middle Name";
-            this.MiddleName.MinimumWidth = 6;
-            this.MiddleName.Name = "MiddleName";
-            this.MiddleName.Width = 225;
-            // 
-            // LastName
-            // 
-            this.LastName.DataPropertyName = "last_name";
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.LastName.DefaultCellStyle = dataGridViewCellStyle6;
-            this.LastName.HeaderText = "Last Name";
-            this.LastName.MinimumWidth = 6;
-            this.LastName.Name = "LastName";
-            this.LastName.Width = 225;
-            // 
-            // Grade
-            // 
-            this.Grade.DataPropertyName = "year_level";
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.Grade.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Grade.HeaderText = "Grade";
-            this.Grade.MinimumWidth = 6;
-            this.Grade.Name = "Grade";
-            this.Grade.Width = 125;
-            // 
-            // Section
-            // 
-            this.Section.DataPropertyName = "section";
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.Section.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Section.HeaderText = "Section";
-            this.Section.MinimumWidth = 6;
-            this.Section.Name = "Section";
-            this.Section.Width = 150;
-            // 
-            // VoteStatus
-            // 
-            this.VoteStatus.DataPropertyName = "vote_status";
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.VoteStatus.DefaultCellStyle = dataGridViewCellStyle9;
-            this.VoteStatus.HeaderText = "Status";
-            this.VoteStatus.MinimumWidth = 6;
-            this.VoteStatus.Name = "VoteStatus";
-            this.VoteStatus.Width = 150;
-            // 
             // BtnClearFilter
             // 
             this.BtnClearFilter.BackColor = System.Drawing.Color.Transparent;
@@ -572,7 +484,7 @@
             this.BtnClearFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnClearFilter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnClearFilter.ForeColor = System.Drawing.Color.White;
-            this.BtnClearFilter.Location = new System.Drawing.Point(770, 160);
+            this.BtnClearFilter.Location = new System.Drawing.Point(849, 160);
             this.BtnClearFilter.Margin = new System.Windows.Forms.Padding(2);
             this.BtnClearFilter.Name = "BtnClearFilter";
             this.BtnClearFilter.Size = new System.Drawing.Size(120, 24);
@@ -580,6 +492,112 @@
             this.BtnClearFilter.Text = "CLEAR FILTER";
             this.BtnClearFilter.UseVisualStyleBackColor = false;
             this.BtnClearFilter.Click += new System.EventHandler(this.BtnClearFilter_Click);
+            // 
+            // StudentID
+            // 
+            this.StudentID.DataPropertyName = "student_id";
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.StudentID.DefaultCellStyle = dataGridViewCellStyle14;
+            this.StudentID.HeaderText = "Student ID";
+            this.StudentID.MinimumWidth = 6;
+            this.StudentID.Name = "StudentID";
+            this.StudentID.Width = 200;
+            // 
+            // FirstName
+            // 
+            this.FirstName.DataPropertyName = "first_name";
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.FirstName.DefaultCellStyle = dataGridViewCellStyle15;
+            this.FirstName.HeaderText = "First Name";
+            this.FirstName.MinimumWidth = 6;
+            this.FirstName.Name = "FirstName";
+            this.FirstName.Width = 225;
+            // 
+            // MiddleName
+            // 
+            this.MiddleName.DataPropertyName = "middle_name";
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.MiddleName.DefaultCellStyle = dataGridViewCellStyle16;
+            this.MiddleName.HeaderText = "Middle Name";
+            this.MiddleName.MinimumWidth = 6;
+            this.MiddleName.Name = "MiddleName";
+            this.MiddleName.Width = 225;
+            // 
+            // LastName
+            // 
+            this.LastName.DataPropertyName = "last_name";
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.LastName.DefaultCellStyle = dataGridViewCellStyle17;
+            this.LastName.HeaderText = "Last Name";
+            this.LastName.MinimumWidth = 6;
+            this.LastName.Name = "LastName";
+            this.LastName.Width = 225;
+            // 
+            // Grade
+            // 
+            this.Grade.DataPropertyName = "grade_level";
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.Grade.DefaultCellStyle = dataGridViewCellStyle18;
+            this.Grade.HeaderText = "Grade";
+            this.Grade.MinimumWidth = 6;
+            this.Grade.Name = "Grade";
+            this.Grade.Width = 125;
+            // 
+            // Section
+            // 
+            this.Section.DataPropertyName = "section";
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.Section.DefaultCellStyle = dataGridViewCellStyle19;
+            this.Section.HeaderText = "Section";
+            this.Section.MinimumWidth = 6;
+            this.Section.Name = "Section";
+            this.Section.Width = 150;
+            // 
+            // VoteStatus
+            // 
+            this.VoteStatus.DataPropertyName = "vote_status";
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.VoteStatus.DefaultCellStyle = dataGridViewCellStyle20;
+            this.VoteStatus.HeaderText = "Status";
+            this.VoteStatus.MinimumWidth = 6;
+            this.VoteStatus.Name = "VoteStatus";
+            this.VoteStatus.Width = 150;
+            // 
+            // CmbVoteStatus
+            // 
+            this.CmbVoteStatus.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbVoteStatus.FormattingEnabled = true;
+            this.CmbVoteStatus.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.CmbVoteStatus.Location = new System.Drawing.Point(726, 160);
+            this.CmbVoteStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.CmbVoteStatus.Name = "CmbVoteStatus";
+            this.CmbVoteStatus.Size = new System.Drawing.Size(119, 24);
+            this.CmbVoteStatus.TabIndex = 21;
+            this.CmbVoteStatus.Text = "   (Vote Status)";
+            this.CmbVoteStatus.SelectedIndexChanged += new System.EventHandler(this.CmbVoteStatus_SelectedIndexChanged);
             // 
             // StudentInfo
             // 
@@ -589,6 +607,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 788);
             this.ControlBox = false;
+            this.Controls.Add(this.CmbVoteStatus);
             this.Controls.Add(this.BtnClearFilter);
             this.Controls.Add(this.BtnImport);
             this.Controls.Add(this.BtnAdd);
@@ -642,6 +661,7 @@
         private System.Windows.Forms.Button BtnEdit;
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Panel PnlStudentVoters;
+        private System.Windows.Forms.Button BtnClearFilter;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn MiddleName;
@@ -649,6 +669,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Section;
         private System.Windows.Forms.DataGridViewTextBoxColumn VoteStatus;
-        private System.Windows.Forms.Button BtnClearFilter;
+        private System.Windows.Forms.ComboBox CmbVoteStatus;
     }
 }

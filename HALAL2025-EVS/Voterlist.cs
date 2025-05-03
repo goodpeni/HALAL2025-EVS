@@ -29,7 +29,7 @@ namespace HALAL2025_EVS
                 try
                 {
                     conn.Open();
-                    string query = "SELECT student_id, first_name, middle_name, last_name, year_level, section, vote_status FROM student";
+                    string query = "SELECT student_id, first_name, middle_name, last_name, grade_level, section, vote_status FROM student";
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
@@ -47,7 +47,59 @@ namespace HALAL2025_EVS
             }
         }
 
+        private void LoadFilteredData(string gradeLevel, string section, string voteStatus)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
 
+                    string query = "SELECT student_id, first_name, middle_name, last_name, grade_level, section, vote_status FROM student WHERE 1=1";
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.Connection = conn;
+
+                    if (!string.IsNullOrWhiteSpace(gradeLevel) && gradeLevel != "(Grade Level)")
+                    {
+                        query += " AND grade_level = @gradeLevel";
+                        cmd.Parameters.AddWithValue("@gradeLevel", gradeLevel);
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(section) && section != "(Section)")
+                    {
+                        query += " AND section = @section";
+                        cmd.Parameters.AddWithValue("@section", section);
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(voteStatus) && voteStatus != "(Vote Status)")
+                    {
+                        int voteValue = voteStatus == "Yes" ? 1 : 0;
+                        query += " AND vote_status = @voteStatus";
+                        cmd.Parameters.AddWithValue("@voteStatus", voteValue);
+                    }
+
+                    cmd.CommandText = query;
+
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    DgvStudentInfo.AutoGenerateColumns = false;
+                    DgvStudentInfo.DataSource = dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
+        private void ApplyFilters()
+        {
+            string selectedGrade = CmbGLevel.SelectedItem?.ToString();
+            string selectedSection = CmbSection.SelectedItem?.ToString();
+            string selectedVoteStatus = CmbVoteStatus.SelectedItem?.ToString();
+            LoadFilteredData(selectedGrade, selectedSection, selectedVoteStatus);
+        }
 
         private void BtnLogout_Click(object sender, EventArgs e)
         {
@@ -81,6 +133,23 @@ namespace HALAL2025_EVS
         {
             CmbGLevel.Text = "  (Grade Level)";
             CmbSection.Text = "     (Section)";
+            CmbVoteStatus.Text = "   (Vote Status)";
+            LoadData();
+        }
+
+        private void CmbGLevel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ApplyFilters();
+        }
+
+        private void CmbSection_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ApplyFilters();
+        }
+
+        private void CmbVoteStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ApplyFilters();
         }
     }
 }
