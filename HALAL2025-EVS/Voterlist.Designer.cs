@@ -51,9 +51,8 @@
             this.TxtSearch = new System.Windows.Forms.TextBox();
             this.LblSearch = new System.Windows.Forms.Label();
             this.lblFilter = new System.Windows.Forms.Label();
-            this.CmbAlphabet = new System.Windows.Forms.ComboBox();
+            this.CmbGLevel = new System.Windows.Forms.ComboBox();
             this.CmbSection = new System.Windows.Forms.ComboBox();
-            this.CmbStatus = new System.Windows.Forms.ComboBox();
             this.BtnAdd = new System.Windows.Forms.Button();
             this.BtnImport = new System.Windows.Forms.Button();
             this.DgvStudentInfo = new System.Windows.Forms.DataGridView();
@@ -70,6 +69,7 @@
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Section = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VoteStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnClearFilter = new System.Windows.Forms.Button();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvStudentInfo)).BeginInit();
@@ -232,10 +232,10 @@
             // TxtSearch
             // 
             this.TxtSearch.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSearch.Location = new System.Drawing.Point(919, 160);
+            this.TxtSearch.Location = new System.Drawing.Point(1097, 161);
             this.TxtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSearch.Name = "TxtSearch";
-            this.TxtSearch.Size = new System.Drawing.Size(122, 23);
+            this.TxtSearch.Size = new System.Drawing.Size(212, 23);
             this.TxtSearch.TabIndex = 13;
             // 
             // LblSearch
@@ -243,7 +243,7 @@
             this.LblSearch.BackColor = System.Drawing.Color.Transparent;
             this.LblSearch.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSearch.ForeColor = System.Drawing.Color.White;
-            this.LblSearch.Location = new System.Drawing.Point(848, 160);
+            this.LblSearch.Location = new System.Drawing.Point(1025, 161);
             this.LblSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblSearch.Name = "LblSearch";
             this.LblSearch.Size = new System.Drawing.Size(68, 22);
@@ -256,7 +256,7 @@
             this.lblFilter.BackColor = System.Drawing.Color.Transparent;
             this.lblFilter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFilter.ForeColor = System.Drawing.Color.White;
-            this.lblFilter.Location = new System.Drawing.Point(463, 160);
+            this.lblFilter.Location = new System.Drawing.Point(458, 160);
             this.lblFilter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFilter.Name = "lblFilter";
             this.lblFilter.Size = new System.Drawing.Size(68, 22);
@@ -264,35 +264,39 @@
             this.lblFilter.Text = "FILTER";
             this.lblFilter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CmbAlphabet
+            // CmbGLevel
             // 
-            this.CmbAlphabet.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbAlphabet.FormattingEnabled = true;
-            this.CmbAlphabet.Location = new System.Drawing.Point(527, 160);
-            this.CmbAlphabet.Margin = new System.Windows.Forms.Padding(2);
-            this.CmbAlphabet.Name = "CmbAlphabet";
-            this.CmbAlphabet.Size = new System.Drawing.Size(101, 24);
-            this.CmbAlphabet.TabIndex = 16;
+            this.CmbGLevel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbGLevel.FormattingEnabled = true;
+            this.CmbGLevel.Items.AddRange(new object[] {
+            "Grade 1",
+            "Grade 2",
+            "Grade 3",
+            "Grade 4",
+            "Grade 5",
+            "Grade 6"});
+            this.CmbGLevel.Location = new System.Drawing.Point(522, 160);
+            this.CmbGLevel.Margin = new System.Windows.Forms.Padding(2);
+            this.CmbGLevel.Name = "CmbGLevel";
+            this.CmbGLevel.Size = new System.Drawing.Size(119, 24);
+            this.CmbGLevel.TabIndex = 16;
+            this.CmbGLevel.Text = "  (Grade Level)";
             // 
             // CmbSection
             // 
             this.CmbSection.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbSection.FormattingEnabled = true;
-            this.CmbSection.Location = new System.Drawing.Point(631, 160);
+            this.CmbSection.Items.AddRange(new object[] {
+            "Section A",
+            "Section B",
+            "Section C",
+            "Section D"});
+            this.CmbSection.Location = new System.Drawing.Point(647, 160);
             this.CmbSection.Margin = new System.Windows.Forms.Padding(2);
             this.CmbSection.Name = "CmbSection";
-            this.CmbSection.Size = new System.Drawing.Size(101, 24);
+            this.CmbSection.Size = new System.Drawing.Size(119, 24);
             this.CmbSection.TabIndex = 17;
-            // 
-            // CmbStatus
-            // 
-            this.CmbStatus.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmbStatus.FormattingEnabled = true;
-            this.CmbStatus.Location = new System.Drawing.Point(734, 160);
-            this.CmbStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.CmbStatus.Name = "CmbStatus";
-            this.CmbStatus.Size = new System.Drawing.Size(101, 24);
-            this.CmbStatus.TabIndex = 18;
+            this.CmbSection.Text = "     (Section)";
             // 
             // BtnAdd
             // 
@@ -303,12 +307,12 @@
             this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAdd.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAdd.ForeColor = System.Drawing.Color.White;
-            this.BtnAdd.Location = new System.Drawing.Point(299, 159);
+            this.BtnAdd.Location = new System.Drawing.Point(55, 160);
             this.BtnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(62, 22);
+            this.BtnAdd.Size = new System.Drawing.Size(120, 22);
             this.BtnAdd.TabIndex = 15;
-            this.BtnAdd.Text = "ADD";
+            this.BtnAdd.Text = "ADD STUDENT";
             this.BtnAdd.UseVisualStyleBackColor = false;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
@@ -321,12 +325,12 @@
             this.BtnImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnImport.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnImport.ForeColor = System.Drawing.Color.White;
-            this.BtnImport.Location = new System.Drawing.Point(368, 160);
+            this.BtnImport.Location = new System.Drawing.Point(179, 160);
             this.BtnImport.Margin = new System.Windows.Forms.Padding(2);
             this.BtnImport.Name = "BtnImport";
-            this.BtnImport.Size = new System.Drawing.Size(83, 22);
+            this.BtnImport.Size = new System.Drawing.Size(173, 22);
             this.BtnImport.TabIndex = 19;
-            this.BtnImport.Text = "IMPORT";
+            this.BtnImport.Text = "IMPORT STUDENTS";
             this.BtnImport.UseVisualStyleBackColor = false;
             // 
             // DgvStudentInfo
@@ -559,6 +563,24 @@
             this.VoteStatus.Name = "VoteStatus";
             this.VoteStatus.Width = 150;
             // 
+            // BtnClearFilter
+            // 
+            this.BtnClearFilter.BackColor = System.Drawing.Color.Transparent;
+            this.BtnClearFilter.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearFilter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnClearFilter.FlatAppearance.BorderSize = 0;
+            this.BtnClearFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearFilter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearFilter.ForeColor = System.Drawing.Color.White;
+            this.BtnClearFilter.Location = new System.Drawing.Point(770, 160);
+            this.BtnClearFilter.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearFilter.Name = "BtnClearFilter";
+            this.BtnClearFilter.Size = new System.Drawing.Size(120, 24);
+            this.BtnClearFilter.TabIndex = 20;
+            this.BtnClearFilter.Text = "CLEAR FILTER";
+            this.BtnClearFilter.UseVisualStyleBackColor = false;
+            this.BtnClearFilter.Click += new System.EventHandler(this.BtnClearFilter_Click);
+            // 
             // StudentInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -567,11 +589,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 788);
             this.ControlBox = false;
+            this.Controls.Add(this.BtnClearFilter);
             this.Controls.Add(this.BtnImport);
             this.Controls.Add(this.BtnAdd);
-            this.Controls.Add(this.CmbStatus);
             this.Controls.Add(this.CmbSection);
-            this.Controls.Add(this.CmbAlphabet);
+            this.Controls.Add(this.CmbGLevel);
             this.Controls.Add(this.lblFilter);
             this.Controls.Add(this.LblSearch);
             this.Controls.Add(this.TxtSearch);
@@ -609,9 +631,8 @@
         private System.Windows.Forms.TextBox TxtSearch;
         private System.Windows.Forms.Label LblSearch;
         private System.Windows.Forms.Label lblFilter;
-        private System.Windows.Forms.ComboBox CmbAlphabet;
+        private System.Windows.Forms.ComboBox CmbGLevel;
         private System.Windows.Forms.ComboBox CmbSection;
-        private System.Windows.Forms.ComboBox CmbStatus;
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.Button BtnImport;
         private System.Windows.Forms.DataGridView DgvStudentInfo;
@@ -628,5 +649,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Section;
         private System.Windows.Forms.DataGridViewTextBoxColumn VoteStatus;
+        private System.Windows.Forms.Button BtnClearFilter;
     }
 }

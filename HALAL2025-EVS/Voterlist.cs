@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Mysqlx.Notice.Warning.Types;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HALAL2025_EVS
 {
@@ -73,6 +75,12 @@ namespace HALAL2025_EVS
             Overview form6 = new Overview();
             this.Hide();
             form6.Show();
+        }
+
+        private void BtnClearFilter_Click(object sender, EventArgs e)
+        {
+            CmbGLevel.Text = "  (Grade Level)";
+            CmbSection.Text = "     (Section)";
         }
     }
 }
