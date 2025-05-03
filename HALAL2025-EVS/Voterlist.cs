@@ -21,16 +21,21 @@ namespace HALAL2025_EVS
         }
 
         private void LoadData()
-        {            
+        {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
                 {
                     conn.Open();
-                    string query = "SELECT student_id, ";
+                    string query = "SELECT student_id, first_name, middle_name, last_name, year_level, section, vote_status FROM student";
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
+
+                    // ✨ Tell the DataGridView to NOT auto-generate columns
+                    DgvStudentInfo.AutoGenerateColumns = false;
+
+                    // 🧠 Now bind the data
                     DgvStudentInfo.DataSource = dt;
                 }
                 catch (Exception ex)
@@ -39,6 +44,7 @@ namespace HALAL2025_EVS
                 }
             }
         }
+
 
 
         private void BtnLogout_Click(object sender, EventArgs e)
