@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace HALAL2025_EVS
 {
-    public partial class VoteStatus : Form
+    public partial class Platform : Form
     {
-        public VoteStatus()
+        public Platform()
         {
             InitializeComponent();
         }
-
-        private void BtnLogout_Click(object sender, EventArgs e)
-        {
-            LOGIN form1 = new LOGIN();
-            this.Hide();
-            form1.Show();
-        }
-
     }
 }

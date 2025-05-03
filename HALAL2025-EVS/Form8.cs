@@ -10,18 +10,25 @@ using System.Windows.Forms;
 
 namespace HALAL2025_EVS
 {
-    public partial class Preview : Form
+    public partial class AddStudent : Form
     {
-        public Preview()
+        public AddStudent()
         {
             InitializeComponent();
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            VoteNow form2 = new VoteNow();
+            StudentInfo form7 = new StudentInfo();
             this.Hide();
-            form2.Show();
+            form7.Show();
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            StudentInfo form7 = new StudentInfo();
+            this.Hide();
+            form7.Show();
         }
     }
 }

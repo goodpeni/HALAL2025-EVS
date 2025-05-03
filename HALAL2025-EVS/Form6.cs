@@ -30,5 +30,33 @@ namespace HALAL2025_EVS
             this.Hide();
             form7.Show();
         }
+
+        private void BtnCandidates_Click(object sender, EventArgs e)
+        {
+            Candidates form9 = new Candidates();
+            this.Hide();
+            form9.Show();
+        }
+
+        private void LblTotalCandidInfo_Click(object sender, EventArgs e)
+        {
+            Candidates form9 = new Candidates();
+            this.Hide();
+            form9.Show();
+        }
+
+        private void LblTotalStudInfo_Click(object sender, EventArgs e)
+        {
+            StudentInfo form7 = new StudentInfo();
+            this.Hide();
+            form7.Show();
+        }
+
+        private void LblVotedStudInfo_Click(object sender, EventArgs e)
+        {
+            StudentInfo form7 = new StudentInfo();
+            this.Hide();
+            form7.Show();
+        }
     }
 }

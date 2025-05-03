@@ -301,6 +301,7 @@
             this.BtnPartylists.TabIndex = 5;
             this.BtnPartylists.Text = "PARTYLISTS";
             this.BtnPartylists.UseVisualStyleBackColor = false;
+            this.BtnPartylists.Click += new System.EventHandler(this.BtnPartylists_Click);
             // 
             // BtnVoteNow
             // 
@@ -418,7 +419,7 @@
             this.BtnReview.Name = "BtnReview";
             this.BtnReview.Size = new System.Drawing.Size(116, 46);
             this.BtnReview.TabIndex = 9;
-            this.BtnReview.Text = "REVIEW";
+            this.BtnReview.Text = "PREVIEW";
             this.BtnReview.UseVisualStyleBackColor = true;
             this.BtnReview.Click += new System.EventHandler(this.BtnReview_Click);
             // 
@@ -2252,6 +2253,7 @@
             this.BtnPFPres1.TabIndex = 5;
             this.BtnPFPres1.Text = "PLATFORM";
             this.BtnPFPres1.UseVisualStyleBackColor = true;
+            this.BtnPFPres1.Click += new System.EventHandler(this.BtnPFPres1_Click);
             // 
             // PicBoxPres3
             // 

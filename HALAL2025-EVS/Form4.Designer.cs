@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VoteStatus));
             this.PnlHeading = new System.Windows.Forms.Panel();
             this.BtnLogout = new System.Windows.Forms.Button();
             this.BtnPartylists = new System.Windows.Forms.Button();
@@ -36,8 +35,8 @@
             this.LblTitle2 = new System.Windows.Forms.Label();
             this.PicBoxLogo = new System.Windows.Forms.PictureBox();
             this.LblTitle1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblSubmitted = new System.Windows.Forms.Label();
+            this.LblThanks = new System.Windows.Forms.Label();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo)).BeginInit();
             this.SuspendLayout();
@@ -62,12 +61,11 @@
             // BtnLogout
             // 
             this.BtnLogout.BackColor = System.Drawing.Color.Transparent;
-            this.BtnLogout.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
             this.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogout.FlatAppearance.BorderSize = 0;
             this.BtnLogout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLogout.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogout.ForeColor = System.Drawing.Color.White;
             this.BtnLogout.Location = new System.Drawing.Point(1950, 22);
@@ -81,13 +79,12 @@
             // BtnPartylists
             // 
             this.BtnPartylists.BackColor = System.Drawing.Color.Transparent;
-            this.BtnPartylists.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnPartylists.BackgroundImage")));
             this.BtnPartylists.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnPartylists.FlatAppearance.BorderSize = 0;
             this.BtnPartylists.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.BtnPartylists.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnPartylists.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BtnPartylists.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnPartylists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPartylists.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPartylists.ForeColor = System.Drawing.Color.White;
             this.BtnPartylists.Location = new System.Drawing.Point(1403, 22);
@@ -100,13 +97,12 @@
             // BtnVoteNow
             // 
             this.BtnVoteNow.BackColor = System.Drawing.Color.Transparent;
-            this.BtnVoteNow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnVoteNow.BackgroundImage")));
             this.BtnVoteNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnVoteNow.FlatAppearance.BorderSize = 0;
             this.BtnVoteNow.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.BtnVoteNow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnVoteNow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BtnVoteNow.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnVoteNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVoteNow.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVoteNow.ForeColor = System.Drawing.Color.White;
             this.BtnVoteNow.Location = new System.Drawing.Point(1273, 22);
@@ -151,29 +147,29 @@
             this.LblTitle1.Text = "HALAL 2025 E-VOTING SYSTEM\r\n";
             this.LblTitle1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // LblSubmitted
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Black", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label3.Location = new System.Drawing.Point(565, 152);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(894, 63);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "YOU SUBMITTED YOUR VOTE.";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblSubmitted.BackColor = System.Drawing.Color.Transparent;
+            this.LblSubmitted.Font = new System.Drawing.Font("Arial Black", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSubmitted.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.LblSubmitted.Location = new System.Drawing.Point(565, 152);
+            this.LblSubmitted.Name = "LblSubmitted";
+            this.LblSubmitted.Size = new System.Drawing.Size(894, 63);
+            this.LblSubmitted.TabIndex = 9;
+            this.LblSubmitted.Text = "YOU SUBMITTED YOUR VOTE.";
+            this.LblSubmitted.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // LblThanks
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(577, 207);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(882, 44);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "THANK YOU FOR VOTING.";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblThanks.BackColor = System.Drawing.Color.Transparent;
+            this.LblThanks.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblThanks.ForeColor = System.Drawing.Color.White;
+            this.LblThanks.Location = new System.Drawing.Point(577, 207);
+            this.LblThanks.Name = "LblThanks";
+            this.LblThanks.Size = new System.Drawing.Size(882, 44);
+            this.LblThanks.TabIndex = 10;
+            this.LblThanks.Text = "THANK YOU FOR VOTING.";
+            this.LblThanks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // VoteStatus
             // 
@@ -182,9 +178,9 @@
             this.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.darkmode;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LblSubmitted);
             this.Controls.Add(this.PnlHeading);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LblThanks);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VoteStatus";
@@ -206,7 +202,7 @@
         private System.Windows.Forms.Label LblTitle2;
         private System.Windows.Forms.PictureBox PicBoxLogo;
         private System.Windows.Forms.Label LblTitle1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblSubmitted;
+        private System.Windows.Forms.Label LblThanks;
     }
 }

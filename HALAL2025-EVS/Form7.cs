@@ -41,16 +41,32 @@ namespace HALAL2025_EVS
         }
 
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnLogout_Click(object sender, EventArgs e)
         {
             LOGIN form1 = new LOGIN();
             this.Hide();
             form1.Show();
+        }
+
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            AddStudent form8 = new AddStudent();
+            form8.Show();
+        }
+
+        private void BtnCandidates_Click(object sender, EventArgs e)
+        {
+            Candidates form9 = new Candidates();
+            this.Hide();
+            form9.Show();
+        }
+
+        private void BtnOverview_Click(object sender, EventArgs e)
+        {
+            Overview form6 = new Overview();
+            this.Hide();
+            form6.Show();
         }
     }
 }

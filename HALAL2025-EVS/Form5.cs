@@ -10,81 +10,25 @@ using System.Windows.Forms;
 
 namespace HALAL2025_EVS
 {
-    public partial class Partylists : Form
+    public partial class ViewPartylist : Form
     {
-        public Partylists()
+        public ViewPartylist()
         {
             InitializeComponent();
         }
 
-        private void LblPartylistDesc_Click(object sender, EventArgs e)
+        private void BtnVoteNow_Click(object sender, EventArgs e)
         {
-
+            VoteNow form2 = new VoteNow();
+            this.Hide();
+            form2.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void BtnLogout_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PnlPartylist_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
+            LOGIN form1 = new LOGIN();
+            this.Hide();
+            form1.Show();
         }
     }
 }
