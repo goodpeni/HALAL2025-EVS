@@ -2,19 +2,85 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace HALAL2025_EVS
 {
     public partial class Overview : Form
     {
+        string connectionString = "server=127.0.0.1;port=3306;uid=root;pwd=;database=evotingdb";
         public Overview()
         {
             InitializeComponent();
+        }
+
+        private void LoadCandidateCount()
+        {
+            string query = "SELECT COUNT(*) FROM candidate";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    int candidateCount = Convert.ToInt32(cmd.ExecuteScalar()); // Safe cast for MySQL
+
+                    LblTotalCandid.Text = candidateCount.ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
+
+        private void LoadStudentCount()
+        {
+            string query = "SELECT COUNT(*) FROM student";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    int studentCount = Convert.ToInt32(cmd.ExecuteScalar()); // Safe cast for MySQL
+
+                    LblTotalStud.Text = studentCount.ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
+
+        private void LoadStudentVotedCount()
+        {
+            string query = "SELECT COUNT(*) FROM student WHERE vote_status = 0";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    int studentVotedCount = Convert.ToInt32(cmd.ExecuteScalar()); // Safe cast for MySQL
+
+                    LblTotalStud.Text = studentVotedCount.ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
 
         private void CenterPanel()
@@ -70,6 +136,9 @@ namespace HALAL2025_EVS
         private void Overview_Load(object sender, EventArgs e)
         {
             CenterPanel();
+            LoadCandidateCount();
+            LoadStudentCount();
+            LoadStudentVotedCount();
         }
     }
 }
