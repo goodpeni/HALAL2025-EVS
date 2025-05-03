@@ -17,6 +17,14 @@ namespace HALAL2025_EVS
             InitializeComponent();
         }
 
+        private void CenterPanel()
+        {
+            int x = (this.ClientSize.Width - PnlRankings.Width) / 2;
+            int y = (int)((this.ClientSize.Height * 0.8) - (PnlRankings.Height / 2));
+
+            PnlRankings.Location = new Point(Math.Max(0, x), Math.Max(0, y));
+        }
+
         private void BtnLogout_Click(object sender, EventArgs e)
         {
             LOGIN form1 = new LOGIN();
@@ -57,6 +65,11 @@ namespace HALAL2025_EVS
             StudentInfo form7 = new StudentInfo();
             this.Hide();
             form7.Show();
+        }
+
+        private void Overview_Load(object sender, EventArgs e)
+        {
+            CenterPanel();
         }
     }
 }
