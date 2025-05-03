@@ -83,7 +83,7 @@ namespace HALAL2025_EVS
         private void CenterPanel()
         {
             int x = (this.ClientSize.Width - PnlRankings.Width) / 2;
-            int y = (int)((this.ClientSize.Height * 0.8) - (PnlRankings.Height / 2));
+            int y = (int)((this.ClientSize.Height * 0.7) - (PnlRankings.Height / 2));
 
             PnlRankings.Location = new Point(Math.Max(0, x), Math.Max(0, y));
         }
