@@ -11,13 +11,17 @@ using MySql.Data.MySqlClient;
 
 namespace HALAL2025_EVS
 {
+
     public partial class Candidates : Form
     {
+        List<string> positionList = new List<string>();
+        List<string> partylistList = new List<string>();
+
         string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=evotingdb";
         public Candidates()
         {
             InitializeComponent();
-            LoadData(); 
+            LoadData();
             LoadPositionData();
             LoadPartylistData();
         }
@@ -25,6 +29,7 @@ namespace HALAL2025_EVS
         private void LoadPositionData()
         {
             string query = "SELECT position_name FROM position";
+            positionList.Clear(); // Clear before adding new items
 
             try
             {
@@ -42,13 +47,12 @@ namespace HALAL2025_EVS
                         while (reader.Read())
                         {
                             string positionName = reader.GetString("position_name");
+                            positionList.Add(positionName);
                             CmbPosition.Items.Add(positionName);
                         }
 
                         if (CmbPosition.Items.Count > 0)
-                        {
-                            CmbPosition.SelectedIndex = 0;  
-                        }
+                            CmbPosition.SelectedIndex = 0;
                     }
                 }
             }
@@ -61,6 +65,7 @@ namespace HALAL2025_EVS
         private void LoadPartylistData()
         {
             string query = "SELECT partylist_name FROM partylist";
+            partylistList.Clear(); // Clear before adding new items
 
             try
             {
@@ -78,13 +83,12 @@ namespace HALAL2025_EVS
                         while (reader.Read())
                         {
                             string partylistName = reader.GetString("partylist_name");
+                            partylistList.Add(partylistName);
                             CmbPartylist.Items.Add(partylistName);
                         }
 
                         if (CmbPartylist.Items.Count > 0)
-                        {
-                            CmbPartylist.SelectedIndex = 0; 
-                        }
+                            CmbPartylist.SelectedIndex = 0;
                     }
                 }
             }
@@ -96,6 +100,8 @@ namespace HALAL2025_EVS
 
         private void LoadFilteredData(string position, string partylist, string studentId)
         {
+//
+
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -107,7 +113,7 @@ namespace HALAL2025_EVS
                                    "INNER JOIN student s ON c.student_id = s.student_id " +
                                    "INNER JOIN position p ON c.position_id = p.position_id " +
                                    "INNER JOIN partylist pl ON c.partylist_id = pl.partylist_id " +
-                                   "WHERE 1 = 1"; 
+                                   "WHERE 1 = 1";
 
                     MySqlCommand cmd = new MySqlCommand();
                     cmd.Connection = conn;
@@ -159,9 +165,10 @@ namespace HALAL2025_EVS
             );
         }
 
-
         private void LoadData()
         {
+//
+
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -234,8 +241,8 @@ namespace HALAL2025_EVS
         private void BtnClearFilter_Click(object sender, EventArgs e)
         {
             TxtSearch.Clear();
-            CmbPosition.SelectedIndex = 0;  
-            CmbPartylist.SelectedIndex = 0; 
+            CmbPosition.SelectedIndex = 0;
+            CmbPartylist.SelectedIndex = 0;
 
             LoadData();
         }
@@ -252,17 +259,116 @@ namespace HALAL2025_EVS
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
+            if (DgvCandidatesList.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = DgvCandidatesList.SelectedRows[0];
 
+                DataGridViewComboBoxCell positionCombo = new DataGridViewComboBoxCell();
+                positionCombo.DataSource = positionList;
+                positionCombo.Value = selectedRow.Cells["Position"].Value.ToString();
+                selectedRow.Cells["Position"] = positionCombo;
+
+                DataGridViewComboBoxCell partylistCombo = new DataGridViewComboBoxCell();
+                partylistCombo.DataSource = partylistList;
+                partylistCombo.Value = selectedRow.Cells["Partylist"].Value.ToString();
+                selectedRow.Cells["Partylist"] = partylistCombo;
+
+                selectedRow.Cells["StudentID"].ReadOnly = true;
+                selectedRow.Cells["FirstName"].ReadOnly = true;
+                selectedRow.Cells["MiddleName"].ReadOnly = true;
+                selectedRow.Cells["LastName"].ReadOnly = true;
+
+                DgvCandidatesList.BeginEdit(true);
+            }
+            else
+            {
+                MessageBox.Show("Please select a candidate row to edit.");
+            }
         }
+
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
+            if (DgvCandidatesList.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = DgvCandidatesList.SelectedRows[0];
 
+                string studentId = selectedRow.Cells["StudentID"].Value.ToString();
+                string newPosition = selectedRow.Cells["Position"].Value.ToString();
+                string newPartylist = selectedRow.Cells["Partylist"].Value.ToString();
+
+                try
+                {
+                    using (MySqlConnection conn = new MySqlConnection(connectionString))
+                    {
+                        conn.Open();
+
+                        string posQuery = "SELECT position_id FROM position WHERE position_name = @name";
+                        MySqlCommand posCmd = new MySqlCommand(posQuery, conn);
+                        posCmd.Parameters.AddWithValue("@name", newPosition);
+                        int positionId = Convert.ToInt32(posCmd.ExecuteScalar());
+
+                        string partyQuery = "SELECT partylist_id FROM partylist WHERE partylist_name = @name";
+                        MySqlCommand partyCmd = new MySqlCommand(partyQuery, conn);
+                        partyCmd.Parameters.AddWithValue("@name", newPartylist);
+                        int partylistId = Convert.ToInt32(partyCmd.ExecuteScalar());
+
+                        string updateQuery = "UPDATE candidate SET position_id = @posId, partylist_id = @partyId WHERE student_id = @studentId";
+                        MySqlCommand updateCmd = new MySqlCommand(updateQuery, conn);
+                        updateCmd.Parameters.AddWithValue("@posId", positionId);
+                        updateCmd.Parameters.AddWithValue("@partyId", partylistId);
+                        updateCmd.Parameters.AddWithValue("@studentId", studentId);
+                        updateCmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Candidate updated successfully.");
+                        LoadData(); 
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error saving changes: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No row selected to save.");
+            }
         }
-
         private void BtnDelete_Click(object sender, EventArgs e)
         {
+            if (DgvCandidatesList.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = DgvCandidatesList.SelectedRows[0];
+                string studentId = selectedRow.Cells["student_id"].Value.ToString();
 
+                DialogResult result = MessageBox.Show("Are you sure you want to delete this candidate?", "Confirm Delete", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        using (MySqlConnection conn = new MySqlConnection(connectionString))
+                        {
+                            conn.Open();
+                            string deleteQuery = "DELETE FROM candidate WHERE student_id = @studentId";
+                            MySqlCommand cmd = new MySqlCommand(deleteQuery, conn);
+                            cmd.Parameters.AddWithValue("@studentId", studentId);
+                            cmd.ExecuteNonQuery();
+
+                            MessageBox.Show("Candidate deleted successfully.");
+                            LoadData(); 
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error deleting candidate: " + ex.Message);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a candidate to delete.");
+            }
         }
+
     }
 }
