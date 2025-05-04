@@ -62,7 +62,7 @@ namespace HALAL2025_EVS
 
         private void LoadStudentVotedCount()
         {
-            string query = "SELECT COUNT(*) FROM student WHERE vote_status = 0";
+            string query = "SELECT COUNT(*) FROM student WHERE vote_status = 1";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -71,7 +71,7 @@ namespace HALAL2025_EVS
                     conn.Open();
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     int studentVotedCount = Convert.ToInt32(cmd.ExecuteScalar()); 
-                    LblTotalStud.Text = studentVotedCount.ToString();
+                    LblVotedStud.Text = studentVotedCount.ToString();
                 }
                 catch (Exception ex)
                 {

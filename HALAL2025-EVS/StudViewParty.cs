@@ -19,7 +19,7 @@ namespace HALAL2025_EVS
 
         private void BtnVoteNow_Click(object sender, EventArgs e)
         {
-            VoteNow form2 = new VoteNow();
+            VoteNow form2 = new VoteNow(LOGIN.LoggedInStudentID);
             this.Hide();
             form2.Show();
         }

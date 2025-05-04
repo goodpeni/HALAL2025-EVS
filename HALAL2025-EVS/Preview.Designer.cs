@@ -1,4 +1,4 @@
-﻿namespace HALAL2025_EVS
+﻿namespace HALAL2025_EV
 {
     partial class Preview
     {

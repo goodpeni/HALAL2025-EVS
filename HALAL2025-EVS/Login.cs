@@ -14,6 +14,8 @@ namespace HALAL2025_EVS
 {
     public partial class LOGIN : Form
     {
+        public static string LoggedInStudentID { get; private set; } // Static variable to store the student ID globally
+
         string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=evotingdb";
 
         public LOGIN()
@@ -24,7 +26,6 @@ namespace HALAL2025_EVS
 
         public void Login()
         {
-
             string adminQuery = "SELECT * FROM admin WHERE admin_name = @id AND admin_password = @pass";
             string studentQuery = "SELECT * FROM student WHERE student_id = @id AND student_password = @pass";
 
@@ -43,10 +44,27 @@ namespace HALAL2025_EVS
                         {
                             if (studentReader.Read())
                             {
-                                MessageBox.Show("Login Success!");
-                                VoteNow form2 = new VoteNow();
-                                this.Hide();
-                                form2.Show();
+                                // Store the logged-in student's ID
+                                LoggedInStudentID = TxtStudentID.Text;
+
+                                // Check if the student has already voted (vote_status = 1)
+                                int voteStatus = Convert.ToInt32(studentReader["vote_status"]);
+                                if (voteStatus == 1)
+                                {
+                                    // If vote_status is 1, go directly to the VoteStatus form
+                                    MessageBox.Show("You have already voted.");
+                                    VoteStatus form4 = new VoteStatus();
+                                    this.Hide();
+                                    form4.Show();
+                                }
+                                else
+                                {
+                                    // Otherwise, allow the student to vote
+                                    MessageBox.Show("Login Success! Please proceed to vote.");
+                                    VoteNow form2 = new VoteNow(LoggedInStudentID);
+                                    this.Hide();
+                                    form2.Show();
+                                }
                                 return;
                             }
                         }
@@ -82,6 +100,7 @@ namespace HALAL2025_EVS
             }
         }
 
+
         private void BtnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -105,7 +124,6 @@ namespace HALAL2025_EVS
                 PicBoxPass.BackgroundImage = Properties.Resources.eye;
             }
         }
-
-      
     }
+
 }
