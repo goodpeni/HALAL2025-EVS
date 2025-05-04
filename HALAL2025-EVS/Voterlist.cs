@@ -328,5 +328,47 @@ namespace HALAL2025_EVS
                 MessageBox.Show("Please select a student to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void BtnImport_Click(object sender, EventArgs e)
+        {
+            // Open a dialog to let the user select the .sql file
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "SQL Files (*.sql)|*.sql|All Files (*.*)|*.*";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+
+                try
+                {
+                    // Read the SQL file content
+                    string sqlCommands = System.IO.File.ReadAllText(filePath);
+
+                    // Split the SQL commands in case there are multiple queries in the file
+                    string[] queries = sqlCommands.Split(new[] { ";\r\n", ";\n" }, StringSplitOptions.RemoveEmptyEntries);
+
+                    using (MySqlConnection conn = new MySqlConnection(connectionString))
+                    {
+                        conn.Open();
+
+                        foreach (string query in queries)
+                        {
+                            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                            {
+                                // Execute each query
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        MessageBox.Show("Students imported successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadData(); // Refresh data grid after importing
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error importing students: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
