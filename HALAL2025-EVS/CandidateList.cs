@@ -197,7 +197,7 @@ namespace HALAL2025_EVS
 
         private void BtnAddParty_Click(object sender, EventArgs e)
         {
-            AddPartylist form11 = new AddPartylist();
+            AddPartylist form11 = new AddPartylist(this);
             form11.Show();
         }
 
