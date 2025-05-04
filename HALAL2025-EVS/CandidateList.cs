@@ -36,7 +36,6 @@ namespace HALAL2025_EVS
                     {
                         MySqlDataReader reader = cmd.ExecuteReader();
 
-                        // Add default option
                         CmbPosition.Items.Clear();
                         CmbPosition.Items.Add("(Position)");
 
@@ -48,7 +47,7 @@ namespace HALAL2025_EVS
 
                         if (CmbPosition.Items.Count > 0)
                         {
-                            CmbPosition.SelectedIndex = 0;  // Set the default "Select" option
+                            CmbPosition.SelectedIndex = 0;  
                         }
                     }
                 }
@@ -73,7 +72,6 @@ namespace HALAL2025_EVS
                     {
                         MySqlDataReader reader = cmd.ExecuteReader();
 
-                        // Add default option
                         CmbPartylist.Items.Clear();
                         CmbPartylist.Items.Add("(Partylist)");
 
@@ -85,7 +83,7 @@ namespace HALAL2025_EVS
 
                         if (CmbPartylist.Items.Count > 0)
                         {
-                            CmbPartylist.SelectedIndex = 0;  // Set the default "Select" option
+                            CmbPartylist.SelectedIndex = 0; 
                         }
                     }
                 }
@@ -104,32 +102,28 @@ namespace HALAL2025_EVS
                 {
                     conn.Open();
 
-                    // Start the query
                     string query = "SELECT c.student_id, s.first_name, s.middle_name, s.last_name, p.position_name, pl.partylist_name " +
                                    "FROM candidate c " +
                                    "INNER JOIN student s ON c.student_id = s.student_id " +
                                    "INNER JOIN position p ON c.position_id = p.position_id " +
                                    "INNER JOIN partylist pl ON c.partylist_id = pl.partylist_id " +
-                                   "WHERE 1 = 1"; // This will allow appending filters with AND without breaking the query.
+                                   "WHERE 1 = 1"; 
 
                     MySqlCommand cmd = new MySqlCommand();
                     cmd.Connection = conn;
 
-                    // Filter by position if selected
                     if (!string.IsNullOrWhiteSpace(position) && position != "(Position)")
                     {
                         query += " AND p.position_name = @position";
                         cmd.Parameters.AddWithValue("@position", position);
                     }
 
-                    // Filter by partylist if selected
                     if (!string.IsNullOrWhiteSpace(partylist) && partylist != "(Partylist)")
                     {
                         query += " AND pl.partylist_name = @partylist";
                         cmd.Parameters.AddWithValue("@partylist", partylist);
                     }
 
-                    // Filter by student ID if provided
                     if (!string.IsNullOrWhiteSpace(studentId))
                     {
                         query += " AND c.student_id LIKE @studentId";
@@ -154,12 +148,10 @@ namespace HALAL2025_EVS
 
         private void ApplyFilters()
         {
-            // Ensure you're comparing against "Select" or similar placeholder value
             string selectedPosition = CmbPosition.SelectedItem?.ToString();
             string selectedPartylist = CmbPartylist.SelectedItem?.ToString();
             string searchId = TxtSearch.Text?.Trim();
 
-            // If the ComboBox values are the default ones, pass empty or null values
             LoadFilteredData(
                 selectedPosition != "(Position)" ? selectedPosition : null,
                 selectedPartylist != "(Partylist)" ? selectedPartylist : null,
@@ -180,10 +172,8 @@ namespace HALAL2025_EVS
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
 
-                    // ✨ Tell the DataGridView to NOT auto-generate columns
                     DgvCandidatesList.AutoGenerateColumns = false;
 
-                    // 🧠 Now bind the data
                     DgvCandidatesList.DataSource = dt;
                 }
                 catch (Exception ex)
@@ -243,11 +233,10 @@ namespace HALAL2025_EVS
 
         private void BtnClearFilter_Click(object sender, EventArgs e)
         {
-            // Clear ComboBox selections (if you want them to return to their default state)
-            CmbPosition.SelectedIndex = 0;  // Clears the selection
-            CmbPartylist.SelectedIndex = 0; // Clears the selection
+            TxtSearch.Clear();
+            CmbPosition.SelectedIndex = 0;  
+            CmbPartylist.SelectedIndex = 0; 
 
-            // Reload all data
             LoadData();
         }
 
@@ -259,6 +248,21 @@ namespace HALAL2025_EVS
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
             ApplyFilters();
+        }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

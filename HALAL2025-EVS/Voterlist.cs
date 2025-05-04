@@ -42,10 +42,8 @@ namespace HALAL2025_EVS
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
 
-                    // ✨ Tell the DataGridView to NOT auto-generate columns
                     DgvStudentInfo.AutoGenerateColumns = false;
 
-                    // 🧠 Now bind the data
                     DgvStudentInfo.DataSource = dt;
                 }
                 catch (Exception ex)
@@ -148,6 +146,7 @@ namespace HALAL2025_EVS
 
         private void BtnClearFilter_Click(object sender, EventArgs e)
         {
+            TxtSearch.Clear();
             CmbGLevel.Text = "  (Grade Level)";
             CmbSection.Text = "     (Section)";
             CmbVoteStatus.Text = "   (Vote Status)";
@@ -178,11 +177,10 @@ namespace HALAL2025_EVS
         {
             DgvStudentInfo.ReadOnly = false;
 
-            // Make only the student_id column read-only
             DgvStudentInfo.Columns["StudentID"].ReadOnly = true;
             DgvStudentInfo.Columns["VoteStatus"].ReadOnly = true;
 
-            BtnSave.Enabled = false; // Wait for actual changes
+            BtnSave.Enabled = false;
         }
 
         private void DgvStudentInfo_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -245,7 +243,7 @@ namespace HALAL2025_EVS
                     }
 
                     MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoadData(); // Refresh after save
+                    LoadData();
                     DgvStudentInfo.ReadOnly = true;
                     BtnSave.Enabled = false;
                 }
@@ -275,13 +273,10 @@ namespace HALAL2025_EVS
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            // Ensure that a row is selected
             if (DgvStudentInfo.SelectedRows.Count > 0)
             {
-                // Get the student ID of the selected row
                 string studentId = DgvStudentInfo.SelectedRows[0].Cells["StudentID"].Value?.ToString();
 
-                // Confirm deletion
                 DialogResult result = MessageBox.Show($"Are you sure you want to delete student {studentId}?",
                                                       "Confirm Deletion",
                                                       MessageBoxButtons.YesNo,
@@ -289,14 +284,12 @@ namespace HALAL2025_EVS
 
                 if (result == DialogResult.Yes)
                 {
-                    // Delete from the database
                     using (MySqlConnection conn = new MySqlConnection(connectionString))
                     {
                         try
                         {
                             conn.Open();
 
-                            // Prepare the SQL query to delete the student by student ID
                             string query = "DELETE FROM student WHERE student_id = @studentId";
 
                             using (MySqlCommand cmd = new MySqlCommand(query, conn))
@@ -307,7 +300,6 @@ namespace HALAL2025_EVS
                                 if (rowsAffected > 0)
                                 {
                                     MessageBox.Show("Student deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    // Remove the row from the DataGridView
                                     DgvStudentInfo.Rows.RemoveAt(DgvStudentInfo.SelectedRows[0].Index);
                                 }
                                 else
@@ -331,7 +323,6 @@ namespace HALAL2025_EVS
 
         private void BtnImport_Click(object sender, EventArgs e)
         {
-            // Open a dialog to let the user select the .sql file
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "SQL Files (*.sql)|*.sql|All Files (*.*)|*.*";
 
@@ -341,10 +332,8 @@ namespace HALAL2025_EVS
 
                 try
                 {
-                    // Read the SQL file content
                     string sqlCommands = System.IO.File.ReadAllText(filePath);
 
-                    // Split the SQL commands in case there are multiple queries in the file
                     string[] queries = sqlCommands.Split(new[] { ";\r\n", ";\n" }, StringSplitOptions.RemoveEmptyEntries);
 
                     using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -355,13 +344,12 @@ namespace HALAL2025_EVS
                         {
                             using (MySqlCommand cmd = new MySqlCommand(query, conn))
                             {
-                                // Execute each query
                                 cmd.ExecuteNonQuery();
                             }
                         }
 
                         MessageBox.Show("Students imported successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadData(); // Refresh data grid after importing
+                        LoadData();
                     }
                 }
                 catch (Exception ex)
