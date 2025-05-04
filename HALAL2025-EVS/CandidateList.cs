@@ -21,7 +21,6 @@ namespace HALAL2025_EVS
         public Candidates()
         {
             InitializeComponent();
-            LoadData();
             LoadPositionData();
             LoadPartylistData();
         }
@@ -29,7 +28,7 @@ namespace HALAL2025_EVS
         private void LoadPositionData()
         {
             string query = "SELECT position_name FROM position";
-            positionList.Clear(); // Clear before adding new items
+            positionList.Clear();
 
             try
             {
@@ -65,7 +64,7 @@ namespace HALAL2025_EVS
         private void LoadPartylistData()
         {
             string query = "SELECT partylist_name FROM partylist";
-            partylistList.Clear(); // Clear before adding new items
+            partylistList.Clear();
 
             try
             {
@@ -174,7 +173,7 @@ namespace HALAL2025_EVS
                 try
                 {
                     conn.Open();
-                    string query = "SELECT c.student_id, s.first_name, s.middle_name, s.last_name, p.position_name, pl.partylist_name FROM candidate c INNER JOIN student s ON c.student_id = s.student_id INNER JOIN position p ON c.position_id = p.position_id INNER JOIN partylist pl ON c.partylist_id = pl.partylist_id";
+                    string query = "SELECT c.student_id, c.candidate_id, s.first_name, s.middle_name, s.last_name, p.position_name, pl.partylist_name FROM candidate c INNER JOIN student s ON c.student_id = s.student_id INNER JOIN position p ON c.position_id = p.position_id INNER JOIN partylist pl ON c.partylist_id = pl.partylist_id";
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
@@ -249,7 +248,7 @@ namespace HALAL2025_EVS
 
         private void Candidates_Load(object sender, EventArgs e)
         {
-
+            LoadData();
         }
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)
@@ -339,7 +338,7 @@ namespace HALAL2025_EVS
             if (DgvCandidatesList.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = DgvCandidatesList.SelectedRows[0];
-                string studentId = selectedRow.Cells["student_id"].Value.ToString();
+                string studentId = selectedRow.Cells["StudentID"].Value.ToString();
 
                 DialogResult result = MessageBox.Show("Are you sure you want to delete this candidate?", "Confirm Delete", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
