@@ -113,6 +113,8 @@
             this.PnlVotedStudInfo = new System.Windows.Forms.Panel();
             this.LblVotedStudInfo = new System.Windows.Forms.Label();
             this.PnlRankings = new System.Windows.Forms.Panel();
+            this.PnlSec = new System.Windows.Forms.Panel();
+            this.LblSec = new System.Windows.Forms.Label();
             this.ChrG6Rep = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ChrG5Rep = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ChrG4Rep = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -141,8 +143,6 @@
             this.LblAudit = new System.Windows.Forms.Label();
             this.PnlTreas = new System.Windows.Forms.Panel();
             this.LblTreas = new System.Windows.Forms.Label();
-            this.PnlSec = new System.Windows.Forms.Panel();
-            this.LblSec = new System.Windows.Forms.Label();
             this.LblRankings = new System.Windows.Forms.Label();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo1)).BeginInit();
@@ -153,6 +153,7 @@
             this.PnlVotedStud.SuspendLayout();
             this.PnlVotedStudInfo.SuspendLayout();
             this.PnlRankings.SuspendLayout();
+            this.PnlSec.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChrG6Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChrG5Rep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChrG4Rep)).BeginInit();
@@ -172,7 +173,6 @@
             this.PnlG4Rep.SuspendLayout();
             this.PnlAudit.SuspendLayout();
             this.PnlTreas.SuspendLayout();
-            this.PnlSec.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlHeading
@@ -543,6 +543,29 @@
             this.PnlRankings.Size = new System.Drawing.Size(1296, 291);
             this.PnlRankings.TabIndex = 4;
             // 
+            // PnlSec
+            // 
+            this.PnlSec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
+            this.PnlSec.Controls.Add(this.LblSec);
+            this.PnlSec.Location = new System.Drawing.Point(651, 242);
+            this.PnlSec.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlSec.Name = "PnlSec";
+            this.PnlSec.Size = new System.Drawing.Size(287, 34);
+            this.PnlSec.TabIndex = 1;
+            // 
+            // LblSec
+            // 
+            this.LblSec.BackColor = System.Drawing.Color.Transparent;
+            this.LblSec.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSec.ForeColor = System.Drawing.Color.White;
+            this.LblSec.Location = new System.Drawing.Point(-1, 0);
+            this.LblSec.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSec.Name = "LblSec";
+            this.LblSec.Size = new System.Drawing.Size(290, 34);
+            this.LblSec.TabIndex = 11;
+            this.LblSec.Text = "SECRETARY";
+            this.LblSec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ChrG6Rep
             // 
             chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
@@ -574,6 +597,7 @@
             this.ChrG6Rep.Series.Add(series1);
             this.ChrG6Rep.Size = new System.Drawing.Size(287, 195);
             this.ChrG6Rep.TabIndex = 34;
+            this.ChrG6Rep.Click += new System.EventHandler(this.ChrG6Rep_Click);
             // 
             // ChrG5Rep
             // 
@@ -606,6 +630,7 @@
             this.ChrG5Rep.Series.Add(series2);
             this.ChrG5Rep.Size = new System.Drawing.Size(287, 195);
             this.ChrG5Rep.TabIndex = 33;
+            this.ChrG5Rep.Click += new System.EventHandler(this.ChrG5Rep_Click);
             // 
             // ChrG4Rep
             // 
@@ -638,6 +663,7 @@
             this.ChrG4Rep.Series.Add(series3);
             this.ChrG4Rep.Size = new System.Drawing.Size(287, 194);
             this.ChrG4Rep.TabIndex = 32;
+            this.ChrG4Rep.Click += new System.EventHandler(this.ChrG4Rep_Click);
             // 
             // ChrPO
             // 
@@ -670,6 +696,7 @@
             this.ChrPO.Series.Add(series4);
             this.ChrPO.Size = new System.Drawing.Size(287, 195);
             this.ChrPO.TabIndex = 31;
+            this.ChrPO.Click += new System.EventHandler(this.ChrPO_Click);
             // 
             // ChrPIO
             // 
@@ -702,6 +729,7 @@
             this.ChrPIO.Series.Add(series5);
             this.ChrPIO.Size = new System.Drawing.Size(287, 195);
             this.ChrPIO.TabIndex = 30;
+            this.ChrPIO.Click += new System.EventHandler(this.ChrPIO_Click);
             // 
             // ChrAudit
             // 
@@ -734,6 +762,7 @@
             this.ChrAudit.Series.Add(series6);
             this.ChrAudit.Size = new System.Drawing.Size(287, 195);
             this.ChrAudit.TabIndex = 29;
+            this.ChrAudit.Click += new System.EventHandler(this.ChrAudit_Click);
             // 
             // ChrTreas
             // 
@@ -766,6 +795,7 @@
             this.ChrTreas.Series.Add(series7);
             this.ChrTreas.Size = new System.Drawing.Size(287, 195);
             this.ChrTreas.TabIndex = 28;
+            this.ChrTreas.Click += new System.EventHandler(this.ChrTreas_Click);
             // 
             // ChrSec
             // 
@@ -798,6 +828,7 @@
             this.ChrSec.Series.Add(series8);
             this.ChrSec.Size = new System.Drawing.Size(287, 195);
             this.ChrSec.TabIndex = 27;
+            this.ChrSec.Click += new System.EventHandler(this.ChrSec_Click);
             // 
             // ChrVice
             // 
@@ -830,6 +861,7 @@
             this.ChrVice.Series.Add(series9);
             this.ChrVice.Size = new System.Drawing.Size(287, 195);
             this.ChrVice.TabIndex = 26;
+            this.ChrVice.Click += new System.EventHandler(this.ChrVice_Click);
             // 
             // ChrPres
             // 
@@ -862,6 +894,7 @@
             this.ChrPres.Series.Add(series10);
             this.ChrPres.Size = new System.Drawing.Size(287, 195);
             this.ChrPres.TabIndex = 25;
+            this.ChrPres.Click += new System.EventHandler(this.ChrPres_Click);
             // 
             // PnlG5Rep
             // 
@@ -1070,29 +1103,6 @@
             this.LblTreas.Text = "TREASURER";
             this.LblTreas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PnlSec
-            // 
-            this.PnlSec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
-            this.PnlSec.Controls.Add(this.LblSec);
-            this.PnlSec.Location = new System.Drawing.Point(651, 242);
-            this.PnlSec.Margin = new System.Windows.Forms.Padding(2);
-            this.PnlSec.Name = "PnlSec";
-            this.PnlSec.Size = new System.Drawing.Size(287, 34);
-            this.PnlSec.TabIndex = 1;
-            // 
-            // LblSec
-            // 
-            this.LblSec.BackColor = System.Drawing.Color.Transparent;
-            this.LblSec.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSec.ForeColor = System.Drawing.Color.White;
-            this.LblSec.Location = new System.Drawing.Point(-1, 0);
-            this.LblSec.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblSec.Name = "LblSec";
-            this.LblSec.Size = new System.Drawing.Size(290, 34);
-            this.LblSec.TabIndex = 11;
-            this.LblSec.Text = "SECRETARY";
-            this.LblSec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // LblRankings
             // 
             this.LblRankings.BackColor = System.Drawing.Color.Transparent;
@@ -1138,6 +1148,7 @@
             this.PnlVotedStud.ResumeLayout(false);
             this.PnlVotedStudInfo.ResumeLayout(false);
             this.PnlRankings.ResumeLayout(false);
+            this.PnlSec.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ChrG6Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChrG5Rep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChrG4Rep)).EndInit();
@@ -1157,7 +1168,6 @@
             this.PnlG4Rep.ResumeLayout(false);
             this.PnlAudit.ResumeLayout(false);
             this.PnlTreas.ResumeLayout(false);
-            this.PnlSec.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
