@@ -501,6 +501,7 @@
             this.StudentID.HeaderText = "Student ID";
             this.StudentID.MinimumWidth = 4;
             this.StudentID.Name = "StudentID";
+            this.StudentID.ReadOnly = true;
             this.StudentID.Width = 150;
             // 
             // CandidateID
@@ -514,6 +515,7 @@
             this.CandidateID.HeaderText = "Candidate ID";
             this.CandidateID.MinimumWidth = 4;
             this.CandidateID.Name = "CandidateID";
+            this.CandidateID.ReadOnly = true;
             this.CandidateID.Width = 130;
             // 
             // FirstName
@@ -527,6 +529,7 @@
             this.FirstName.HeaderText = "First Name";
             this.FirstName.MinimumWidth = 4;
             this.FirstName.Name = "FirstName";
+            this.FirstName.ReadOnly = true;
             this.FirstName.Width = 200;
             // 
             // MiddleName
@@ -540,6 +543,7 @@
             this.MiddleName.HeaderText = "Middle Name";
             this.MiddleName.MinimumWidth = 4;
             this.MiddleName.Name = "MiddleName";
+            this.MiddleName.ReadOnly = true;
             this.MiddleName.Width = 200;
             // 
             // LastName
@@ -553,6 +557,7 @@
             this.LastName.HeaderText = "Last Name";
             this.LastName.MinimumWidth = 4;
             this.LastName.Name = "LastName";
+            this.LastName.ReadOnly = true;
             this.LastName.Width = 200;
             // 
             // Position
@@ -565,6 +570,7 @@
             this.Position.DefaultCellStyle = dataGridViewCellStyle8;
             this.Position.HeaderText = "Position";
             this.Position.Name = "Position";
+            this.Position.ReadOnly = true;
             this.Position.Width = 150;
             // 
             // Partylist
@@ -578,6 +584,7 @@
             this.Partylist.HeaderText = "Partylist Name";
             this.Partylist.MinimumWidth = 4;
             this.Partylist.Name = "Partylist";
+            this.Partylist.ReadOnly = true;
             this.Partylist.Width = 150;
             // 
             // Candidates

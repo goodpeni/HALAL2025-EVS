@@ -164,7 +164,7 @@ namespace HALAL2025_EVS
             );
         }
 
-        private void LoadData()
+        public void LoadData()
         {
 //
 
@@ -191,8 +191,8 @@ namespace HALAL2025_EVS
 
         private void BtnAddCandid_Click(object sender, EventArgs e)
         {
-            AddCandidate form10 = new AddCandidate();
-            form10.Show();
+            AddCandidate addForm = new AddCandidate(this); // ✅ New
+            addForm.Show();
         }
 
         private void BtnAddParty_Click(object sender, EventArgs e)
@@ -260,6 +260,8 @@ namespace HALAL2025_EVS
         {
             if (DgvCandidatesList.SelectedRows.Count > 0)
             {
+                
+
                 DataGridViewRow selectedRow = DgvCandidatesList.SelectedRows[0];
 
                 DataGridViewComboBoxCell positionCombo = new DataGridViewComboBoxCell();
@@ -272,7 +274,10 @@ namespace HALAL2025_EVS
                 partylistCombo.Value = selectedRow.Cells["Partylist"].Value.ToString();
                 selectedRow.Cells["Partylist"] = partylistCombo;
 
+                selectedRow.Cells["Position"].ReadOnly = false;
+                selectedRow.Cells["Partylist"].ReadOnly = false;
                 selectedRow.Cells["StudentID"].ReadOnly = true;
+                selectedRow.Cells["CandidateID"].ReadOnly = true;
                 selectedRow.Cells["FirstName"].ReadOnly = true;
                 selectedRow.Cells["MiddleName"].ReadOnly = true;
                 selectedRow.Cells["LastName"].ReadOnly = true;

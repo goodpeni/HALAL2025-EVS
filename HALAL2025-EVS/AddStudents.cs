@@ -13,10 +13,12 @@ namespace HALAL2025_EVS
 {
     public partial class AddStudent : Form
     {
+        private StudentInfo parentForm;
         string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=evotingdb";
-        public AddStudent()
+        public AddStudent(StudentInfo parent)
         {
             InitializeComponent();
+            parentForm = parent;
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace HALAL2025_EVS
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            // Validate that all fields are filled
+
             if (string.IsNullOrWhiteSpace(TxtStudentID.Text) ||
                 string.IsNullOrWhiteSpace(TxtFirstName.Text) ||
                 string.IsNullOrWhiteSpace(TxtMiddleName.Text) ||
@@ -86,9 +88,9 @@ namespace HALAL2025_EVS
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Student added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            StudentInfo form7 = new StudentInfo();
+                            parentForm.LoadData();
+                            parentForm.Show();
                             this.Close();
-                            form7.Show();
                         }
                         else
                         {

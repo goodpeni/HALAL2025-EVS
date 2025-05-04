@@ -33,18 +33,20 @@
             this.PicBoxLogo = new System.Windows.Forms.PictureBox();
             this.LblTitle1 = new System.Windows.Forms.Label();
             this.PnlAddCandidate = new System.Windows.Forms.Panel();
+            this.TxtCandidateID = new System.Windows.Forms.TextBox();
+            this.LblCandidateID = new System.Windows.Forms.Label();
+            this.BtnAddCandidate = new System.Windows.Forms.Button();
+            this.BtnBack = new System.Windows.Forms.Button();
             this.TxtPlatForm = new System.Windows.Forms.TextBox();
             this.LblPlatForm = new System.Windows.Forms.Label();
             this.CmbPartylists = new System.Windows.Forms.ComboBox();
             this.LblPartylists = new System.Windows.Forms.Label();
-            this.BtnSave = new System.Windows.Forms.Button();
-            this.BtnBack = new System.Windows.Forms.Button();
             this.CmbPosition = new System.Windows.Forms.ComboBox();
             this.LblPosition = new System.Windows.Forms.Label();
             this.LblChooseFile = new System.Windows.Forms.Label();
-            this.TxtCandidateID = new System.Windows.Forms.TextBox();
+            this.TxtStudentID = new System.Windows.Forms.TextBox();
             this.BtnChooseFile = new System.Windows.Forms.Button();
-            this.LblCandidateID = new System.Windows.Forms.Label();
+            this.LblStudentID = new System.Windows.Forms.Label();
             this.LblPhoto = new System.Windows.Forms.Label();
             this.LblFirstName = new System.Windows.Forms.Label();
             this.TxtLastName = new System.Windows.Forms.TextBox();
@@ -68,7 +70,7 @@
             this.PnlHeading.Controls.Add(this.LblTitle1);
             this.PnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeading.Location = new System.Drawing.Point(0, 0);
-            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2);
             this.PnlHeading.Name = "PnlHeading";
             this.PnlHeading.Size = new System.Drawing.Size(433, 67);
             this.PnlHeading.TabIndex = 5;
@@ -92,7 +94,7 @@
             this.PicBoxLogo.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.halal20225;
             this.PicBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxLogo.Location = new System.Drawing.Point(10, 1);
-            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxLogo.Name = "PicBoxLogo";
             this.PicBoxLogo.Size = new System.Drawing.Size(56, 61);
             this.PicBoxLogo.TabIndex = 1;
@@ -116,18 +118,20 @@
             this.PnlAddCandidate.BackColor = System.Drawing.Color.Transparent;
             this.PnlAddCandidate.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
             this.PnlAddCandidate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlAddCandidate.Controls.Add(this.TxtCandidateID);
+            this.PnlAddCandidate.Controls.Add(this.LblCandidateID);
+            this.PnlAddCandidate.Controls.Add(this.BtnAddCandidate);
+            this.PnlAddCandidate.Controls.Add(this.BtnBack);
             this.PnlAddCandidate.Controls.Add(this.TxtPlatForm);
             this.PnlAddCandidate.Controls.Add(this.LblPlatForm);
             this.PnlAddCandidate.Controls.Add(this.CmbPartylists);
             this.PnlAddCandidate.Controls.Add(this.LblPartylists);
-            this.PnlAddCandidate.Controls.Add(this.BtnSave);
-            this.PnlAddCandidate.Controls.Add(this.BtnBack);
             this.PnlAddCandidate.Controls.Add(this.CmbPosition);
             this.PnlAddCandidate.Controls.Add(this.LblPosition);
             this.PnlAddCandidate.Controls.Add(this.LblChooseFile);
-            this.PnlAddCandidate.Controls.Add(this.TxtCandidateID);
+            this.PnlAddCandidate.Controls.Add(this.TxtStudentID);
             this.PnlAddCandidate.Controls.Add(this.BtnChooseFile);
-            this.PnlAddCandidate.Controls.Add(this.LblCandidateID);
+            this.PnlAddCandidate.Controls.Add(this.LblStudentID);
             this.PnlAddCandidate.Controls.Add(this.LblPhoto);
             this.PnlAddCandidate.Controls.Add(this.LblFirstName);
             this.PnlAddCandidate.Controls.Add(this.TxtLastName);
@@ -136,21 +140,78 @@
             this.PnlAddCandidate.Controls.Add(this.LblMiddleName);
             this.PnlAddCandidate.Controls.Add(this.TxtMiddleName);
             this.PnlAddCandidate.Location = new System.Drawing.Point(18, 107);
-            this.PnlAddCandidate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlAddCandidate.Margin = new System.Windows.Forms.Padding(2);
             this.PnlAddCandidate.Name = "PnlAddCandidate";
             this.PnlAddCandidate.Size = new System.Drawing.Size(391, 371);
             this.PnlAddCandidate.TabIndex = 6;
+            // 
+            // TxtCandidateID
+            // 
+            this.TxtCandidateID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtCandidateID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCandidateID.Location = new System.Drawing.Point(132, 55);
+            this.TxtCandidateID.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtCandidateID.Name = "TxtCandidateID";
+            this.TxtCandidateID.Size = new System.Drawing.Size(238, 23);
+            this.TxtCandidateID.TabIndex = 75;
+            // 
+            // LblCandidateID
+            // 
+            this.LblCandidateID.BackColor = System.Drawing.Color.Transparent;
+            this.LblCandidateID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCandidateID.ForeColor = System.Drawing.Color.White;
+            this.LblCandidateID.Location = new System.Drawing.Point(21, 59);
+            this.LblCandidateID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCandidateID.Name = "LblCandidateID";
+            this.LblCandidateID.Size = new System.Drawing.Size(107, 19);
+            this.LblCandidateID.TabIndex = 74;
+            this.LblCandidateID.Text = "CANDIDATE ID";
+            this.LblCandidateID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // BtnAddCandidate
+            // 
+            this.BtnAddCandidate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
+            this.BtnAddCandidate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAddCandidate.FlatAppearance.BorderSize = 0;
+            this.BtnAddCandidate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddCandidate.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAddCandidate.ForeColor = System.Drawing.Color.White;
+            this.BtnAddCandidate.Location = new System.Drawing.Point(263, 340);
+            this.BtnAddCandidate.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnAddCandidate.Name = "BtnAddCandidate";
+            this.BtnAddCandidate.Size = new System.Drawing.Size(116, 24);
+            this.BtnAddCandidate.TabIndex = 73;
+            this.BtnAddCandidate.Text = "ADD";
+            this.BtnAddCandidate.UseVisualStyleBackColor = false;
+            this.BtnAddCandidate.Click += new System.EventHandler(this.BtnAddCandidate_Click_1);
+            // 
+            // BtnBack
+            // 
+            this.BtnBack.BackColor = System.Drawing.Color.Maroon;
+            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBack.FlatAppearance.BorderSize = 0;
+            this.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBack.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBack.ForeColor = System.Drawing.Color.White;
+            this.BtnBack.Location = new System.Drawing.Point(10, 340);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(116, 24);
+            this.BtnBack.TabIndex = 72;
+            this.BtnBack.Text = "BACK";
+            this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // TxtPlatForm
             // 
             this.TxtPlatForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPlatForm.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPlatForm.Location = new System.Drawing.Point(136, 232);
-            this.TxtPlatForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtPlatForm.Location = new System.Drawing.Point(132, 256);
+            this.TxtPlatForm.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPlatForm.Multiline = true;
             this.TxtPlatForm.Name = "TxtPlatForm";
             this.TxtPlatForm.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.TxtPlatForm.Size = new System.Drawing.Size(238, 106);
+            this.TxtPlatForm.Size = new System.Drawing.Size(238, 70);
             this.TxtPlatForm.TabIndex = 71;
             // 
             // LblPlatForm
@@ -158,7 +219,7 @@
             this.LblPlatForm.BackColor = System.Drawing.Color.Transparent;
             this.LblPlatForm.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPlatForm.ForeColor = System.Drawing.Color.White;
-            this.LblPlatForm.Location = new System.Drawing.Point(25, 232);
+            this.LblPlatForm.Location = new System.Drawing.Point(21, 256);
             this.LblPlatForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPlatForm.Name = "LblPlatForm";
             this.LblPlatForm.Size = new System.Drawing.Size(97, 19);
@@ -170,8 +231,8 @@
             // 
             this.CmbPartylists.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbPartylists.FormattingEnabled = true;
-            this.CmbPartylists.Location = new System.Drawing.Point(136, 172);
-            this.CmbPartylists.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbPartylists.Location = new System.Drawing.Point(132, 196);
+            this.CmbPartylists.Margin = new System.Windows.Forms.Padding(2);
             this.CmbPartylists.Name = "CmbPartylists";
             this.CmbPartylists.Size = new System.Drawing.Size(238, 24);
             this.CmbPartylists.TabIndex = 69;
@@ -181,7 +242,7 @@
             this.LblPartylists.BackColor = System.Drawing.Color.Transparent;
             this.LblPartylists.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPartylists.ForeColor = System.Drawing.Color.White;
-            this.LblPartylists.Location = new System.Drawing.Point(25, 176);
+            this.LblPartylists.Location = new System.Drawing.Point(21, 200);
             this.LblPartylists.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPartylists.Name = "LblPartylists";
             this.LblPartylists.Size = new System.Drawing.Size(97, 19);
@@ -189,46 +250,12 @@
             this.LblPartylists.Text = "PARTYLIST";
             this.LblPartylists.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // BtnSave
-            // 
-            this.BtnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
-            this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSave.FlatAppearance.BorderSize = 0;
-            this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSave.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSave.ForeColor = System.Drawing.Color.White;
-            this.BtnSave.Location = new System.Drawing.Point(321, 342);
-            this.BtnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(52, 24);
-            this.BtnSave.TabIndex = 67;
-            this.BtnSave.Text = "SAVE";
-            this.BtnSave.UseVisualStyleBackColor = false;
-            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
-            // 
-            // BtnBack
-            // 
-            this.BtnBack.BackColor = System.Drawing.Color.Maroon;
-            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBack.FlatAppearance.BorderSize = 0;
-            this.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBack.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBack.ForeColor = System.Drawing.Color.White;
-            this.BtnBack.Location = new System.Drawing.Point(17, 342);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(52, 24);
-            this.BtnBack.TabIndex = 66;
-            this.BtnBack.Text = "BACK";
-            this.BtnBack.UseVisualStyleBackColor = false;
-            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
-            // 
             // CmbPosition
             // 
             this.CmbPosition.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbPosition.FormattingEnabled = true;
-            this.CmbPosition.Location = new System.Drawing.Point(136, 202);
-            this.CmbPosition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbPosition.Location = new System.Drawing.Point(132, 226);
+            this.CmbPosition.Margin = new System.Windows.Forms.Padding(2);
             this.CmbPosition.Name = "CmbPosition";
             this.CmbPosition.Size = new System.Drawing.Size(238, 24);
             this.CmbPosition.TabIndex = 65;
@@ -238,7 +265,7 @@
             this.LblPosition.BackColor = System.Drawing.Color.Transparent;
             this.LblPosition.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPosition.ForeColor = System.Drawing.Color.White;
-            this.LblPosition.Location = new System.Drawing.Point(25, 205);
+            this.LblPosition.Location = new System.Drawing.Point(21, 229);
             this.LblPosition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPosition.Name = "LblPosition";
             this.LblPosition.Size = new System.Drawing.Size(97, 19);
@@ -251,7 +278,7 @@
             this.LblChooseFile.BackColor = System.Drawing.Color.Transparent;
             this.LblChooseFile.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblChooseFile.ForeColor = System.Drawing.Color.White;
-            this.LblChooseFile.Location = new System.Drawing.Point(212, 150);
+            this.LblChooseFile.Location = new System.Drawing.Point(208, 174);
             this.LblChooseFile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblChooseFile.Name = "LblChooseFile";
             this.LblChooseFile.Size = new System.Drawing.Size(97, 19);
@@ -259,15 +286,15 @@
             this.LblChooseFile.Text = "No File Chosen";
             this.LblChooseFile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TxtCandidateID
+            // TxtStudentID
             // 
-            this.TxtCandidateID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtCandidateID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCandidateID.Location = new System.Drawing.Point(136, 16);
-            this.TxtCandidateID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TxtCandidateID.Name = "TxtCandidateID";
-            this.TxtCandidateID.Size = new System.Drawing.Size(238, 23);
-            this.TxtCandidateID.TabIndex = 54;
+            this.TxtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtStudentID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtStudentID.Location = new System.Drawing.Point(132, 26);
+            this.TxtStudentID.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtStudentID.Name = "TxtStudentID";
+            this.TxtStudentID.Size = new System.Drawing.Size(238, 23);
+            this.TxtStudentID.TabIndex = 54;
             // 
             // BtnChooseFile
             // 
@@ -276,33 +303,33 @@
             this.BtnChooseFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnChooseFile.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnChooseFile.ForeColor = System.Drawing.Color.White;
-            this.BtnChooseFile.Location = new System.Drawing.Point(136, 145);
-            this.BtnChooseFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnChooseFile.Location = new System.Drawing.Point(132, 169);
+            this.BtnChooseFile.Margin = new System.Windows.Forms.Padding(2);
             this.BtnChooseFile.Name = "BtnChooseFile";
             this.BtnChooseFile.Size = new System.Drawing.Size(70, 22);
             this.BtnChooseFile.TabIndex = 62;
             this.BtnChooseFile.Text = "Choose File";
             this.BtnChooseFile.UseVisualStyleBackColor = false;
             // 
-            // LblCandidateID
+            // LblStudentID
             // 
-            this.LblCandidateID.BackColor = System.Drawing.Color.Transparent;
-            this.LblCandidateID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCandidateID.ForeColor = System.Drawing.Color.White;
-            this.LblCandidateID.Location = new System.Drawing.Point(25, 20);
-            this.LblCandidateID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblCandidateID.Name = "LblCandidateID";
-            this.LblCandidateID.Size = new System.Drawing.Size(97, 19);
-            this.LblCandidateID.TabIndex = 53;
-            this.LblCandidateID.Text = "CANDIDATE ID";
-            this.LblCandidateID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblStudentID.BackColor = System.Drawing.Color.Transparent;
+            this.LblStudentID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblStudentID.ForeColor = System.Drawing.Color.White;
+            this.LblStudentID.Location = new System.Drawing.Point(21, 30);
+            this.LblStudentID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblStudentID.Name = "LblStudentID";
+            this.LblStudentID.Size = new System.Drawing.Size(107, 19);
+            this.LblStudentID.TabIndex = 53;
+            this.LblStudentID.Text = "STUDENT ID";
+            this.LblStudentID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LblPhoto
             // 
             this.LblPhoto.BackColor = System.Drawing.Color.Transparent;
             this.LblPhoto.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPhoto.ForeColor = System.Drawing.Color.White;
-            this.LblPhoto.Location = new System.Drawing.Point(25, 149);
+            this.LblPhoto.Location = new System.Drawing.Point(21, 173);
             this.LblPhoto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblPhoto.Name = "LblPhoto";
             this.LblPhoto.Size = new System.Drawing.Size(97, 19);
@@ -315,7 +342,7 @@
             this.LblFirstName.BackColor = System.Drawing.Color.Transparent;
             this.LblFirstName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFirstName.ForeColor = System.Drawing.Color.White;
-            this.LblFirstName.Location = new System.Drawing.Point(25, 62);
+            this.LblFirstName.Location = new System.Drawing.Point(21, 86);
             this.LblFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblFirstName.Name = "LblFirstName";
             this.LblFirstName.Size = new System.Drawing.Size(97, 19);
@@ -327,8 +354,8 @@
             // 
             this.TxtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtLastName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLastName.Location = new System.Drawing.Point(136, 119);
-            this.TxtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtLastName.Location = new System.Drawing.Point(132, 143);
+            this.TxtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.TxtLastName.Name = "TxtLastName";
             this.TxtLastName.Size = new System.Drawing.Size(238, 23);
             this.TxtLastName.TabIndex = 60;
@@ -337,8 +364,8 @@
             // 
             this.TxtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtFirstName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFirstName.Location = new System.Drawing.Point(136, 58);
-            this.TxtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtFirstName.Location = new System.Drawing.Point(132, 84);
+            this.TxtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.TxtFirstName.Name = "TxtFirstName";
             this.TxtFirstName.Size = new System.Drawing.Size(238, 23);
             this.TxtFirstName.TabIndex = 56;
@@ -348,7 +375,7 @@
             this.LblLastName.BackColor = System.Drawing.Color.Transparent;
             this.LblLastName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblLastName.ForeColor = System.Drawing.Color.White;
-            this.LblLastName.Location = new System.Drawing.Point(25, 122);
+            this.LblLastName.Location = new System.Drawing.Point(21, 146);
             this.LblLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLastName.Name = "LblLastName";
             this.LblLastName.Size = new System.Drawing.Size(97, 19);
@@ -361,10 +388,10 @@
             this.LblMiddleName.BackColor = System.Drawing.Color.Transparent;
             this.LblMiddleName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMiddleName.ForeColor = System.Drawing.Color.White;
-            this.LblMiddleName.Location = new System.Drawing.Point(25, 92);
+            this.LblMiddleName.Location = new System.Drawing.Point(21, 116);
             this.LblMiddleName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblMiddleName.Name = "LblMiddleName";
-            this.LblMiddleName.Size = new System.Drawing.Size(97, 19);
+            this.LblMiddleName.Size = new System.Drawing.Size(107, 19);
             this.LblMiddleName.TabIndex = 57;
             this.LblMiddleName.Text = "MIDDLE NAME";
             this.LblMiddleName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -373,8 +400,8 @@
             // 
             this.TxtMiddleName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtMiddleName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMiddleName.Location = new System.Drawing.Point(136, 89);
-            this.TxtMiddleName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtMiddleName.Location = new System.Drawing.Point(132, 113);
+            this.TxtMiddleName.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMiddleName.Name = "TxtMiddleName";
             this.TxtMiddleName.Size = new System.Drawing.Size(238, 23);
             this.TxtMiddleName.TabIndex = 58;
@@ -404,9 +431,9 @@
             this.Controls.Add(this.LblAddCandid);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddCandidate";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Candidate";
             this.PnlHeading.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo)).EndInit();
@@ -426,14 +453,12 @@
         private System.Windows.Forms.Label LblAddCandid;
         private System.Windows.Forms.ComboBox CmbPartylists;
         private System.Windows.Forms.Label LblPartylists;
-        private System.Windows.Forms.Button BtnSave;
-        private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.ComboBox CmbPosition;
         private System.Windows.Forms.Label LblPosition;
         private System.Windows.Forms.Label LblChooseFile;
-        private System.Windows.Forms.TextBox TxtCandidateID;
+        private System.Windows.Forms.TextBox TxtStudentID;
         private System.Windows.Forms.Button BtnChooseFile;
-        private System.Windows.Forms.Label LblCandidateID;
+        private System.Windows.Forms.Label LblStudentID;
         private System.Windows.Forms.Label LblPhoto;
         private System.Windows.Forms.Label LblFirstName;
         private System.Windows.Forms.TextBox TxtLastName;
@@ -443,5 +468,9 @@
         private System.Windows.Forms.TextBox TxtMiddleName;
         private System.Windows.Forms.TextBox TxtPlatForm;
         private System.Windows.Forms.Label LblPlatForm;
+        private System.Windows.Forms.Button BtnAddCandidate;
+        private System.Windows.Forms.Button BtnBack;
+        private System.Windows.Forms.TextBox TxtCandidateID;
+        private System.Windows.Forms.Label LblCandidateID;
     }
 }

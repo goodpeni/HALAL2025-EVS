@@ -29,7 +29,7 @@ namespace HALAL2025_EVS
         }
 
 
-        private void LoadData()
+        public void LoadData()
         {
             DgvStudentInfo.ReadOnly = true;
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -126,7 +126,7 @@ namespace HALAL2025_EVS
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            AddStudent form8 = new AddStudent();
+            AddStudent form8 = new AddStudent(this);
             form8.Show();
         }
 
