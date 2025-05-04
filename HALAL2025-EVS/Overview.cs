@@ -105,7 +105,7 @@ namespace HALAL2025_EVS
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     MySqlDataReader reader = cmd.ExecuteReader();
 
-                    // Clear all chart points and enable labels
+                    // Clear and set chart styles
                     SetupChartSeries(ChrPres);
                     SetupChartSeries(ChrVice);
                     SetupChartSeries(ChrSec);
@@ -116,6 +116,9 @@ namespace HALAL2025_EVS
                     SetupChartSeries(ChrG4Rep);
                     SetupChartSeries(ChrG5Rep);
                     SetupChartSeries(ChrG6Rep);
+
+                    // Store index trackers for each chart to color first 3 points
+                    Dictionary<int, int> chartIndexTracker = new Dictionary<int, int>();
 
                     while (reader.Read())
                     {
@@ -129,18 +132,22 @@ namespace HALAL2025_EVS
                         point.YValues = new double[] { voteCount };
                         point.Label = labelText;
 
-                        switch (positionId)
+                        System.Windows.Forms.DataVisualization.Charting.Chart targetChart = GetChartByPosition(positionId);
+                        if (targetChart != null)
                         {
-                            case 1: ChrPres.Series[0].Points.Add(point); break;
-                            case 2: ChrVice.Series[0].Points.Add(point); break;
-                            case 3: ChrSec.Series[0].Points.Add(point); break;
-                            case 4: ChrTreas.Series[0].Points.Add(point); break;
-                            case 5: ChrAudit.Series[0].Points.Add(point); break;
-                            case 6: ChrPIO.Series[0].Points.Add(point); break;
-                            case 7: ChrPO.Series[0].Points.Add(point); break;
-                            case 8: ChrG4Rep.Series[0].Points.Add(point); break;
-                            case 9: ChrG5Rep.Series[0].Points.Add(point); break;
-                            case 10: ChrG6Rep.Series[0].Points.Add(point); break;
+                            int currentIndex = chartIndexTracker.ContainsKey(positionId) ? chartIndexTracker[positionId] : 0;
+
+                            // Set custom color based on index
+                            if (currentIndex == 0)
+                                point.Color = Color.FromArgb(46, 77, 78);
+                            else if (currentIndex == 1)
+                                point.Color = Color.FromArgb(65, 114, 120);
+                            else if (currentIndex == 2)
+                                point.Color = Color.FromArgb(79, 152, 170);
+
+                            targetChart.Series[0].Points.Add(point);
+
+                            chartIndexTracker[positionId] = currentIndex + 1;
                         }
                     }
 
@@ -153,17 +160,36 @@ namespace HALAL2025_EVS
             }
         }
 
+        private System.Windows.Forms.DataVisualization.Charting.Chart GetChartByPosition(int positionId)
+        {
+            switch (positionId)
+            {
+                case 1: return ChrPres;
+                case 2: return ChrVice;
+                case 3: return ChrSec;
+                case 4: return ChrTreas;
+                case 5: return ChrAudit;
+                case 6: return ChrPIO;
+                case 7: return ChrPO;
+                case 8: return ChrG4Rep;
+                case 9: return ChrG5Rep;
+                case 10: return ChrG6Rep;
+                default: return null;
+            }
+        }
+
 
         private void SetupChartSeries(System.Windows.Forms.DataVisualization.Charting.Chart chart)
         {
             var series = chart.Series[0];
             series.Points.Clear();
-            series.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
+            series.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar; // ← Horizontal bars
             series.IsValueShownAsLabel = true;
             series.LabelForeColor = Color.Black;
             series.Font = new Font("Segoe UI", 7, FontStyle.Bold);
         }
-            
+
+
         private void BtnLogout_Click(object sender, EventArgs e)
         {
             LOGIN form1 = new LOGIN();
