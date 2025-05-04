@@ -68,6 +68,7 @@
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Section = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VoteStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnSave = new System.Windows.Forms.Button();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvStudentInfo)).BeginInit();
@@ -378,8 +379,12 @@
             this.DgvStudentInfo.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.DgvStudentInfo.RowTemplate.Height = 24;
             this.DgvStudentInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DgvStudentInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvStudentInfo.Size = new System.Drawing.Size(1174, 418);
             this.DgvStudentInfo.TabIndex = 11;
+            this.DgvStudentInfo.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvStudentInfo_CellValueChanged);
+            this.DgvStudentInfo.CurrentCellDirtyStateChanged += new System.EventHandler(this.DgvStudentInfo_CurrentCellDirtyStateChanged);
+            this.DgvStudentInfo.SelectionChanged += new System.EventHandler(this.DgvStudentInfo_SelectionChanged);
             // 
             // BtnEdit
             // 
@@ -396,6 +401,7 @@
             this.BtnEdit.TabIndex = 19;
             this.BtnEdit.Text = "EDIT";
             this.BtnEdit.UseVisualStyleBackColor = false;
+            this.BtnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
             // BtnDelete
             // 
@@ -405,7 +411,7 @@
             this.BtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDelete.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDelete.ForeColor = System.Drawing.Color.White;
-            this.BtnDelete.Location = new System.Drawing.Point(1099, 437);
+            this.BtnDelete.Location = new System.Drawing.Point(1097, 437);
             this.BtnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(116, 33);
@@ -417,6 +423,7 @@
             // 
             this.PnlStudentVoters.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
             this.PnlStudentVoters.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlStudentVoters.Controls.Add(this.BtnSave);
             this.PnlStudentVoters.Controls.Add(this.BtnDelete);
             this.PnlStudentVoters.Controls.Add(this.BtnEdit);
             this.PnlStudentVoters.Controls.Add(this.DgvStudentInfo);
@@ -550,6 +557,23 @@
             this.VoteStatus.Name = "VoteStatus";
             this.VoteStatus.Width = 160;
             // 
+            // BtnSave
+            // 
+            this.BtnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
+            this.BtnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnSave.FlatAppearance.BorderSize = 0;
+            this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSave.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSave.ForeColor = System.Drawing.Color.White;
+            this.BtnSave.Location = new System.Drawing.Point(809, 437);
+            this.BtnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(116, 33);
+            this.BtnSave.TabIndex = 21;
+            this.BtnSave.Text = "SAVE";
+            this.BtnSave.UseVisualStyleBackColor = false;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            // 
             // StudentInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -577,6 +601,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Info";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.StudentInfo_Load);
             this.PnlHeading.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvStudentInfo)).EndInit();
@@ -617,5 +642,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Section;
         private System.Windows.Forms.DataGridViewTextBoxColumn VoteStatus;
+        private System.Windows.Forms.Button BtnSave;
     }
 }

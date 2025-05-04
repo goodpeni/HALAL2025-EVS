@@ -20,10 +20,18 @@ namespace HALAL2025_EVS
         {
             InitializeComponent();
             LoadData();
+
+            BtnEdit.Enabled = false;
+            BtnSave.Enabled = false;
+
+            DgvStudentInfo.CellValueChanged += DgvStudentInfo_CellValueChanged;
+            DgvStudentInfo.CurrentCellDirtyStateChanged += DgvStudentInfo_CurrentCellDirtyStateChanged;
         }
+
 
         private void LoadData()
         {
+            DgvStudentInfo.ReadOnly = true;
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -164,6 +172,105 @@ namespace HALAL2025_EVS
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
             ApplyFilters();
+        }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+            DgvStudentInfo.ReadOnly = false;
+
+            // Make only the student_id column read-only
+            DgvStudentInfo.Columns["StudentID"].ReadOnly = true;
+            DgvStudentInfo.Columns["VoteStatus"].ReadOnly = true;
+
+            BtnSave.Enabled = false; // Wait for actual changes
+        }
+
+        private void DgvStudentInfo_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                BtnSave.Enabled = true;
+            }
+        }
+
+        private void DgvStudentInfo_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (DgvStudentInfo.IsCurrentCellDirty)
+            {
+                DgvStudentInfo.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    foreach (DataGridViewRow row in DgvStudentInfo.Rows)
+                    {
+                        if (row.IsNewRow) continue;
+
+                        string studentId = row.Cells["StudentID"].Value?.ToString();
+                        string firstName = row.Cells["FirstName"].Value?.ToString();
+                        string middleName = row.Cells["MiddleName"].Value?.ToString();
+                        string lastName = row.Cells["LastName"].Value?.ToString();
+                        string gradeLevel = row.Cells["Grade"].Value?.ToString();
+                        string section = row.Cells["Section"].Value?.ToString();
+                        int voteStatus = row.Cells["VoteStatus"].Value != null && row.Cells["VoteStatus"].Value.ToString() == "1" ? 1 : 0;
+
+                        string query = @"UPDATE student 
+                                SET first_name = @firstName, 
+                                    middle_name = @middleName, 
+                                    last_name = @lastName, 
+                                    grade_level = @gradeLevel, 
+                                    section = @section, 
+                                    vote_status = @voteStatus 
+                                WHERE student_id = @studentId";
+
+                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@firstName", firstName);
+                            cmd.Parameters.AddWithValue("@middleName", middleName);
+                            cmd.Parameters.AddWithValue("@lastName", lastName);
+                            cmd.Parameters.AddWithValue("@gradeLevel", gradeLevel);
+                            cmd.Parameters.AddWithValue("@section", section);
+                            cmd.Parameters.AddWithValue("@voteStatus", voteStatus);
+                            cmd.Parameters.AddWithValue("@studentId", studentId);
+
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+
+                    MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadData(); // Refresh after save
+                    DgvStudentInfo.ReadOnly = true;
+                    BtnSave.Enabled = false;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error saving changes: " + ex.Message);
+                }
+            }
+        }
+
+        private void DgvStudentInfo_SelectionChanged(object sender, EventArgs e)
+        {
+            if (DgvStudentInfo.SelectedRows.Count > 0 || DgvStudentInfo.CurrentRow != null)
+            {
+                BtnEdit.Enabled = true;
+            }
+            else
+            {
+                BtnEdit.Enabled = false;
+            }
+        }
+
+        private void StudentInfo_Load(object sender, EventArgs e)
+        {
+            DgvStudentInfo.SelectionChanged += DgvStudentInfo_SelectionChanged;
         }
     }
 }
