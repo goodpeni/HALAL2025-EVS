@@ -272,5 +272,61 @@ namespace HALAL2025_EVS
         {
             DgvStudentInfo.SelectionChanged += DgvStudentInfo_SelectionChanged;
         }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            // Ensure that a row is selected
+            if (DgvStudentInfo.SelectedRows.Count > 0)
+            {
+                // Get the student ID of the selected row
+                string studentId = DgvStudentInfo.SelectedRows[0].Cells["StudentID"].Value?.ToString();
+
+                // Confirm deletion
+                DialogResult result = MessageBox.Show($"Are you sure you want to delete student {studentId}?",
+                                                      "Confirm Deletion",
+                                                      MessageBoxButtons.YesNo,
+                                                      MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    // Delete from the database
+                    using (MySqlConnection conn = new MySqlConnection(connectionString))
+                    {
+                        try
+                        {
+                            conn.Open();
+
+                            // Prepare the SQL query to delete the student by student ID
+                            string query = "DELETE FROM student WHERE student_id = @studentId";
+
+                            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@studentId", studentId);
+
+                                int rowsAffected = cmd.ExecuteNonQuery();
+                                if (rowsAffected > 0)
+                                {
+                                    MessageBox.Show("Student deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    // Remove the row from the DataGridView
+                                    DgvStudentInfo.Rows.RemoveAt(DgvStudentInfo.SelectedRows[0].Index);
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Error: Student not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error deleting student: " + ex.Message);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a student to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
