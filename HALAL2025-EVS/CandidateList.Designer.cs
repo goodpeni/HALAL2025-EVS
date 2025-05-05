@@ -49,6 +49,13 @@
             this.LblTitle1 = new System.Windows.Forms.Label();
             this.LblCandidates = new System.Windows.Forms.Label();
             this.DgvCandidatesList = new System.Windows.Forms.DataGridView();
+            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CandidateID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MiddleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Partylist = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PnlCandidates = new System.Windows.Forms.Panel();
             this.BtnSave = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
@@ -64,13 +71,6 @@
             this.LblFilter = new System.Windows.Forms.Label();
             this.BtnAddParty = new System.Windows.Forms.Button();
             this.BtnClearFilter = new System.Windows.Forms.Button();
-            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CandidateID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MiddleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Partylist = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCandidatesList)).BeginInit();
@@ -108,7 +108,7 @@
             this.BtnStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnStudents.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnStudents.ForeColor = System.Drawing.Color.White;
-            this.BtnStudents.Location = new System.Drawing.Point(1161, 18);
+            this.BtnStudents.Location = new System.Drawing.Point(1110, 19);
             this.BtnStudents.Margin = new System.Windows.Forms.Padding(2);
             this.BtnStudents.Name = "BtnStudents";
             this.BtnStudents.Size = new System.Drawing.Size(88, 32);
@@ -128,7 +128,7 @@
             this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLogout.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogout.ForeColor = System.Drawing.Color.White;
-            this.BtnLogout.Location = new System.Drawing.Point(1469, 18);
+            this.BtnLogout.Location = new System.Drawing.Point(1200, 18);
             this.BtnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.BtnLogout.Name = "BtnLogout";
             this.BtnLogout.Size = new System.Drawing.Size(70, 32);
@@ -150,7 +150,7 @@
             this.BtnPartylists.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPartylists.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPartylists.ForeColor = System.Drawing.Color.White;
-            this.BtnPartylists.Location = new System.Drawing.Point(1063, 18);
+            this.BtnPartylists.Location = new System.Drawing.Point(1012, 19);
             this.BtnPartylists.Margin = new System.Windows.Forms.Padding(2);
             this.BtnPartylists.Name = "BtnPartylists";
             this.BtnPartylists.Size = new System.Drawing.Size(88, 32);
@@ -170,7 +170,7 @@
             this.BtnOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOverview.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnOverview.ForeColor = System.Drawing.Color.White;
-            this.BtnOverview.Location = new System.Drawing.Point(962, 18);
+            this.BtnOverview.Location = new System.Drawing.Point(911, 19);
             this.BtnOverview.Margin = new System.Windows.Forms.Padding(2);
             this.BtnOverview.Name = "BtnOverview";
             this.BtnOverview.Size = new System.Drawing.Size(88, 32);
@@ -278,6 +278,103 @@
             this.DgvCandidatesList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvCandidatesList.Size = new System.Drawing.Size(1182, 376);
             this.DgvCandidatesList.TabIndex = 13;
+            // 
+            // StudentID
+            // 
+            this.StudentID.DataPropertyName = "student_id";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.StudentID.DefaultCellStyle = dataGridViewCellStyle3;
+            this.StudentID.HeaderText = "Student ID";
+            this.StudentID.MinimumWidth = 4;
+            this.StudentID.Name = "StudentID";
+            this.StudentID.ReadOnly = true;
+            this.StudentID.Width = 150;
+            // 
+            // CandidateID
+            // 
+            this.CandidateID.DataPropertyName = "candidate_id";
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.CandidateID.DefaultCellStyle = dataGridViewCellStyle4;
+            this.CandidateID.HeaderText = "Candidate ID";
+            this.CandidateID.MinimumWidth = 4;
+            this.CandidateID.Name = "CandidateID";
+            this.CandidateID.ReadOnly = true;
+            this.CandidateID.Width = 130;
+            // 
+            // FirstName
+            // 
+            this.FirstName.DataPropertyName = "first_name";
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.FirstName.DefaultCellStyle = dataGridViewCellStyle5;
+            this.FirstName.HeaderText = "First Name";
+            this.FirstName.MinimumWidth = 4;
+            this.FirstName.Name = "FirstName";
+            this.FirstName.ReadOnly = true;
+            this.FirstName.Width = 200;
+            // 
+            // MiddleName
+            // 
+            this.MiddleName.DataPropertyName = "middle_name";
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.MiddleName.DefaultCellStyle = dataGridViewCellStyle6;
+            this.MiddleName.HeaderText = "Middle Name";
+            this.MiddleName.MinimumWidth = 4;
+            this.MiddleName.Name = "MiddleName";
+            this.MiddleName.ReadOnly = true;
+            this.MiddleName.Width = 200;
+            // 
+            // LastName
+            // 
+            this.LastName.DataPropertyName = "last_name";
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.LastName.DefaultCellStyle = dataGridViewCellStyle7;
+            this.LastName.HeaderText = "Last Name";
+            this.LastName.MinimumWidth = 4;
+            this.LastName.Name = "LastName";
+            this.LastName.ReadOnly = true;
+            this.LastName.Width = 200;
+            // 
+            // Position
+            // 
+            this.Position.DataPropertyName = "position_name";
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.Position.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Position.HeaderText = "Position";
+            this.Position.Name = "Position";
+            this.Position.ReadOnly = true;
+            this.Position.Width = 150;
+            // 
+            // Partylist
+            // 
+            this.Partylist.DataPropertyName = "partylist_name";
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.Partylist.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Partylist.HeaderText = "Partylist Name";
+            this.Partylist.MinimumWidth = 4;
+            this.Partylist.Name = "Partylist";
+            this.Partylist.ReadOnly = true;
+            this.Partylist.Width = 150;
             // 
             // PnlCandidates
             // 
@@ -489,103 +586,6 @@
             this.BtnClearFilter.Text = "CLEAR FILTER";
             this.BtnClearFilter.UseVisualStyleBackColor = false;
             this.BtnClearFilter.Click += new System.EventHandler(this.BtnClearFilter_Click);
-            // 
-            // StudentID
-            // 
-            this.StudentID.DataPropertyName = "student_id";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.StudentID.DefaultCellStyle = dataGridViewCellStyle3;
-            this.StudentID.HeaderText = "Student ID";
-            this.StudentID.MinimumWidth = 4;
-            this.StudentID.Name = "StudentID";
-            this.StudentID.ReadOnly = true;
-            this.StudentID.Width = 150;
-            // 
-            // CandidateID
-            // 
-            this.CandidateID.DataPropertyName = "candidate_id";
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.CandidateID.DefaultCellStyle = dataGridViewCellStyle4;
-            this.CandidateID.HeaderText = "Candidate ID";
-            this.CandidateID.MinimumWidth = 4;
-            this.CandidateID.Name = "CandidateID";
-            this.CandidateID.ReadOnly = true;
-            this.CandidateID.Width = 130;
-            // 
-            // FirstName
-            // 
-            this.FirstName.DataPropertyName = "first_name";
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.FirstName.DefaultCellStyle = dataGridViewCellStyle5;
-            this.FirstName.HeaderText = "First Name";
-            this.FirstName.MinimumWidth = 4;
-            this.FirstName.Name = "FirstName";
-            this.FirstName.ReadOnly = true;
-            this.FirstName.Width = 200;
-            // 
-            // MiddleName
-            // 
-            this.MiddleName.DataPropertyName = "middle_name";
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.MiddleName.DefaultCellStyle = dataGridViewCellStyle6;
-            this.MiddleName.HeaderText = "Middle Name";
-            this.MiddleName.MinimumWidth = 4;
-            this.MiddleName.Name = "MiddleName";
-            this.MiddleName.ReadOnly = true;
-            this.MiddleName.Width = 200;
-            // 
-            // LastName
-            // 
-            this.LastName.DataPropertyName = "last_name";
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.LastName.DefaultCellStyle = dataGridViewCellStyle7;
-            this.LastName.HeaderText = "Last Name";
-            this.LastName.MinimumWidth = 4;
-            this.LastName.Name = "LastName";
-            this.LastName.ReadOnly = true;
-            this.LastName.Width = 200;
-            // 
-            // Position
-            // 
-            this.Position.DataPropertyName = "position_name";
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.Position.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Position.HeaderText = "Position";
-            this.Position.Name = "Position";
-            this.Position.ReadOnly = true;
-            this.Position.Width = 150;
-            // 
-            // Partylist
-            // 
-            this.Partylist.DataPropertyName = "partylist_name";
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.Partylist.DefaultCellStyle = dataGridViewCellStyle9;
-            this.Partylist.HeaderText = "Partylist Name";
-            this.Partylist.MinimumWidth = 4;
-            this.Partylist.Name = "Partylist";
-            this.Partylist.ReadOnly = true;
-            this.Partylist.Width = 150;
             // 
             // Candidates
             // 
