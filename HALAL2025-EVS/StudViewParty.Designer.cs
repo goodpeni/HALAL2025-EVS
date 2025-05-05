@@ -66,7 +66,7 @@
             this.PicBoxTreas = new System.Windows.Forms.PictureBox();
             this.PicBoxSpaces = new System.Windows.Forms.PictureBox();
             this.PicBoxG5Rep = new System.Windows.Forms.PictureBox();
-            this.PicboxPIO = new System.Windows.Forms.PictureBox();
+            this.PicBoxPIO = new System.Windows.Forms.PictureBox();
             this.PicBoxSec = new System.Windows.Forms.PictureBox();
             this.PicBoxPres = new System.Windows.Forms.PictureBox();
             this.LblPartylist = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxTreas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxSpaces)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5Rep)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicboxPIO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxPres)).BeginInit();
             this.SuspendLayout();
@@ -101,9 +101,9 @@
             this.PnlHeading.Controls.Add(this.LblTitle1);
             this.PnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeading.Location = new System.Drawing.Point(0, 0);
-            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2);
             this.PnlHeading.Name = "PnlHeading";
-            this.PnlHeading.Size = new System.Drawing.Size(1455, 67);
+            this.PnlHeading.Size = new System.Drawing.Size(1316, 67);
             this.PnlHeading.TabIndex = 3;
             // 
             // BtnLogout
@@ -116,8 +116,8 @@
             this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLogout.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogout.ForeColor = System.Drawing.Color.White;
-            this.BtnLogout.Location = new System.Drawing.Point(1462, 18);
-            this.BtnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnLogout.Location = new System.Drawing.Point(1195, 18);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.BtnLogout.Name = "BtnLogout";
             this.BtnLogout.Size = new System.Drawing.Size(70, 32);
             this.BtnLogout.TabIndex = 7;
@@ -138,7 +138,7 @@
             this.BtnPartylists.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPartylists.ForeColor = System.Drawing.Color.White;
             this.BtnPartylists.Location = new System.Drawing.Point(1052, 18);
-            this.BtnPartylists.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnPartylists.Margin = new System.Windows.Forms.Padding(2);
             this.BtnPartylists.Name = "BtnPartylists";
             this.BtnPartylists.Size = new System.Drawing.Size(88, 32);
             this.BtnPartylists.TabIndex = 5;
@@ -157,7 +157,7 @@
             this.BtnVoteNow.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVoteNow.ForeColor = System.Drawing.Color.White;
             this.BtnVoteNow.Location = new System.Drawing.Point(955, 18);
-            this.BtnVoteNow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnVoteNow.Margin = new System.Windows.Forms.Padding(2);
             this.BtnVoteNow.Name = "BtnVoteNow";
             this.BtnVoteNow.Size = new System.Drawing.Size(88, 32);
             this.BtnVoteNow.TabIndex = 1;
@@ -184,7 +184,7 @@
             this.PicBoxLogo.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.halal20225;
             this.PicBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxLogo.Location = new System.Drawing.Point(10, 1);
-            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxLogo.Name = "PicBoxLogo";
             this.PicBoxLogo.Size = new System.Drawing.Size(56, 61);
             this.PicBoxLogo.TabIndex = 1;
@@ -208,7 +208,7 @@
             this.LblViewPartylist.BackColor = System.Drawing.Color.Transparent;
             this.LblViewPartylist.Font = new System.Drawing.Font("Arial Black", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblViewPartylist.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.LblViewPartylist.Location = new System.Drawing.Point(458, 86);
+            this.LblViewPartylist.Location = new System.Drawing.Point(346, 89);
             this.LblViewPartylist.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblViewPartylist.Name = "LblViewPartylist";
             this.LblViewPartylist.Size = new System.Drawing.Size(638, 51);
@@ -220,8 +220,8 @@
             // 
             this.CmbFilter.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbFilter.FormattingEnabled = true;
-            this.CmbFilter.Location = new System.Drawing.Point(708, 150);
-            this.CmbFilter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbFilter.Location = new System.Drawing.Point(596, 153);
+            this.CmbFilter.Margin = new System.Windows.Forms.Padding(2);
             this.CmbFilter.Name = "CmbFilter";
             this.CmbFilter.Size = new System.Drawing.Size(251, 38);
             this.CmbFilter.TabIndex = 12;
@@ -231,7 +231,7 @@
             this.LblFilter.BackColor = System.Drawing.Color.Transparent;
             this.LblFilter.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFilter.ForeColor = System.Drawing.Color.White;
-            this.LblFilter.Location = new System.Drawing.Point(610, 150);
+            this.LblFilter.Location = new System.Drawing.Point(498, 153);
             this.LblFilter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblFilter.Name = "LblFilter";
             this.LblFilter.Size = new System.Drawing.Size(94, 37);
@@ -271,16 +271,16 @@
             this.PnlPartylists.Controls.Add(this.PicBoxTreas);
             this.PnlPartylists.Controls.Add(this.PicBoxSpaces);
             this.PnlPartylists.Controls.Add(this.PicBoxG5Rep);
-            this.PnlPartylists.Controls.Add(this.PicboxPIO);
+            this.PnlPartylists.Controls.Add(this.PicBoxPIO);
             this.PnlPartylists.Controls.Add(this.PicBoxSec);
             this.PnlPartylists.Controls.Add(this.PicBoxPres);
             this.PnlPartylists.Controls.Add(this.LblPartylist);
             this.PnlPartylists.Controls.Add(this.LblPartylistName);
             this.PnlPartylists.Controls.Add(this.LblPres);
-            this.PnlPartylists.Location = new System.Drawing.Point(458, 203);
-            this.PnlPartylists.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlPartylists.Location = new System.Drawing.Point(356, 215);
+            this.PnlPartylists.Margin = new System.Windows.Forms.Padding(2);
             this.PnlPartylists.Name = "PnlPartylists";
-            this.PnlPartylists.Size = new System.Drawing.Size(638, 665);
+            this.PnlPartylists.Size = new System.Drawing.Size(638, 515);
             this.PnlPartylists.TabIndex = 14;
             // 
             // LblG6RepName
@@ -535,7 +535,7 @@
             this.PicBoxG4Rep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxG4Rep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PicBoxG4Rep.Location = new System.Drawing.Point(43, 752);
-            this.PicBoxG4Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxG4Rep.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxG4Rep.Name = "PicBoxG4Rep";
             this.PicBoxG4Rep.Size = new System.Drawing.Size(151, 163);
             this.PicBoxG4Rep.TabIndex = 27;
@@ -546,7 +546,7 @@
             this.PicBoxG6Rep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxG6Rep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PicBoxG6Rep.Location = new System.Drawing.Point(430, 752);
-            this.PicBoxG6Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxG6Rep.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxG6Rep.Name = "PicBoxG6Rep";
             this.PicBoxG6Rep.Size = new System.Drawing.Size(151, 163);
             this.PicBoxG6Rep.TabIndex = 26;
@@ -557,7 +557,7 @@
             this.PicBoxAudit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxAudit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PicBoxAudit.Location = new System.Drawing.Point(43, 523);
-            this.PicBoxAudit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxAudit.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxAudit.Name = "PicBoxAudit";
             this.PicBoxAudit.Size = new System.Drawing.Size(151, 163);
             this.PicBoxAudit.TabIndex = 25;
@@ -568,7 +568,7 @@
             this.PicBoxPO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxPO.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PicBoxPO.Location = new System.Drawing.Point(430, 523);
-            this.PicBoxPO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxPO.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxPO.Name = "PicBoxPO";
             this.PicBoxPO.Size = new System.Drawing.Size(151, 163);
             this.PicBoxPO.TabIndex = 24;
@@ -579,7 +579,7 @@
             this.PicBoxVice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxVice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PicBoxVice.Location = new System.Drawing.Point(43, 300);
-            this.PicBoxVice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxVice.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxVice.Name = "PicBoxVice";
             this.PicBoxVice.Size = new System.Drawing.Size(151, 163);
             this.PicBoxVice.TabIndex = 23;
@@ -590,7 +590,7 @@
             this.PicBoxTreas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxTreas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PicBoxTreas.Location = new System.Drawing.Point(430, 300);
-            this.PicBoxTreas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxTreas.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxTreas.Name = "PicBoxTreas";
             this.PicBoxTreas.Size = new System.Drawing.Size(151, 163);
             this.PicBoxTreas.TabIndex = 22;
@@ -600,7 +600,7 @@
             // 
             this.PicBoxSpaces.BackColor = System.Drawing.Color.Transparent;
             this.PicBoxSpaces.Location = new System.Drawing.Point(17, 951);
-            this.PicBoxSpaces.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxSpaces.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxSpaces.Name = "PicBoxSpaces";
             this.PicBoxSpaces.Size = new System.Drawing.Size(588, 8);
             this.PicBoxSpaces.TabIndex = 21;
@@ -611,29 +611,29 @@
             this.PicBoxG5Rep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxG5Rep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PicBoxG5Rep.Location = new System.Drawing.Point(237, 752);
-            this.PicBoxG5Rep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxG5Rep.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxG5Rep.Name = "PicBoxG5Rep";
             this.PicBoxG5Rep.Size = new System.Drawing.Size(151, 163);
             this.PicBoxG5Rep.TabIndex = 20;
             this.PicBoxG5Rep.TabStop = false;
             // 
-            // PicboxPIO
+            // PicBoxPIO
             // 
-            this.PicboxPIO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PicboxPIO.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PicboxPIO.Location = new System.Drawing.Point(237, 523);
-            this.PicboxPIO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.PicboxPIO.Name = "PicboxPIO";
-            this.PicboxPIO.Size = new System.Drawing.Size(151, 163);
-            this.PicboxPIO.TabIndex = 19;
-            this.PicboxPIO.TabStop = false;
+            this.PicBoxPIO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PicBoxPIO.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PicBoxPIO.Location = new System.Drawing.Point(237, 523);
+            this.PicBoxPIO.Margin = new System.Windows.Forms.Padding(2);
+            this.PicBoxPIO.Name = "PicBoxPIO";
+            this.PicBoxPIO.Size = new System.Drawing.Size(151, 163);
+            this.PicBoxPIO.TabIndex = 19;
+            this.PicBoxPIO.TabStop = false;
             // 
             // PicBoxSec
             // 
             this.PicBoxSec.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxSec.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PicBoxSec.Location = new System.Drawing.Point(237, 300);
-            this.PicBoxSec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxSec.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxSec.Name = "PicBoxSec";
             this.PicBoxSec.Size = new System.Drawing.Size(151, 163);
             this.PicBoxSec.TabIndex = 18;
@@ -644,7 +644,7 @@
             this.PicBoxPres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxPres.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PicBoxPres.Location = new System.Drawing.Point(237, 77);
-            this.PicBoxPres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxPres.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxPres.Name = "PicBoxPres";
             this.PicBoxPres.Size = new System.Drawing.Size(151, 163);
             this.PicBoxPres.TabIndex = 17;
@@ -695,7 +695,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.darkmode;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1455, 878);
+            this.ClientSize = new System.Drawing.Size(1316, 788);
             this.Controls.Add(this.PnlPartylists);
             this.Controls.Add(this.CmbFilter);
             this.Controls.Add(this.LblViewPartylist);
@@ -703,7 +703,7 @@
             this.Controls.Add(this.LblFilter);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewPartylist";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Partylist";
@@ -719,7 +719,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxTreas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxSpaces)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxG5Rep)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicboxPIO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxPIO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxSec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxPres)).EndInit();
             this.ResumeLayout(false);
@@ -750,7 +750,7 @@
         private System.Windows.Forms.PictureBox PicBoxTreas;
         private System.Windows.Forms.PictureBox PicBoxSpaces;
         private System.Windows.Forms.PictureBox PicBoxG5Rep;
-        private System.Windows.Forms.PictureBox PicboxPIO;
+        private System.Windows.Forms.PictureBox PicBoxPIO;
         private System.Windows.Forms.PictureBox PicBoxSec;
         private System.Windows.Forms.PictureBox PicBoxPres;
         private System.Windows.Forms.Label LblG6RepName;
