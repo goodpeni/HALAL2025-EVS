@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
 using MySql.Data.MySqlClient;
 
 namespace HALAL2025_EVS
@@ -374,5 +378,75 @@ namespace HALAL2025_EVS
             }
         }
 
+        private void BtnReport_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+                {
+                    saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                    saveFileDialog.Title = "Save Candidate Report";
+                    saveFileDialog.FileName = "Candidate_Report.pdf";
+
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string filePath = saveFileDialog.FileName;
+
+                        // Create a new PDF document
+                        Document doc = new Document(PageSize.A4, 25, 25, 30, 30);
+
+                        using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                        {
+                            PdfWriter writer = PdfWriter.GetInstance(doc, fs);
+                            doc.Open();
+
+                            // Add title
+                            var titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18);
+                            Paragraph title = new Paragraph("Candidate Information Report", titleFont)
+                            {
+                                Alignment = Element.ALIGN_CENTER,
+                                SpacingAfter = 20f
+                            };
+                            doc.Add(title);
+
+                            // Create a table with the same number of columns as the DataGridView
+                            PdfPTable pdfTable = new PdfPTable(DgvCandidatesList.Columns.Count);
+                            pdfTable.WidthPercentage = 100;
+
+                            // Add headers
+                            foreach (DataGridViewColumn column in DgvCandidatesList.Columns)
+                            {
+                                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText))
+                                {
+                                    BackgroundColor = new BaseColor(230, 230, 250) // light purple
+                                };
+                                pdfTable.AddCell(cell);
+                            }
+
+                            // Add rows
+                            foreach (DataGridViewRow row in DgvCandidatesList.Rows)
+                            {
+                                if (row.IsNewRow) continue;
+
+                                foreach (DataGridViewCell cell in row.Cells)
+                                {
+                                    string value = cell.Value?.ToString() ?? "";
+                                    pdfTable.AddCell(value);
+                                }
+                            }
+
+                            doc.Add(pdfTable);
+                            doc.Close();
+                        }
+
+                        MessageBox.Show($"Report generated successfully!\n\nSaved to: {filePath}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error generating report: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

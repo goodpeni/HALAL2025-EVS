@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Mysqlx.Notice.Warning.Types;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace HALAL2025_EVS
 {
@@ -358,5 +362,75 @@ namespace HALAL2025_EVS
                 }
             }
         }
+
+        private void BtnReport_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Prompt the user to choose a file location and name using SaveFileDialog
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+                {
+                    saveFileDialog.Filter = "PDF Files (*.pdf)|*.pdf";
+                    saveFileDialog.DefaultExt = "pdf";
+                    saveFileDialog.AddExtension = true;
+
+                    // If the user selects a file location, proceed
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string filePath = saveFileDialog.FileName;
+
+                        // Create a new PDF document
+                        Document doc = new Document(PageSize.A4, 25, 25, 30, 30);
+                        PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
+                        doc.Open();
+
+                        // Add title
+                        var titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18);
+                        Paragraph title = new Paragraph("Student Information Report", titleFont)
+                        {
+                            Alignment = Element.ALIGN_CENTER,
+                            SpacingAfter = 20f
+                        };
+                        doc.Add(title);
+
+                        // Create a table with the same number of columns as the DataGridView
+                        PdfPTable pdfTable = new PdfPTable(DgvStudentInfo.Columns.Count);
+                        pdfTable.WidthPercentage = 100;
+
+                        // Add headers
+                        foreach (DataGridViewColumn column in DgvStudentInfo.Columns)
+                        {
+                            PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText))
+                            {
+                                BackgroundColor = new BaseColor(230, 230, 250) // light purple
+                            };
+                            pdfTable.AddCell(cell);
+                        }
+
+                        // Add rows
+                        foreach (DataGridViewRow row in DgvStudentInfo.Rows)
+                        {
+                            if (row.IsNewRow) continue;
+
+                            foreach (DataGridViewCell cell in row.Cells)
+                            {
+                                string value = cell.Value?.ToString() ?? "";
+                                pdfTable.AddCell(value);
+                            }
+                        }
+
+                        doc.Add(pdfTable);
+                        doc.Close();
+
+                        MessageBox.Show($"Report generated successfully!\n\nSaved to: {filePath}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error generating report: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }

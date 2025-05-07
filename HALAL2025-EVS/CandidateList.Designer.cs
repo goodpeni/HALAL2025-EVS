@@ -71,6 +71,7 @@
             this.LblFilter = new System.Windows.Forms.Label();
             this.BtnAddParty = new System.Windows.Forms.Button();
             this.BtnClearFilter = new System.Windows.Forms.Button();
+            this.BtnReport = new System.Windows.Forms.Button();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCandidatesList)).BeginInit();
@@ -381,6 +382,7 @@
             this.PnlCandidates.AutoScroll = true;
             this.PnlCandidates.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
             this.PnlCandidates.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlCandidates.Controls.Add(this.BtnReport);
             this.PnlCandidates.Controls.Add(this.BtnSave);
             this.PnlCandidates.Controls.Add(this.BtnDelete);
             this.PnlCandidates.Controls.Add(this.BtnEdit);
@@ -587,6 +589,23 @@
             this.BtnClearFilter.UseVisualStyleBackColor = false;
             this.BtnClearFilter.Click += new System.EventHandler(this.BtnClearFilter_Click);
             // 
+            // BtnReport
+            // 
+            this.BtnReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
+            this.BtnReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnReport.FlatAppearance.BorderSize = 0;
+            this.BtnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReport.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnReport.ForeColor = System.Drawing.Color.White;
+            this.BtnReport.Location = new System.Drawing.Point(38, 416);
+            this.BtnReport.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnReport.Name = "BtnReport";
+            this.BtnReport.Size = new System.Drawing.Size(116, 33);
+            this.BtnReport.TabIndex = 32;
+            this.BtnReport.Text = "REPORT";
+            this.BtnReport.UseVisualStyleBackColor = false;
+            this.BtnReport.Click += new System.EventHandler(this.BtnReport_Click);
+            // 
             // Candidates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -660,5 +679,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Position;
         private System.Windows.Forms.DataGridViewTextBoxColumn Partylist;
+        private System.Windows.Forms.Button BtnReport;
     }
 }

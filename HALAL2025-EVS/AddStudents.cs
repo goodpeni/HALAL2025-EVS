@@ -23,9 +23,7 @@ namespace HALAL2025_EVS
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            StudentInfo form7 = new StudentInfo();
-            this.Hide();
-            form7.Show();
+            this.Close();
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)

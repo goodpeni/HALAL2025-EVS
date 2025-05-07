@@ -76,5 +76,10 @@ namespace HALAL2025_EVS
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

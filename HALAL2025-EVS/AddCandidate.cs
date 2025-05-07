@@ -162,9 +162,7 @@ namespace HALAL2025_EVS
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            Candidates form9 = new Candidates();
-            this.Hide();
-            form9.Show();
+            this.Close();
         }
 
         private void BtnAddCandidate_Click_1(object sender, EventArgs e)
@@ -214,7 +212,7 @@ namespace HALAL2025_EVS
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error saving candidate: " + ex.Message);
+                    //MessageBox.Show("Error saving candidate: " + ex.Message);
                 }
             }
         }

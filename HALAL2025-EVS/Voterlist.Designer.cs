@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PnlHeading = new System.Windows.Forms.Panel();
             this.BtnStudents = new System.Windows.Forms.Button();
             this.BtnLogout = new System.Windows.Forms.Button();
@@ -69,6 +69,7 @@
             this.BtnSave = new System.Windows.Forms.Button();
             this.BtnClearFilter = new System.Windows.Forms.Button();
             this.CmbVoteStatus = new System.Windows.Forms.ComboBox();
+            this.BtnReport = new System.Windows.Forms.Button();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvStudentInfo)).BeginInit();
@@ -338,21 +339,21 @@
             // 
             // DgvStudentInfo
             // 
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.Black;
-            this.DgvStudentInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.DgvStudentInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvStudentInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(187)))), ((int)(((byte)(197)))));
             this.DgvStudentInfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(80)))), ((int)(((byte)(82)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvStudentInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(80)))), ((int)(((byte)(82)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvStudentInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DgvStudentInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvStudentInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.StudentID,
@@ -367,18 +368,18 @@
             this.DgvStudentInfo.Margin = new System.Windows.Forms.Padding(2);
             this.DgvStudentInfo.MultiSelect = false;
             this.DgvStudentInfo.Name = "DgvStudentInfo";
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvStudentInfo.RowHeadersDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvStudentInfo.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.DgvStudentInfo.RowHeadersVisible = false;
             this.DgvStudentInfo.RowHeadersWidth = 51;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DgvStudentInfo.RowsDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DgvStudentInfo.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.DgvStudentInfo.RowTemplate.Height = 24;
             this.DgvStudentInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DgvStudentInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -391,11 +392,11 @@
             // StudentID
             // 
             this.StudentID.DataPropertyName = "student_id";
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.StudentID.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.StudentID.DefaultCellStyle = dataGridViewCellStyle3;
             this.StudentID.HeaderText = "Student ID";
             this.StudentID.MinimumWidth = 6;
             this.StudentID.Name = "StudentID";
@@ -404,11 +405,11 @@
             // FirstName
             // 
             this.FirstName.DataPropertyName = "first_name";
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.FirstName.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.FirstName.DefaultCellStyle = dataGridViewCellStyle4;
             this.FirstName.HeaderText = "First Name";
             this.FirstName.MinimumWidth = 6;
             this.FirstName.Name = "FirstName";
@@ -417,11 +418,11 @@
             // MiddleName
             // 
             this.MiddleName.DataPropertyName = "middle_name";
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.MiddleName.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.MiddleName.DefaultCellStyle = dataGridViewCellStyle5;
             this.MiddleName.HeaderText = "Middle Name";
             this.MiddleName.MinimumWidth = 6;
             this.MiddleName.Name = "MiddleName";
@@ -430,11 +431,11 @@
             // LastName
             // 
             this.LastName.DataPropertyName = "last_name";
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.LastName.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.LastName.DefaultCellStyle = dataGridViewCellStyle6;
             this.LastName.HeaderText = "Last Name";
             this.LastName.MinimumWidth = 6;
             this.LastName.Name = "LastName";
@@ -443,11 +444,11 @@
             // Grade
             // 
             this.Grade.DataPropertyName = "grade_level";
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.Grade.DefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.Grade.DefaultCellStyle = dataGridViewCellStyle7;
             this.Grade.HeaderText = "Grade";
             this.Grade.MinimumWidth = 6;
             this.Grade.Name = "Grade";
@@ -456,11 +457,11 @@
             // Section
             // 
             this.Section.DataPropertyName = "section";
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.Section.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.Section.DefaultCellStyle = dataGridViewCellStyle8;
             this.Section.HeaderText = "Section";
             this.Section.MinimumWidth = 6;
             this.Section.Name = "Section";
@@ -469,11 +470,11 @@
             // VoteStatus
             // 
             this.VoteStatus.DataPropertyName = "vote_status";
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
-            this.VoteStatus.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(156)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(97)))), ((int)(((byte)(104)))));
+            this.VoteStatus.DefaultCellStyle = dataGridViewCellStyle9;
             this.VoteStatus.HeaderText = "Status";
             this.VoteStatus.MinimumWidth = 6;
             this.VoteStatus.Name = "VoteStatus";
@@ -517,6 +518,7 @@
             // 
             this.PnlStudentVoters.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
             this.PnlStudentVoters.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlStudentVoters.Controls.Add(this.BtnReport);
             this.PnlStudentVoters.Controls.Add(this.BtnSave);
             this.PnlStudentVoters.Controls.Add(this.BtnDelete);
             this.PnlStudentVoters.Controls.Add(this.BtnEdit);
@@ -576,6 +578,23 @@
             this.CmbVoteStatus.TabIndex = 21;
             this.CmbVoteStatus.Text = "   (Vote Status)";
             this.CmbVoteStatus.SelectedIndexChanged += new System.EventHandler(this.CmbVoteStatus_SelectedIndexChanged);
+            // 
+            // BtnReport
+            // 
+            this.BtnReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
+            this.BtnReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnReport.FlatAppearance.BorderSize = 0;
+            this.BtnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReport.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnReport.ForeColor = System.Drawing.Color.White;
+            this.BtnReport.Location = new System.Drawing.Point(39, 437);
+            this.BtnReport.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnReport.Name = "BtnReport";
+            this.BtnReport.Size = new System.Drawing.Size(116, 33);
+            this.BtnReport.TabIndex = 22;
+            this.BtnReport.Text = "REPORT";
+            this.BtnReport.UseVisualStyleBackColor = false;
+            this.BtnReport.Click += new System.EventHandler(this.BtnReport_Click);
             // 
             // StudentInfo
             // 
@@ -646,5 +665,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Section;
         private System.Windows.Forms.DataGridViewTextBoxColumn VoteStatus;
         private System.Windows.Forms.Button BtnSave;
+        private System.Windows.Forms.Button BtnReport;
     }
 }
