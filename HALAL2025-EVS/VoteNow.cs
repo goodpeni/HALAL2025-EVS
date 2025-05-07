@@ -165,6 +165,17 @@ WHERE CONCAT(s.first_name, ' ', s.last_name) = @candidateName";
         {
             CenterPanel();
             LoadCandidates();
+
+            BtnClearPres.Click += (s, ev) => ClearSelection(PnlPres);
+            BtnClearVice.Click += (s, ev) => ClearSelection(PnlVice);
+            BtnClearSecretary.Click += (s, ev) => ClearSelection(PnlSec);
+            BtnClearTreas.Click += (s, ev) => ClearSelection(PnlTreas);
+            BtnClearAudit.Click += (s, ev) => ClearSelection(PnlAudit);
+            BtnClearPIO.Click += (s, ev) => ClearSelection(PnlPIO);
+            BtnClearPO.Click += (s, ev) => ClearSelection(PnlPO);
+            BtnClearG4Repre.Click += (s, ev) => ClearSelection(PnlG4Repre);
+            BtnClearG5Repre.Click += (s, ev) => ClearSelection(PnlG5Repre);
+            BtnClearG6Repre.Click += (s, ev) => ClearSelection(PnlG6Repre);
         }
 
         private void LoadCandidates()
@@ -348,10 +359,8 @@ WHERE CONCAT(s.first_name, ' ', s.last_name) = @candidateName";
             }
         }
 
-        private void BtnClearSelection_Click(object sender, EventArgs e)
+        private void ClearSelection(Panel positionPanel)
         {
-            Panel positionPanel = ((Button)sender).Parent as Panel;
-
             foreach (Control control in positionPanel.Controls)
             {
                 if (control is RadioButton rb)
@@ -360,5 +369,6 @@ WHERE CONCAT(s.first_name, ' ', s.last_name) = @candidateName";
                 }
             }
         }
+
     }
 }

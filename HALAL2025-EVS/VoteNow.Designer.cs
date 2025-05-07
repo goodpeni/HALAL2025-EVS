@@ -41,45 +41,46 @@
             this.BtnSubmit = new System.Windows.Forms.Button();
             this.BtnReview = new System.Windows.Forms.Button();
             this.PnlG6Repre = new System.Windows.Forms.Panel();
-            this.BtnClearG6Repre = new System.Windows.Forms.Button();
             this.LblG6RepreDesc = new System.Windows.Forms.Label();
             this.LblG6Repre = new System.Windows.Forms.Label();
             this.PnlG5Repre = new System.Windows.Forms.Panel();
-            this.BtnClearG5Rrepre = new System.Windows.Forms.Button();
             this.LblG5RepreDesc = new System.Windows.Forms.Label();
             this.LblG5Repre = new System.Windows.Forms.Label();
             this.PnlG4Repre = new System.Windows.Forms.Panel();
-            this.BtnClearG4Repre = new System.Windows.Forms.Button();
             this.LblG4RepreDesc = new System.Windows.Forms.Label();
             this.LblG4Repre = new System.Windows.Forms.Label();
             this.PnlPO = new System.Windows.Forms.Panel();
-            this.BtnClearPO = new System.Windows.Forms.Button();
             this.LblPODesc = new System.Windows.Forms.Label();
             this.LblPO = new System.Windows.Forms.Label();
             this.PnlPIO = new System.Windows.Forms.Panel();
-            this.BtnClearPIO = new System.Windows.Forms.Button();
             this.LblPIODesc = new System.Windows.Forms.Label();
             this.LblPIO = new System.Windows.Forms.Label();
             this.PnlAudit = new System.Windows.Forms.Panel();
-            this.BtnClearAudit = new System.Windows.Forms.Button();
             this.LblAuditDesc = new System.Windows.Forms.Label();
             this.LblAudit = new System.Windows.Forms.Label();
             this.PnlTreas = new System.Windows.Forms.Panel();
             this.LblTreasDesc = new System.Windows.Forms.Label();
             this.LblTreas = new System.Windows.Forms.Label();
             this.PnlSec = new System.Windows.Forms.Panel();
-            this.BtnClearSecretary = new System.Windows.Forms.Button();
             this.LblSecDesc = new System.Windows.Forms.Label();
             this.LblSec = new System.Windows.Forms.Label();
             this.PnlVice = new System.Windows.Forms.Panel();
-            this.BtnClearVice = new System.Windows.Forms.Button();
             this.LblVIceDesc = new System.Windows.Forms.Label();
             this.LblVice = new System.Windows.Forms.Label();
             this.PnlPres = new System.Windows.Forms.Panel();
-            this.BtnClearPres = new System.Windows.Forms.Button();
             this.LblPresDesc = new System.Windows.Forms.Label();
             this.LblPres = new System.Windows.Forms.Label();
             this.lblVoteWisely = new System.Windows.Forms.Label();
+            this.BtnClearG6Repre = new System.Windows.Forms.Button();
+            this.BtnClearG5Repre = new System.Windows.Forms.Button();
+            this.BtnClearG4Repre = new System.Windows.Forms.Button();
+            this.BtnClearPO = new System.Windows.Forms.Button();
+            this.BtnClearPIO = new System.Windows.Forms.Button();
+            this.BtnClearAudit = new System.Windows.Forms.Button();
+            this.BtnClearSecretary = new System.Windows.Forms.Button();
+            this.BtnClearVice = new System.Windows.Forms.Button();
+            this.BtnClearPres = new System.Windows.Forms.Button();
+            this.BtnClearTreas = new System.Windows.Forms.Button();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo)).BeginInit();
             this.PnlVoting.SuspendLayout();
@@ -294,21 +295,6 @@
             this.PnlG6Repre.Size = new System.Drawing.Size(610, 251);
             this.PnlG6Repre.TabIndex = 10;
             // 
-            // BtnClearG6Repre
-            // 
-            this.BtnClearG6Repre.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.BtnClearG6Repre.FlatAppearance.BorderSize = 0;
-            this.BtnClearG6Repre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClearG6Repre.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClearG6Repre.ForeColor = System.Drawing.Color.White;
-            this.BtnClearG6Repre.Location = new System.Drawing.Point(442, 12);
-            this.BtnClearG6Repre.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnClearG6Repre.Name = "BtnClearG6Repre";
-            this.BtnClearG6Repre.Size = new System.Drawing.Size(154, 24);
-            this.BtnClearG6Repre.TabIndex = 25;
-            this.BtnClearG6Repre.Text = "CLEAR SELECTION";
-            this.BtnClearG6Repre.UseVisualStyleBackColor = true;
-            // 
             // LblG6RepreDesc
             // 
             this.LblG6RepreDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -336,7 +322,7 @@
             // PnlG5Repre
             // 
             this.PnlG5Repre.BackColor = System.Drawing.Color.White;
-            this.PnlG5Repre.Controls.Add(this.BtnClearG5Rrepre);
+            this.PnlG5Repre.Controls.Add(this.BtnClearG5Repre);
             this.PnlG5Repre.Controls.Add(this.LblG5RepreDesc);
             this.PnlG5Repre.Controls.Add(this.LblG5Repre);
             this.PnlG5Repre.Location = new System.Drawing.Point(32, 2179);
@@ -344,21 +330,6 @@
             this.PnlG5Repre.Name = "PnlG5Repre";
             this.PnlG5Repre.Size = new System.Drawing.Size(610, 251);
             this.PnlG5Repre.TabIndex = 9;
-            // 
-            // BtnClearG5Rrepre
-            // 
-            this.BtnClearG5Rrepre.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.BtnClearG5Rrepre.FlatAppearance.BorderSize = 0;
-            this.BtnClearG5Rrepre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClearG5Rrepre.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClearG5Rrepre.ForeColor = System.Drawing.Color.White;
-            this.BtnClearG5Rrepre.Location = new System.Drawing.Point(442, 12);
-            this.BtnClearG5Rrepre.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnClearG5Rrepre.Name = "BtnClearG5Rrepre";
-            this.BtnClearG5Rrepre.Size = new System.Drawing.Size(154, 24);
-            this.BtnClearG5Rrepre.TabIndex = 25;
-            this.BtnClearG5Rrepre.Text = "CLEAR SELECTION";
-            this.BtnClearG5Rrepre.UseVisualStyleBackColor = true;
             // 
             // LblG5RepreDesc
             // 
@@ -396,21 +367,6 @@
             this.PnlG4Repre.Size = new System.Drawing.Size(610, 251);
             this.PnlG4Repre.TabIndex = 8;
             // 
-            // BtnClearG4Repre
-            // 
-            this.BtnClearG4Repre.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.BtnClearG4Repre.FlatAppearance.BorderSize = 0;
-            this.BtnClearG4Repre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClearG4Repre.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClearG4Repre.ForeColor = System.Drawing.Color.White;
-            this.BtnClearG4Repre.Location = new System.Drawing.Point(442, 12);
-            this.BtnClearG4Repre.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnClearG4Repre.Name = "BtnClearG4Repre";
-            this.BtnClearG4Repre.Size = new System.Drawing.Size(154, 24);
-            this.BtnClearG4Repre.TabIndex = 22;
-            this.BtnClearG4Repre.Text = "CLEAR SELECTION";
-            this.BtnClearG4Repre.UseVisualStyleBackColor = true;
-            // 
             // LblG4RepreDesc
             // 
             this.LblG4RepreDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -446,21 +402,6 @@
             this.PnlPO.Name = "PnlPO";
             this.PnlPO.Size = new System.Drawing.Size(610, 251);
             this.PnlPO.TabIndex = 7;
-            // 
-            // BtnClearPO
-            // 
-            this.BtnClearPO.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.BtnClearPO.FlatAppearance.BorderSize = 0;
-            this.BtnClearPO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClearPO.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClearPO.ForeColor = System.Drawing.Color.White;
-            this.BtnClearPO.Location = new System.Drawing.Point(442, 12);
-            this.BtnClearPO.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnClearPO.Name = "BtnClearPO";
-            this.BtnClearPO.Size = new System.Drawing.Size(154, 24);
-            this.BtnClearPO.TabIndex = 25;
-            this.BtnClearPO.Text = "CLEAR SELECTION";
-            this.BtnClearPO.UseVisualStyleBackColor = true;
             // 
             // LblPODesc
             // 
@@ -498,21 +439,6 @@
             this.PnlPIO.Size = new System.Drawing.Size(610, 251);
             this.PnlPIO.TabIndex = 6;
             // 
-            // BtnClearPIO
-            // 
-            this.BtnClearPIO.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.BtnClearPIO.FlatAppearance.BorderSize = 0;
-            this.BtnClearPIO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClearPIO.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClearPIO.ForeColor = System.Drawing.Color.White;
-            this.BtnClearPIO.Location = new System.Drawing.Point(442, 12);
-            this.BtnClearPIO.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnClearPIO.Name = "BtnClearPIO";
-            this.BtnClearPIO.Size = new System.Drawing.Size(154, 24);
-            this.BtnClearPIO.TabIndex = 22;
-            this.BtnClearPIO.Text = "CLEAR SELECTION";
-            this.BtnClearPIO.UseVisualStyleBackColor = true;
-            // 
             // LblPIODesc
             // 
             this.LblPIODesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -549,21 +475,6 @@
             this.PnlAudit.Size = new System.Drawing.Size(610, 251);
             this.PnlAudit.TabIndex = 5;
             // 
-            // BtnClearAudit
-            // 
-            this.BtnClearAudit.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.BtnClearAudit.FlatAppearance.BorderSize = 0;
-            this.BtnClearAudit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClearAudit.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClearAudit.ForeColor = System.Drawing.Color.White;
-            this.BtnClearAudit.Location = new System.Drawing.Point(442, 12);
-            this.BtnClearAudit.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnClearAudit.Name = "BtnClearAudit";
-            this.BtnClearAudit.Size = new System.Drawing.Size(154, 24);
-            this.BtnClearAudit.TabIndex = 20;
-            this.BtnClearAudit.Text = "CLEAR SELECTION";
-            this.BtnClearAudit.UseVisualStyleBackColor = true;
-            // 
             // LblAuditDesc
             // 
             this.LblAuditDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -591,6 +502,7 @@
             // PnlTreas
             // 
             this.PnlTreas.BackColor = System.Drawing.Color.White;
+            this.PnlTreas.Controls.Add(this.BtnClearTreas);
             this.PnlTreas.Controls.Add(this.LblTreasDesc);
             this.PnlTreas.Controls.Add(this.LblTreas);
             this.PnlTreas.Location = new System.Drawing.Point(32, 868);
@@ -635,21 +547,6 @@
             this.PnlSec.Size = new System.Drawing.Size(610, 251);
             this.PnlSec.TabIndex = 3;
             // 
-            // BtnClearSecretary
-            // 
-            this.BtnClearSecretary.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.BtnClearSecretary.FlatAppearance.BorderSize = 0;
-            this.BtnClearSecretary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClearSecretary.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClearSecretary.ForeColor = System.Drawing.Color.White;
-            this.BtnClearSecretary.Location = new System.Drawing.Point(442, 12);
-            this.BtnClearSecretary.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnClearSecretary.Name = "BtnClearSecretary";
-            this.BtnClearSecretary.Size = new System.Drawing.Size(154, 24);
-            this.BtnClearSecretary.TabIndex = 20;
-            this.BtnClearSecretary.Text = "CLEAR SELECTION";
-            this.BtnClearSecretary.UseVisualStyleBackColor = true;
-            // 
             // LblSecDesc
             // 
             this.LblSecDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -685,21 +582,6 @@
             this.PnlVice.Name = "PnlVice";
             this.PnlVice.Size = new System.Drawing.Size(610, 251);
             this.PnlVice.TabIndex = 2;
-            // 
-            // BtnClearVice
-            // 
-            this.BtnClearVice.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.BtnClearVice.FlatAppearance.BorderSize = 0;
-            this.BtnClearVice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClearVice.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClearVice.ForeColor = System.Drawing.Color.White;
-            this.BtnClearVice.Location = new System.Drawing.Point(442, 12);
-            this.BtnClearVice.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnClearVice.Name = "BtnClearVice";
-            this.BtnClearVice.Size = new System.Drawing.Size(154, 24);
-            this.BtnClearVice.TabIndex = 17;
-            this.BtnClearVice.Text = "CLEAR SELECTION";
-            this.BtnClearVice.UseVisualStyleBackColor = true;
             // 
             // LblVIceDesc
             // 
@@ -738,21 +620,6 @@
             this.PnlPres.Size = new System.Drawing.Size(610, 251);
             this.PnlPres.TabIndex = 1;
             // 
-            // BtnClearPres
-            // 
-            this.BtnClearPres.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.BtnClearPres.FlatAppearance.BorderSize = 0;
-            this.BtnClearPres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClearPres.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClearPres.ForeColor = System.Drawing.Color.White;
-            this.BtnClearPres.Location = new System.Drawing.Point(442, 12);
-            this.BtnClearPres.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnClearPres.Name = "BtnClearPres";
-            this.BtnClearPres.Size = new System.Drawing.Size(154, 24);
-            this.BtnClearPres.TabIndex = 14;
-            this.BtnClearPres.Text = "CLEAR SELECTION";
-            this.BtnClearPres.UseVisualStyleBackColor = true;
-            // 
             // LblPresDesc
             // 
             this.LblPresDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -789,6 +656,156 @@
             this.lblVoteWisely.TabIndex = 8;
             this.lblVoteWisely.Text = "CAST YOUR VOTE WISELY!";
             this.lblVoteWisely.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BtnClearG6Repre
+            // 
+            this.BtnClearG6Repre.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearG6Repre.FlatAppearance.BorderSize = 0;
+            this.BtnClearG6Repre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearG6Repre.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearG6Repre.ForeColor = System.Drawing.Color.White;
+            this.BtnClearG6Repre.Location = new System.Drawing.Point(442, 12);
+            this.BtnClearG6Repre.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearG6Repre.Name = "BtnClearG6Repre";
+            this.BtnClearG6Repre.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearG6Repre.TabIndex = 25;
+            this.BtnClearG6Repre.Text = "CLEAR SELECTION";
+            this.BtnClearG6Repre.UseVisualStyleBackColor = true;
+            // 
+            // BtnClearG5Repre
+            // 
+            this.BtnClearG5Repre.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearG5Repre.FlatAppearance.BorderSize = 0;
+            this.BtnClearG5Repre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearG5Repre.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearG5Repre.ForeColor = System.Drawing.Color.White;
+            this.BtnClearG5Repre.Location = new System.Drawing.Point(442, 12);
+            this.BtnClearG5Repre.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearG5Repre.Name = "BtnClearG5Repre";
+            this.BtnClearG5Repre.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearG5Repre.TabIndex = 25;
+            this.BtnClearG5Repre.Text = "CLEAR SELECTION";
+            this.BtnClearG5Repre.UseVisualStyleBackColor = true;
+            // 
+            // BtnClearG4Repre
+            // 
+            this.BtnClearG4Repre.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearG4Repre.FlatAppearance.BorderSize = 0;
+            this.BtnClearG4Repre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearG4Repre.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearG4Repre.ForeColor = System.Drawing.Color.White;
+            this.BtnClearG4Repre.Location = new System.Drawing.Point(442, 12);
+            this.BtnClearG4Repre.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearG4Repre.Name = "BtnClearG4Repre";
+            this.BtnClearG4Repre.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearG4Repre.TabIndex = 22;
+            this.BtnClearG4Repre.Text = "CLEAR SELECTION";
+            this.BtnClearG4Repre.UseVisualStyleBackColor = true;
+            // 
+            // BtnClearPO
+            // 
+            this.BtnClearPO.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearPO.FlatAppearance.BorderSize = 0;
+            this.BtnClearPO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearPO.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearPO.ForeColor = System.Drawing.Color.White;
+            this.BtnClearPO.Location = new System.Drawing.Point(442, 12);
+            this.BtnClearPO.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearPO.Name = "BtnClearPO";
+            this.BtnClearPO.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearPO.TabIndex = 25;
+            this.BtnClearPO.Text = "CLEAR SELECTION";
+            this.BtnClearPO.UseVisualStyleBackColor = true;
+            // 
+            // BtnClearPIO
+            // 
+            this.BtnClearPIO.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearPIO.FlatAppearance.BorderSize = 0;
+            this.BtnClearPIO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearPIO.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearPIO.ForeColor = System.Drawing.Color.White;
+            this.BtnClearPIO.Location = new System.Drawing.Point(442, 12);
+            this.BtnClearPIO.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearPIO.Name = "BtnClearPIO";
+            this.BtnClearPIO.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearPIO.TabIndex = 22;
+            this.BtnClearPIO.Text = "CLEAR SELECTION";
+            this.BtnClearPIO.UseVisualStyleBackColor = true;
+            // 
+            // BtnClearAudit
+            // 
+            this.BtnClearAudit.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearAudit.FlatAppearance.BorderSize = 0;
+            this.BtnClearAudit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearAudit.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearAudit.ForeColor = System.Drawing.Color.White;
+            this.BtnClearAudit.Location = new System.Drawing.Point(442, 12);
+            this.BtnClearAudit.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearAudit.Name = "BtnClearAudit";
+            this.BtnClearAudit.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearAudit.TabIndex = 20;
+            this.BtnClearAudit.Text = "CLEAR SELECTION";
+            this.BtnClearAudit.UseVisualStyleBackColor = true;
+            // 
+            // BtnClearSecretary
+            // 
+            this.BtnClearSecretary.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearSecretary.FlatAppearance.BorderSize = 0;
+            this.BtnClearSecretary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearSecretary.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearSecretary.ForeColor = System.Drawing.Color.White;
+            this.BtnClearSecretary.Location = new System.Drawing.Point(442, 12);
+            this.BtnClearSecretary.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearSecretary.Name = "BtnClearSecretary";
+            this.BtnClearSecretary.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearSecretary.TabIndex = 20;
+            this.BtnClearSecretary.Text = "CLEAR SELECTION";
+            this.BtnClearSecretary.UseVisualStyleBackColor = true;
+            // 
+            // BtnClearVice
+            // 
+            this.BtnClearVice.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearVice.FlatAppearance.BorderSize = 0;
+            this.BtnClearVice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearVice.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearVice.ForeColor = System.Drawing.Color.White;
+            this.BtnClearVice.Location = new System.Drawing.Point(442, 12);
+            this.BtnClearVice.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearVice.Name = "BtnClearVice";
+            this.BtnClearVice.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearVice.TabIndex = 17;
+            this.BtnClearVice.Text = "CLEAR SELECTION";
+            this.BtnClearVice.UseVisualStyleBackColor = true;
+            // 
+            // BtnClearPres
+            // 
+            this.BtnClearPres.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearPres.FlatAppearance.BorderSize = 0;
+            this.BtnClearPres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearPres.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearPres.ForeColor = System.Drawing.Color.White;
+            this.BtnClearPres.Location = new System.Drawing.Point(442, 12);
+            this.BtnClearPres.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearPres.Name = "BtnClearPres";
+            this.BtnClearPres.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearPres.TabIndex = 14;
+            this.BtnClearPres.Text = "CLEAR SELECTION";
+            this.BtnClearPres.UseVisualStyleBackColor = true;
+            // 
+            // BtnClearTreas
+            // 
+            this.BtnClearTreas.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.BtnClearTreas.FlatAppearance.BorderSize = 0;
+            this.BtnClearTreas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClearTreas.Font = new System.Drawing.Font("Arial Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnClearTreas.ForeColor = System.Drawing.Color.White;
+            this.BtnClearTreas.Location = new System.Drawing.Point(442, 13);
+            this.BtnClearTreas.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnClearTreas.Name = "BtnClearTreas";
+            this.BtnClearTreas.Size = new System.Drawing.Size(154, 24);
+            this.BtnClearTreas.TabIndex = 21;
+            this.BtnClearTreas.Text = "CLEAR SELECTION";
+            this.BtnClearTreas.UseVisualStyleBackColor = true;
             // 
             // VoteNow
             // 
@@ -865,18 +882,19 @@
         private System.Windows.Forms.Label LblG5Repre;
         private System.Windows.Forms.Label LblG4RepreDesc;
         private System.Windows.Forms.Label LblG4Repre;
-        private System.Windows.Forms.Button BtnClearPres;
-        private System.Windows.Forms.Button BtnClearG6Repre;
-        private System.Windows.Forms.Button BtnClearG5Rrepre;
-        private System.Windows.Forms.Button BtnClearG4Repre;
-        private System.Windows.Forms.Button BtnClearPO;
-        private System.Windows.Forms.Button BtnClearPIO;
-        private System.Windows.Forms.Button BtnClearAudit;
-        private System.Windows.Forms.Button BtnClearSecretary;
         private System.Windows.Forms.Label LblTreasDesc;
         private System.Windows.Forms.Panel PnlVice;
         private System.Windows.Forms.Label LblVIceDesc;
         private System.Windows.Forms.Label LblVice;
+        private System.Windows.Forms.Button BtnClearG6Repre;
+        private System.Windows.Forms.Button BtnClearG5Repre;
+        private System.Windows.Forms.Button BtnClearG4Repre;
+        private System.Windows.Forms.Button BtnClearPO;
+        private System.Windows.Forms.Button BtnClearPIO;
+        private System.Windows.Forms.Button BtnClearAudit;
+        private System.Windows.Forms.Button BtnClearTreas;
+        private System.Windows.Forms.Button BtnClearSecretary;
         private System.Windows.Forms.Button BtnClearVice;
+        private System.Windows.Forms.Button BtnClearPres;
     }
 }
