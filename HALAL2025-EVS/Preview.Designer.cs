@@ -70,7 +70,7 @@
             this.PnlTab.Controls.Add(this.LblTitle1);
             this.PnlTab.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlTab.Location = new System.Drawing.Point(0, 0);
-            this.PnlTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlTab.Margin = new System.Windows.Forms.Padding(2);
             this.PnlTab.Name = "PnlTab";
             this.PnlTab.Size = new System.Drawing.Size(362, 56);
             this.PnlTab.TabIndex = 0;
@@ -81,7 +81,7 @@
             this.PicBoxLogo.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.halal20225;
             this.PicBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxLogo.Location = new System.Drawing.Point(6, 6);
-            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxLogo.Name = "PicBoxLogo";
             this.PicBoxLogo.Size = new System.Drawing.Size(38, 41);
             this.PicBoxLogo.TabIndex = 2;
@@ -150,7 +150,7 @@
             this.PnlReviewTab.Controls.Add(this.LblVice);
             this.PnlReviewTab.Controls.Add(this.LblPres);
             this.PnlReviewTab.Location = new System.Drawing.Point(35, 67);
-            this.PnlReviewTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlReviewTab.Margin = new System.Windows.Forms.Padding(2);
             this.PnlReviewTab.Name = "PnlReviewTab";
             this.PnlReviewTab.Size = new System.Drawing.Size(289, 284);
             this.PnlReviewTab.TabIndex = 2;
@@ -294,7 +294,7 @@
             this.BtnBack.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBack.ForeColor = System.Drawing.Color.White;
             this.BtnBack.Location = new System.Drawing.Point(103, 244);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(85, 32);
             this.BtnBack.TabIndex = 11;
@@ -431,7 +431,8 @@
             this.Controls.Add(this.PnlReviewTab);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Preview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";

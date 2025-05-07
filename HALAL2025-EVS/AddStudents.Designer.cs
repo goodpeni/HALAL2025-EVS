@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStudent));
             this.PnlHeading = new System.Windows.Forms.Panel();
             this.LblTitle2 = new System.Windows.Forms.Label();
             this.PicBoxLogo = new System.Windows.Forms.PictureBox();
@@ -68,7 +69,7 @@
             this.PnlHeading.Controls.Add(this.LblTitle1);
             this.PnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeading.Location = new System.Drawing.Point(0, 0);
-            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2);
             this.PnlHeading.Name = "PnlHeading";
             this.PnlHeading.Size = new System.Drawing.Size(467, 67);
             this.PnlHeading.TabIndex = 4;
@@ -92,7 +93,7 @@
             this.PicBoxLogo.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.halal20225;
             this.PicBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxLogo.Location = new System.Drawing.Point(10, 1);
-            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxLogo.Name = "PicBoxLogo";
             this.PicBoxLogo.Size = new System.Drawing.Size(56, 61);
             this.PicBoxLogo.TabIndex = 1;
@@ -135,7 +136,7 @@
             this.PnlAddStud.Controls.Add(this.LblSection);
             this.PnlAddStud.Controls.Add(this.LblConfirmPass);
             this.PnlAddStud.Location = new System.Drawing.Point(36, 110);
-            this.PnlAddStud.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlAddStud.Margin = new System.Windows.Forms.Padding(2);
             this.PnlAddStud.Name = "PnlAddStud";
             this.PnlAddStud.Size = new System.Drawing.Size(396, 423);
             this.PnlAddStud.TabIndex = 5;
@@ -149,7 +150,7 @@
             this.BtnAdd.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAdd.ForeColor = System.Drawing.Color.White;
             this.BtnAdd.Location = new System.Drawing.Point(271, 389);
-            this.BtnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(116, 24);
             this.BtnAdd.TabIndex = 25;
@@ -166,7 +167,7 @@
             this.BtnBack.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBack.ForeColor = System.Drawing.Color.White;
             this.BtnBack.Location = new System.Drawing.Point(8, 389);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(116, 24);
             this.BtnBack.TabIndex = 24;
@@ -181,7 +182,7 @@
             this.ChkShowPass.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkShowPass.ForeColor = System.Drawing.Color.White;
             this.ChkShowPass.Location = new System.Drawing.Point(262, 351);
-            this.ChkShowPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ChkShowPass.Margin = new System.Windows.Forms.Padding(2);
             this.ChkShowPass.Name = "ChkShowPass";
             this.ChkShowPass.Size = new System.Drawing.Size(101, 18);
             this.ChkShowPass.TabIndex = 23;
@@ -194,7 +195,7 @@
             this.TxtConfirmPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtConfirmPass.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtConfirmPass.Location = new System.Drawing.Point(178, 324);
-            this.TxtConfirmPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtConfirmPass.Margin = new System.Windows.Forms.Padding(2);
             this.TxtConfirmPass.Name = "TxtConfirmPass";
             this.TxtConfirmPass.PasswordChar = '*';
             this.TxtConfirmPass.Size = new System.Drawing.Size(185, 23);
@@ -210,7 +211,7 @@
             "C",
             "D"});
             this.CmbSection.Location = new System.Drawing.Point(255, 213);
-            this.CmbSection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbSection.Margin = new System.Windows.Forms.Padding(2);
             this.CmbSection.Name = "CmbSection";
             this.CmbSection.Size = new System.Drawing.Size(108, 24);
             this.CmbSection.TabIndex = 20;
@@ -227,7 +228,7 @@
             "5",
             "6"});
             this.CmbGrade.Location = new System.Drawing.Point(125, 213);
-            this.CmbGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmbGrade.Margin = new System.Windows.Forms.Padding(2);
             this.CmbGrade.Name = "CmbGrade";
             this.CmbGrade.Size = new System.Drawing.Size(56, 24);
             this.CmbGrade.TabIndex = 19;
@@ -237,7 +238,7 @@
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPassword.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPassword.Location = new System.Drawing.Point(178, 281);
-            this.TxtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
             this.TxtPassword.Size = new System.Drawing.Size(185, 23);
@@ -248,7 +249,7 @@
             this.TxtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtLastName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLastName.Location = new System.Drawing.Point(125, 175);
-            this.TxtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.TxtLastName.Name = "TxtLastName";
             this.TxtLastName.Size = new System.Drawing.Size(238, 23);
             this.TxtLastName.TabIndex = 15;
@@ -297,7 +298,7 @@
             this.TxtMiddleName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtMiddleName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtMiddleName.Location = new System.Drawing.Point(125, 133);
-            this.TxtMiddleName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtMiddleName.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMiddleName.Name = "TxtMiddleName";
             this.TxtMiddleName.Size = new System.Drawing.Size(238, 23);
             this.TxtMiddleName.TabIndex = 11;
@@ -320,7 +321,7 @@
             this.TxtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtFirstName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFirstName.Location = new System.Drawing.Point(125, 90);
-            this.TxtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.TxtFirstName.Name = "TxtFirstName";
             this.TxtFirstName.Size = new System.Drawing.Size(238, 23);
             this.TxtFirstName.TabIndex = 9;
@@ -343,7 +344,7 @@
             this.TxtStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtStudentID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtStudentID.Location = new System.Drawing.Point(125, 26);
-            this.TxtStudentID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtStudentID.Margin = new System.Windows.Forms.Padding(2);
             this.TxtStudentID.Name = "TxtStudentID";
             this.TxtStudentID.Size = new System.Drawing.Size(238, 23);
             this.TxtStudentID.TabIndex = 7;
@@ -413,7 +414,8 @@
             this.Controls.Add(this.PnlHeading);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form8";

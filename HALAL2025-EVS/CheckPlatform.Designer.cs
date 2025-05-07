@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Platform));
             this.PnlHeading = new System.Windows.Forms.Panel();
             this.LblTitle2 = new System.Windows.Forms.Label();
             this.PicBoxLogo = new System.Windows.Forms.PictureBox();
@@ -53,7 +54,7 @@
             this.PnlHeading.Controls.Add(this.LblTitle1);
             this.PnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeading.Location = new System.Drawing.Point(0, 0);
-            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlHeading.Margin = new System.Windows.Forms.Padding(2);
             this.PnlHeading.Name = "PnlHeading";
             this.PnlHeading.Size = new System.Drawing.Size(375, 67);
             this.PnlHeading.TabIndex = 7;
@@ -77,7 +78,7 @@
             this.PicBoxLogo.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.halal20225;
             this.PicBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PicBoxLogo.Location = new System.Drawing.Point(9, 5);
-            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.PicBoxLogo.Name = "PicBoxLogo";
             this.PicBoxLogo.Size = new System.Drawing.Size(40, 55);
             this.PicBoxLogo.TabIndex = 1;
@@ -159,7 +160,7 @@
             this.PnlPlatform.Controls.Add(this.LblName);
             this.PnlPlatform.Controls.Add(this.LblPosition);
             this.PnlPlatform.Location = new System.Drawing.Point(14, 105);
-            this.PnlPlatform.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnlPlatform.Margin = new System.Windows.Forms.Padding(2);
             this.PnlPlatform.Name = "PnlPlatform";
             this.PnlPlatform.Size = new System.Drawing.Size(348, 373);
             this.PnlPlatform.TabIndex = 12;
@@ -173,7 +174,7 @@
             this.BtnBack.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBack.ForeColor = System.Drawing.Color.White;
             this.BtnBack.Location = new System.Drawing.Point(146, 336);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(52, 24);
             this.BtnBack.TabIndex = 69;
@@ -193,7 +194,8 @@
             this.Controls.Add(this.PnlPlatform);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Platform";
             this.Text = "Form12";
             this.PnlHeading.ResumeLayout(false);
