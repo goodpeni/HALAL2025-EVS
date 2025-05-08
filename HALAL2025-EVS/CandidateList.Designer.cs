@@ -58,6 +58,7 @@
             this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Partylist = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PnlCandidates = new System.Windows.Forms.Panel();
+            this.BtnDelParty = new System.Windows.Forms.Button();
             this.BtnReport = new System.Windows.Forms.Button();
             this.BtnSave = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
@@ -383,6 +384,7 @@
             this.PnlCandidates.AutoScroll = true;
             this.PnlCandidates.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
             this.PnlCandidates.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlCandidates.Controls.Add(this.BtnDelParty);
             this.PnlCandidates.Controls.Add(this.BtnReport);
             this.PnlCandidates.Controls.Add(this.BtnSave);
             this.PnlCandidates.Controls.Add(this.BtnDelete);
@@ -393,6 +395,23 @@
             this.PnlCandidates.Name = "PnlCandidates";
             this.PnlCandidates.Size = new System.Drawing.Size(1254, 478);
             this.PnlCandidates.TabIndex = 14;
+            // 
+            // BtnDelParty
+            // 
+            this.BtnDelParty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
+            this.BtnDelParty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnDelParty.FlatAppearance.BorderSize = 0;
+            this.BtnDelParty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDelParty.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDelParty.ForeColor = System.Drawing.Color.White;
+            this.BtnDelParty.Location = new System.Drawing.Point(179, 416);
+            this.BtnDelParty.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnDelParty.Name = "BtnDelParty";
+            this.BtnDelParty.Size = new System.Drawing.Size(171, 33);
+            this.BtnDelParty.TabIndex = 35;
+            this.BtnDelParty.Text = "DELETE PARTYLIST";
+            this.BtnDelParty.UseVisualStyleBackColor = false;
+            this.BtnDelParty.Click += new System.EventHandler(this.BtnDelParty_Click);
             // 
             // BtnReport
             // 
@@ -419,7 +438,7 @@
             this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSave.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSave.ForeColor = System.Drawing.Color.White;
-            this.BtnSave.Location = new System.Drawing.Point(808, 416);
+            this.BtnSave.Location = new System.Drawing.Point(792, 416);
             this.BtnSave.Margin = new System.Windows.Forms.Padding(2);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(116, 33);
@@ -436,12 +455,12 @@
             this.BtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDelete.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDelete.ForeColor = System.Drawing.Color.White;
-            this.BtnDelete.Location = new System.Drawing.Point(1096, 416);
+            this.BtnDelete.Location = new System.Drawing.Point(1062, 416);
             this.BtnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(116, 33);
+            this.BtnDelete.Size = new System.Drawing.Size(158, 33);
             this.BtnDelete.TabIndex = 33;
-            this.BtnDelete.Text = "DEL";
+            this.BtnDelete.Text = "DELETE CANDIDATE";
             this.BtnDelete.UseVisualStyleBackColor = false;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
@@ -453,7 +472,7 @@
             this.BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEdit.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEdit.ForeColor = System.Drawing.Color.White;
-            this.BtnEdit.Location = new System.Drawing.Point(943, 416);
+            this.BtnEdit.Location = new System.Drawing.Point(927, 416);
             this.BtnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(116, 33);
@@ -682,5 +701,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Position;
         private System.Windows.Forms.DataGridViewTextBoxColumn Partylist;
         private System.Windows.Forms.Button BtnReport;
+        private System.Windows.Forms.Button BtnDelParty;
     }
 }

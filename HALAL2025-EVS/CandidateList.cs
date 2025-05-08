@@ -458,5 +458,11 @@ namespace HALAL2025_EVS
                 MessageBox.Show("Error generating report: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void BtnDelParty_Click(object sender, EventArgs e)
+        {
+            DelParty delparty = new DelParty(this);
+            delparty.Show();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace HALAL2025_EVS
 {
-    partial class AddPartylist
+    partial class DelParty
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddPartylist));
             this.PnlHeading = new System.Windows.Forms.Panel();
             this.LblTitle2 = new System.Windows.Forms.Label();
             this.LblTitle1 = new System.Windows.Forms.Label();
             this.PicBoxLogo = new System.Windows.Forms.PictureBox();
-            this.PnlAddPartylist = new System.Windows.Forms.Panel();
-            this.BtnAdd = new System.Windows.Forms.Button();
-            this.BtnBack = new System.Windows.Forms.Button();
-            this.TxtPlatform = new System.Windows.Forms.TextBox();
-            this.LblPlatform = new System.Windows.Forms.Label();
-            this.TxtPartylistName = new System.Windows.Forms.TextBox();
-            this.LblPartylistName = new System.Windows.Forms.Label();
-            this.TxtPartylistID = new System.Windows.Forms.TextBox();
-            this.LblPartylistID = new System.Windows.Forms.Label();
             this.LblAddParty = new System.Windows.Forms.Label();
+            this.PnlAddPartylist = new System.Windows.Forms.Panel();
+            this.BtnDelete = new System.Windows.Forms.Button();
+            this.BtnBack = new System.Windows.Forms.Button();
+            this.LblPartylistName = new System.Windows.Forms.Label();
+            this.CmbPartylist = new System.Windows.Forms.ComboBox();
             this.PnlHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo)).BeginInit();
             this.PnlAddPartylist.SuspendLayout();
@@ -61,7 +56,7 @@
             this.PnlHeading.Margin = new System.Windows.Forms.Padding(2);
             this.PnlHeading.Name = "PnlHeading";
             this.PnlHeading.Size = new System.Drawing.Size(433, 67);
-            this.PnlHeading.TabIndex = 6;
+            this.PnlHeading.TabIndex = 7;
             // 
             // LblTitle2
             // 
@@ -84,7 +79,7 @@
             this.LblTitle1.Location = new System.Drawing.Point(70, 7);
             this.LblTitle1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblTitle1.Name = "LblTitle1";
-            this.LblTitle1.Size = new System.Drawing.Size(352, 28);
+            this.LblTitle1.Size = new System.Drawing.Size(361, 28);
             this.LblTitle1.TabIndex = 3;
             this.LblTitle1.Text = "HALAL 2025 E-VOTING SYSTEM\r\n";
             this.LblTitle1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -101,128 +96,6 @@
             this.PicBoxLogo.TabIndex = 1;
             this.PicBoxLogo.TabStop = false;
             // 
-            // PnlAddPartylist
-            // 
-            this.PnlAddPartylist.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
-            this.PnlAddPartylist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PnlAddPartylist.Controls.Add(this.BtnAdd);
-            this.PnlAddPartylist.Controls.Add(this.BtnBack);
-            this.PnlAddPartylist.Controls.Add(this.TxtPlatform);
-            this.PnlAddPartylist.Controls.Add(this.LblPlatform);
-            this.PnlAddPartylist.Controls.Add(this.TxtPartylistName);
-            this.PnlAddPartylist.Controls.Add(this.LblPartylistName);
-            this.PnlAddPartylist.Controls.Add(this.TxtPartylistID);
-            this.PnlAddPartylist.Controls.Add(this.LblPartylistID);
-            this.PnlAddPartylist.Location = new System.Drawing.Point(26, 116);
-            this.PnlAddPartylist.Margin = new System.Windows.Forms.Padding(2);
-            this.PnlAddPartylist.Name = "PnlAddPartylist";
-            this.PnlAddPartylist.Size = new System.Drawing.Size(378, 297);
-            this.PnlAddPartylist.TabIndex = 7;
-            // 
-            // BtnAdd
-            // 
-            this.BtnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
-            this.BtnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAdd.FlatAppearance.BorderSize = 0;
-            this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAdd.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAdd.ForeColor = System.Drawing.Color.White;
-            this.BtnAdd.Location = new System.Drawing.Point(233, 262);
-            this.BtnAdd.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(116, 24);
-            this.BtnAdd.TabIndex = 75;
-            this.BtnAdd.Text = "ADD";
-            this.BtnAdd.UseVisualStyleBackColor = false;
-            this.BtnAdd.Click += new System.EventHandler(this.BtnAddCandidate_Click);
-            // 
-            // BtnBack
-            // 
-            this.BtnBack.BackColor = System.Drawing.Color.Maroon;
-            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBack.FlatAppearance.BorderSize = 0;
-            this.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBack.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBack.ForeColor = System.Drawing.Color.White;
-            this.BtnBack.Location = new System.Drawing.Point(30, 262);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(116, 24);
-            this.BtnBack.TabIndex = 74;
-            this.BtnBack.Text = "BACK";
-            this.BtnBack.UseVisualStyleBackColor = false;
-            this.BtnBack.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // TxtPlatform
-            // 
-            this.TxtPlatform.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtPlatform.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPlatform.Location = new System.Drawing.Point(158, 126);
-            this.TxtPlatform.Margin = new System.Windows.Forms.Padding(2);
-            this.TxtPlatform.Multiline = true;
-            this.TxtPlatform.Name = "TxtPlatform";
-            this.TxtPlatform.Size = new System.Drawing.Size(191, 114);
-            this.TxtPlatform.TabIndex = 60;
-            // 
-            // LblPlatform
-            // 
-            this.LblPlatform.BackColor = System.Drawing.Color.Transparent;
-            this.LblPlatform.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPlatform.ForeColor = System.Drawing.Color.White;
-            this.LblPlatform.Location = new System.Drawing.Point(27, 126);
-            this.LblPlatform.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblPlatform.Name = "LblPlatform";
-            this.LblPlatform.Size = new System.Drawing.Size(121, 19);
-            this.LblPlatform.TabIndex = 59;
-            this.LblPlatform.Text = "PLATFORM";
-            this.LblPlatform.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtPartylistName
-            // 
-            this.TxtPartylistName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtPartylistName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPartylistName.Location = new System.Drawing.Point(158, 72);
-            this.TxtPartylistName.Margin = new System.Windows.Forms.Padding(2);
-            this.TxtPartylistName.Name = "TxtPartylistName";
-            this.TxtPartylistName.Size = new System.Drawing.Size(191, 23);
-            this.TxtPartylistName.TabIndex = 58;
-            // 
-            // LblPartylistName
-            // 
-            this.LblPartylistName.BackColor = System.Drawing.Color.Transparent;
-            this.LblPartylistName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPartylistName.ForeColor = System.Drawing.Color.White;
-            this.LblPartylistName.Location = new System.Drawing.Point(27, 76);
-            this.LblPartylistName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblPartylistName.Name = "LblPartylistName";
-            this.LblPartylistName.Size = new System.Drawing.Size(127, 19);
-            this.LblPartylistName.TabIndex = 57;
-            this.LblPartylistName.Text = "PARTYLIST NAME\r\n\r\n";
-            this.LblPartylistName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtPartylistID
-            // 
-            this.TxtPartylistID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtPartylistID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPartylistID.Location = new System.Drawing.Point(158, 39);
-            this.TxtPartylistID.Margin = new System.Windows.Forms.Padding(2);
-            this.TxtPartylistID.Name = "TxtPartylistID";
-            this.TxtPartylistID.Size = new System.Drawing.Size(191, 23);
-            this.TxtPartylistID.TabIndex = 56;
-            // 
-            // LblPartylistID
-            // 
-            this.LblPartylistID.BackColor = System.Drawing.Color.Transparent;
-            this.LblPartylistID.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPartylistID.ForeColor = System.Drawing.Color.White;
-            this.LblPartylistID.Location = new System.Drawing.Point(27, 43);
-            this.LblPartylistID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblPartylistID.Name = "LblPartylistID";
-            this.LblPartylistID.Size = new System.Drawing.Size(127, 19);
-            this.LblPartylistID.TabIndex = 55;
-            this.LblPartylistID.Text = "PARTYLIST ID";
-            this.LblPartylistID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // LblAddParty
             // 
             this.LblAddParty.BackColor = System.Drawing.Color.Transparent;
@@ -232,31 +105,98 @@
             this.LblAddParty.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblAddParty.Name = "LblAddParty";
             this.LblAddParty.Size = new System.Drawing.Size(378, 36);
-            this.LblAddParty.TabIndex = 8;
+            this.LblAddParty.TabIndex = 9;
             this.LblAddParty.Text = "ADD PARTYLIST";
             this.LblAddParty.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // AddPartylist
+            // PnlAddPartylist
+            // 
+            this.PnlAddPartylist.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.login_bg;
+            this.PnlAddPartylist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlAddPartylist.Controls.Add(this.CmbPartylist);
+            this.PnlAddPartylist.Controls.Add(this.BtnDelete);
+            this.PnlAddPartylist.Controls.Add(this.BtnBack);
+            this.PnlAddPartylist.Controls.Add(this.LblPartylistName);
+            this.PnlAddPartylist.Location = new System.Drawing.Point(26, 116);
+            this.PnlAddPartylist.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlAddPartylist.Name = "PnlAddPartylist";
+            this.PnlAddPartylist.Size = new System.Drawing.Size(378, 136);
+            this.PnlAddPartylist.TabIndex = 10;
+            // 
+            // BtnDelete
+            // 
+            this.BtnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(71)))), ((int)(((byte)(74)))));
+            this.BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDelete.FlatAppearance.BorderSize = 0;
+            this.BtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDelete.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDelete.ForeColor = System.Drawing.Color.White;
+            this.BtnDelete.Location = new System.Drawing.Point(233, 89);
+            this.BtnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(116, 24);
+            this.BtnDelete.TabIndex = 75;
+            this.BtnDelete.Text = "DELETE";
+            this.BtnDelete.UseVisualStyleBackColor = false;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // BtnBack
+            // 
+            this.BtnBack.BackColor = System.Drawing.Color.Maroon;
+            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBack.FlatAppearance.BorderSize = 0;
+            this.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBack.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBack.ForeColor = System.Drawing.Color.White;
+            this.BtnBack.Location = new System.Drawing.Point(30, 89);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(116, 24);
+            this.BtnBack.TabIndex = 74;
+            this.BtnBack.Text = "BACK";
+            this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            // 
+            // LblPartylistName
+            // 
+            this.LblPartylistName.BackColor = System.Drawing.Color.Transparent;
+            this.LblPartylistName.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPartylistName.ForeColor = System.Drawing.Color.White;
+            this.LblPartylistName.Location = new System.Drawing.Point(27, 33);
+            this.LblPartylistName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblPartylistName.Name = "LblPartylistName";
+            this.LblPartylistName.Size = new System.Drawing.Size(127, 19);
+            this.LblPartylistName.TabIndex = 57;
+            this.LblPartylistName.Text = "PARTYLIST NAME\r\n\r\n";
+            this.LblPartylistName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CmbPartylist
+            // 
+            this.CmbPartylist.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbPartylist.FormattingEnabled = true;
+            this.CmbPartylist.Location = new System.Drawing.Point(158, 29);
+            this.CmbPartylist.Name = "CmbPartylist";
+            this.CmbPartylist.Size = new System.Drawing.Size(191, 24);
+            this.CmbPartylist.TabIndex = 76;
+            // 
+            // DelParty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HALAL2025_EVS.Properties.Resources.darkmode;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(433, 448);
-            this.Controls.Add(this.LblAddParty);
+            this.ClientSize = new System.Drawing.Size(433, 282);
             this.Controls.Add(this.PnlAddPartylist);
+            this.Controls.Add(this.LblAddParty);
             this.Controls.Add(this.PnlHeading);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "AddPartylist";
+            this.Name = "DelParty";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Edit Partylist";
+            this.Text = "DelParty";
             this.PnlHeading.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxLogo)).EndInit();
             this.PnlAddPartylist.ResumeLayout(false);
-            this.PnlAddPartylist.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -264,18 +204,14 @@
         #endregion
 
         private System.Windows.Forms.Panel PnlHeading;
-        private System.Windows.Forms.PictureBox PicBoxLogo;
-        private System.Windows.Forms.Panel PnlAddPartylist;
-        private System.Windows.Forms.Label LblAddParty;
-        private System.Windows.Forms.TextBox TxtPartylistID;
-        private System.Windows.Forms.Label LblPartylistID;
-        private System.Windows.Forms.TextBox TxtPlatform;
-        private System.Windows.Forms.Label LblPlatform;
-        private System.Windows.Forms.TextBox TxtPartylistName;
-        private System.Windows.Forms.Label LblPartylistName;
         private System.Windows.Forms.Label LblTitle2;
         private System.Windows.Forms.Label LblTitle1;
-        private System.Windows.Forms.Button BtnAdd;
+        private System.Windows.Forms.PictureBox PicBoxLogo;
+        private System.Windows.Forms.Label LblAddParty;
+        private System.Windows.Forms.Panel PnlAddPartylist;
+        private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Button BtnBack;
+        private System.Windows.Forms.Label LblPartylistName;
+        private System.Windows.Forms.ComboBox CmbPartylist;
     }
 }
