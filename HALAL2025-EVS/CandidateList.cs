@@ -221,9 +221,19 @@ namespace HALAL2025_EVS
 
         private void BtnLogout_Click(object sender, EventArgs e)
         {
-            LOGIN form1 = new LOGIN();
-            this.Hide();
-            form1.Show();
+            DialogResult result = MessageBox.Show(
+        "Are you sure you want to logout?",
+        "Logout Confirmation",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    );
+
+            if (result == DialogResult.Yes)
+            {
+                LOGIN form1 = new LOGIN();
+                this.Hide();
+                form1.Show();
+            }
         }
 
         private void CmbAlphabets_SelectedIndexChanged(object sender, EventArgs e)

@@ -59,9 +59,20 @@ namespace HALAL2025_EVS
 
         private void BtnLogout_Click(object sender, EventArgs e)
         {
-            LOGIN form1 = new LOGIN();
-            this.Hide();
-            form1.Show();
+
+            DialogResult result = MessageBox.Show(
+        "Are you sure you want to logout?",
+        "Logout Confirmation",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    );
+
+            if (result == DialogResult.Yes)
+            {
+                LOGIN form1 = new LOGIN();
+                this.Hide();
+                form1.Show();
+            }
         }
 
         private void BtnReview_Click(object sender, EventArgs e)
@@ -88,19 +99,33 @@ namespace HALAL2025_EVS
 
         private void BtnSubmit_Click(object sender, EventArgs e)
         {
-            // Gather selected candidates
             Dictionary<int, string> selectedCandidates = new Dictionary<int, string>();
 
             // Check each position panel and get the selected candidate name
-            foreach (var positionPanel in positionPanels.Values)
+            foreach (var kvp in positionPanels)
             {
+                int positionId = kvp.Key;
+                Panel positionPanel = kvp.Value;
+
+                bool hasSelected = false;
+
                 foreach (Control control in positionPanel.Controls)
                 {
                     if (control is RadioButton rb && rb.Checked)
                     {
-                        int positionId = positionPanel.TabIndex;
-                        selectedCandidates[positionId] = rb.Tag.ToString(); // Assuming the candidate name is stored in the Tag
+                        selectedCandidates[positionId] = rb.Tag.ToString(); // Tag holds candidate name
+                        hasSelected = true;
+                        break;
                     }
+                }
+
+                if (!hasSelected)
+                {
+                    MessageBox.Show($"Please select a candidate for all positions before submitting.\nMissing: {GetPositionName(positionId)}",
+                                    "Incomplete Vote",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning);
+                    return; // Stop submission if one position is incomplete
                 }
             }
 
@@ -108,21 +133,35 @@ namespace HALAL2025_EVS
             foreach (var candidate in selectedCandidates)
             {
                 string candidateName = candidate.Value;
-
-                // Update vote count for this candidate
                 UpdateVoteCount(candidateName);
             }
 
-            // Update the student's vote_status to 1 (indicating they have voted)
+            // Update student's vote status
             UpdateVoteStatus();
 
-            // Show the Vote Status form after updating the vote counts
+            // Show Vote Status form
             VoteStatus form4 = new VoteStatus();
             this.Hide();
             form4.Show();
         }
 
-
+        private string GetPositionName(int positionId)
+        {
+            switch (positionId)
+            {
+                case 1: return "President";
+                case 2: return "Vice President";
+                case 3: return "Secretary";
+                case 4: return "Treasurer";
+                case 5: return "Auditor";
+                case 6: return "Public Information Officer";
+                case 7: return "Peace Officer";
+                case 8: return "Grade 4 Representative";
+                case 9: return "Grade 5 Representative";
+                case 10: return "Grade 6 Representative";
+                default: return "Unknown Position";
+            }
+        }
         private void UpdateVoteCount(string candidateName)
         {
             string query = @"
