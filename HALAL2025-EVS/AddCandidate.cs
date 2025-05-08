@@ -26,6 +26,8 @@ namespace HALAL2025_EVS
 
             LoadPartylists();
             LoadPositions();
+
+            TxtStudentID.KeyPress += TxtStudentID_KeyPress;
         }
 
 
@@ -214,6 +216,15 @@ namespace HALAL2025_EVS
                 {
                     //MessageBox.Show("Error saving candidate: " + ex.Message);
                 }
+            }
+        }
+
+        private void TxtStudentID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the length is already 14 characters
+            if (TxtStudentID.Text.Length >= 14 && e.KeyChar != '\b')  // '\b' is the backspace key
+            {
+                e.Handled = true;  // Prevent the key press
             }
         }
     }

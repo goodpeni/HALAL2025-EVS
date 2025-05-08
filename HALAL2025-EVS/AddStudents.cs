@@ -19,6 +19,7 @@ namespace HALAL2025_EVS
         {
             InitializeComponent();
             parentForm = parent;
+            TxtStudentID.KeyPress += TxtStudentID_KeyPress;
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
@@ -113,6 +114,15 @@ namespace HALAL2025_EVS
             else
             {
                 TxtConfirmPass.PasswordChar = '*';
+            }
+        }
+
+        private void TxtStudentID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the length is already 14 characters
+            if (TxtStudentID.Text.Length >= 14 && e.KeyChar != '\b')  // '\b' is the backspace key
+            {
+                e.Handled = true;  // Prevent the key press
             }
         }
     }

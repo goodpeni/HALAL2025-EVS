@@ -22,6 +22,7 @@ namespace HALAL2025_EVS
         {
             InitializeComponent();
             this.AcceptButton = BtnLogin;
+            TxtStudentID.KeyPress += TxtStudentID_KeyPress;
         }
 
         public void Login()
@@ -122,6 +123,15 @@ namespace HALAL2025_EVS
             {
                 TxtPassword.PasswordChar = '*';
                 PicBoxPass.BackgroundImage = Properties.Resources.eye;
+            }
+        }
+
+        private void TxtStudentID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the length is already 14 characters
+            if (TxtStudentID.Text.Length >= 14 && e.KeyChar != '\b')  // '\b' is the backspace key
+            {
+                e.Handled = true;  // Prevent the key press
             }
         }
     }
