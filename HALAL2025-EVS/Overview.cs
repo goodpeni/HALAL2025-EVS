@@ -4,10 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
 using MySql.Data.MySqlClient;
 
 namespace HALAL2025_EVS
@@ -186,7 +189,8 @@ namespace HALAL2025_EVS
             series.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar; // ← Horizontal bars
             series.IsValueShownAsLabel = true;
             series.LabelForeColor = Color.Black;
-            series.Font = new Font("Segoe UI", 7, FontStyle.Bold);
+            series.Font = new System.Drawing.Font("Segoe UI", 7, FontStyle.Bold);
+
         }
 
 
@@ -300,5 +304,109 @@ namespace HALAL2025_EVS
         {
 
         }
+
+        private void BtnRankingReport_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Title = "Save Election Rankings Report";
+                saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                saveFileDialog.FileName = "ElectionRankings.pdf";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        string filePath = saveFileDialog.FileName;
+
+                        // Create the PDF document
+                        Document doc = new Document(PageSize.A4, 25, 25, 30, 30);
+                        PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
+                        doc.Open();
+
+                        // Define fonts explicitly
+                        iTextSharp.text.Font titleFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 18, iTextSharp.text.Font.BOLD);
+                        iTextSharp.text.Font headerFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.BOLD);
+                        iTextSharp.text.Font contentFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 11, iTextSharp.text.Font.NORMAL);
+
+                        // Title
+                        Paragraph title = new Paragraph("Election Rankings Report", titleFont)
+                        {
+                            Alignment = Element.ALIGN_CENTER,
+                            SpacingAfter = 15
+                        };
+                        doc.Add(title);
+
+                        // Timestamp
+                        Paragraph timestamp = new Paragraph("Generated on: " + DateTime.Now.ToString("MMMM dd, yyyy hh:mm tt"), contentFont)
+                        {
+                            Alignment = Element.ALIGN_RIGHT,
+                            SpacingAfter = 20
+                        };
+                        doc.Add(timestamp);
+
+                        // Fetch rankings from database
+                        using (MySqlConnection conn = new MySqlConnection(connectionString))
+                        {
+                            conn.Open();
+                            string query = @"
+                        SELECT 
+                            p.position_name,
+                            CONCAT(s.first_name, ' ', s.last_name) AS candidate_name,
+                            c.vote_count
+                        FROM candidate c
+                        INNER JOIN student s ON c.student_id = s.student_id
+                        INNER JOIN position p ON c.position_id = p.position_id
+                        WHERE (c.position_id, c.vote_count) IN (
+                            SELECT position_id, MAX(vote_count)
+                            FROM candidate
+                            GROUP BY position_id
+                        )
+                        ORDER BY c.position_id;
+                    ";
+
+                            MySqlCommand cmd = new MySqlCommand(query, conn);
+                            MySqlDataReader reader = cmd.ExecuteReader();
+
+                            // Create a table with 3 columns
+                            PdfPTable table = new PdfPTable(3)
+                            {
+                                WidthPercentage = 100
+                            };
+                            table.SetWidths(new float[] { 3f, 5f, 2f });
+
+                            // Add table headers
+                            table.AddCell(new PdfPCell(new Phrase("Position", headerFont)));
+                            table.AddCell(new PdfPCell(new Phrase("Candidate", headerFont)));
+                            table.AddCell(new PdfPCell(new Phrase("Votes", headerFont)));
+
+                            // Add data
+                            while (reader.Read())
+                            {
+                                string position = reader.GetString("position_name");
+                                string candidate = reader.GetString("candidate_name");
+                                int votes = reader.GetInt32("vote_count");
+
+                                table.AddCell(new PdfPCell(new Phrase(position, contentFont)));
+                                table.AddCell(new PdfPCell(new Phrase(candidate, contentFont)));
+                                table.AddCell(new PdfPCell(new Phrase(votes.ToString(), contentFont)));
+                            }
+
+                            reader.Close();
+                            doc.Add(table);
+                        }
+
+                        doc.Close();
+                        MessageBox.Show("PDF ranking report has been successfully saved at:\n" + filePath, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error generating PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+
     }
 }
