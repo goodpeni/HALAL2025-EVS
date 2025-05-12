@@ -13,9 +13,8 @@ namespace HALAL2025_EVS
         public ViewPartylist()
         {
             InitializeComponent();
-            LoadPartylists(); // Call the method on form load
+            LoadPartylists(); // Load partylists and display first one immediately
             CmbFilter.SelectedIndexChanged += CmbFilter_SelectedIndexChanged;
-
         }
 
         private void LoadPartylists()
@@ -29,14 +28,18 @@ namespace HALAL2025_EVS
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     MySqlDataReader reader = cmd.ExecuteReader();
 
-                    CmbFilter.Items.Clear(); // Clear existing items
+                    CmbFilter.Items.Clear();
                     while (reader.Read())
                     {
                         CmbFilter.Items.Add(reader.GetString("partylist_name"));
                     }
 
                     if (CmbFilter.Items.Count > 0)
-                        CmbFilter.SelectedIndex = 0; // Optionally select the first item
+                    {
+                        CmbFilter.SelectedIndex = 0;
+                        // Immediately load candidates for the first partylist
+                        LoadCandidatesByPartylist(CmbFilter.SelectedItem.ToString());
+                    }
                 }
             }
             catch (Exception ex)
@@ -45,33 +48,12 @@ namespace HALAL2025_EVS
             }
         }
 
-        private void BtnVoteNow_Click(object sender, EventArgs e)
-        {
-            VoteNow form2 = new VoteNow(LOGIN.LoggedInStudentID);
-            this.Hide();
-            form2.Show();
-        }
-
-        private void BtnLogout_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show(
-        "Are you sure you want to logout?",
-        "Logout Confirmation",
-        MessageBoxButtons.YesNo,
-        MessageBoxIcon.Question
-    );
-
-            if (result == DialogResult.Yes)
-            {
-                LOGIN form1 = new LOGIN();
-                this.Hide();
-                form1.Show();
-            }
-        }
         private void CmbFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedPartylist = CmbFilter.SelectedItem.ToString();
-            LoadCandidatesByPartylist(selectedPartylist);
+            if (CmbFilter.SelectedItem != null)
+            {
+                LoadCandidatesByPartylist(CmbFilter.SelectedItem.ToString());
+            }
         }
 
         private void LoadCandidatesByPartylist(string partylistName)
@@ -95,7 +77,6 @@ namespace HALAL2025_EVS
                     cmd.Parameters.AddWithValue("@partylistName", partylistName);
                     MySqlDataReader reader = cmd.ExecuteReader();
 
-                    // Clear previous images and names
                     ClearCandidateUI();
 
                     while (reader.Read())
@@ -113,7 +94,6 @@ namespace HALAL2025_EVS
                             }
                         }
 
-                        // Assign photo and name to the correct picture box and label
                         SetCandidateUI(positionId, name, photo);
                     }
                 }
@@ -123,6 +103,7 @@ namespace HALAL2025_EVS
                 MessageBox.Show("Error loading candidates: " + ex.Message);
             }
         }
+
         private void SetCandidateUI(int positionId, string name, Image photo)
         {
             switch (positionId)
@@ -169,6 +150,7 @@ namespace HALAL2025_EVS
                     break;
             }
         }
+
         private void ClearCandidateUI()
         {
             PicBoxPres.Image = null; LblPresName.Text = "";
@@ -181,6 +163,29 @@ namespace HALAL2025_EVS
             PicBoxG4Rep.Image = null; LblG4RepName.Text = "";
             PicBoxG5Rep.Image = null; LblG5RepName.Text = "";
             PicBoxG6Rep.Image = null; LblG6RepName.Text = "";
+        }
+
+        private void BtnVoteNow_Click(object sender, EventArgs e)
+        {
+            VoteNow form2 = new VoteNow(LOGIN.LoggedInStudentID);
+            this.Hide();
+            form2.Show();
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to logout?",
+                "Logout Confirmation",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                LOGIN form1 = new LOGIN();
+                this.Hide();
+                form1.Show();
+            }
         }
     }
 }
